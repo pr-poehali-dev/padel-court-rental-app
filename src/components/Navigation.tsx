@@ -10,7 +10,6 @@ const Navigation = () => {
 
   const navItems = [
     { path: '/', label: 'Главная', icon: 'Home' },
-    { path: '/booking', label: 'Бронирование', icon: 'Calendar' },
     { path: '/courts', label: 'Корты', icon: 'Grid3x3' },
     { path: '/pricing', label: 'Тарифы', icon: 'DollarSign' },
     { path: '/contact', label: 'Контакты', icon: 'Phone' },
