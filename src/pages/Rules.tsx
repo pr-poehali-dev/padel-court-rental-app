@@ -72,44 +72,44 @@ const Rules = () => {
       
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
               Правила падела
             </h1>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Падел — это микс тенниса и сквоша. Динамичная игра, доступная для новичков и увлекательная для профессионалов
             </p>
           </div>
 
-          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-white/95 border-accent/20">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 text-center">
+          <Card className="mb-16 p-10 md:p-12 animate-fade-in bg-white/95 backdrop-blur-sm border-0 shadow-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
               Что такое падел?
             </h2>
-            <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
               Падел (Padel) — это ракеточный вид спорта, который сочетает элементы тенниса и сквоша. 
               Игра проходит на корте, окруженном стеклянными стенами, что делает её невероятно динамичной. 
               Научиться играть можно за одну тренировку, а совершенствоваться — всю жизнь!
             </p>
           </Card>
 
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-white mb-8 text-center animate-fade-in">
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center animate-fade-in">
               Основные правила
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {basicRules.map((rule, index) => (
                 <Card 
                   key={index} 
-                  className="p-6 hover:shadow-xl transition-shadow animate-fade-in bg-white/95"
+                  className="p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/95 backdrop-blur-sm border-0"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 flex-shrink-0">
-                      <Icon name={rule.icon as any} size={24} className="text-accent" />
+                  <div className="flex items-start gap-5">
+                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/15 flex-shrink-0">
+                      <Icon name={rule.icon as any} size={28} className="text-accent" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-primary mb-2">{rule.title}</h3>
-                      <p className="text-muted-foreground">{rule.description}</p>
+                      <h3 className="text-2xl font-bold text-primary mb-3">{rule.title}</h3>
+                      <p className="text-muted-foreground text-lg leading-relaxed">{rule.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -117,49 +117,49 @@ const Rules = () => {
             </div>
           </div>
 
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-white mb-8 text-center animate-fade-in">
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center animate-fade-in">
               Что нужно для игры
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {equipmentItems.map((item, index) => (
                 <Card 
                   key={index} 
-                  className="text-center p-6 hover:shadow-xl transition-shadow animate-fade-in bg-white/95"
+                  className="text-center p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/95 backdrop-blur-sm border-0"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-4">
-                    <Icon name={item.icon as any} size={32} className="text-accent" />
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-accent/15 mb-6">
+                    <Icon name={item.icon as any} size={36} className="text-accent" />
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
+                  <h3 className="text-2xl font-bold text-primary mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed">{item.description}</p>
                 </Card>
               ))}
             </div>
-            <p className="text-center text-white/90 mt-6 animate-fade-in">
+            <p className="text-center text-white/90 mt-8 text-xl animate-fade-in">
               В клубе ЗВИ вы можете взять всё необходимое оборудование в аренду
             </p>
           </div>
 
-          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-white/95">
-            <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+          <Card className="mb-16 p-10 md:p-12 animate-fade-in bg-white/95 backdrop-blur-sm border-0 shadow-2xl">
+            <h2 className="text-4xl font-bold text-primary mb-8 text-center">
               Советы начинающим
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {tips.map((tip, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <Icon name="CheckCircle2" size={20} className="text-accent flex-shrink-0 mt-1" />
-                  <p className="text-muted-foreground">{tip}</p>
+                <div key={index} className="flex items-start gap-4">
+                  <Icon name="CheckCircle2" size={24} className="text-accent flex-shrink-0 mt-1" />
+                  <p className="text-muted-foreground text-lg leading-relaxed">{tip}</p>
                 </div>
               ))}
             </div>
           </Card>
 
           <div className="text-center animate-fade-in">
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Готовы попробовать?
             </h2>
-            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
               Забронируйте корт и приходите на первую тренировку. Наши инструкторы помогут освоить основы игры!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
