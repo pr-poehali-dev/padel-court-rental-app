@@ -59,6 +59,12 @@ const Home = () => {
                   Посмотреть корты
                 </Button>
               </Link>
+              <Link to="/pricing" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 backdrop-blur-sm">
+                  <Icon name="DollarSign" className="mr-2" size={20} />
+                  Тарифы
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
