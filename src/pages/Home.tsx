@@ -46,45 +46,45 @@ const Home = () => {
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10 py-20">
-          <div className="max-w-4xl mx-auto animate-fade-in">
+          <div className="max-w-4xl mx-auto">
             <div className="flex flex-col gap-6">
-              <a href="#" className="w-full">
-                <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8">
+              <a href="#" className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
+                <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105">
                   <Icon name="Calendar" className="mr-3" size={24} />
                   Забронировать корт
                 </Button>
               </a>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-in" style={{ animationDelay: '150ms' }}>
                 <Link to="/courts" className="w-full">
-                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm">
+                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="Grid3x3" className="mr-2" size={20} />
                     Посмотреть корты
                   </Button>
                 </Link>
                 <Link to="/pricing" className="w-full">
-                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm">
+                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="DollarSign" className="mr-2" size={20} />
                     Тарифы
                   </Button>
                 </Link>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
                 <Link to="/about" className="w-full">
-                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm">
+                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="Info" className="mr-2" size={20} />
                     О клубе
                   </Button>
                 </Link>
                 <Link to="/rules" className="w-full">
-                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm">
+                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="BookOpen" className="mr-2" size={20} />
                     Правила
                   </Button>
                 </Link>
                 <Link to="/contact" className="w-full">
-                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm">
+                  <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="Phone" className="mr-2" size={20} />
                     Контакты
                   </Button>
