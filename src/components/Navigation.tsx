@@ -50,7 +50,7 @@ const Navigation = () => {
               <Icon name="Menu" size={24} />
             </Button>
           </SheetTrigger>
-          <SheetContent side="top" className="h-auto bg-sidebar/98 backdrop-blur-md border-b-2 border-accent mt-16">
+          <SheetContent side="top" className="h-auto bg-sidebar/98 backdrop-blur-md mt-16">
             <div className="flex flex-col space-y-3 pb-4">
               {navItems.map((item) => (
                 <Link
