@@ -47,8 +47,19 @@ const Courts = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div className="min-h-screen bg-background relative">
+      <div
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: 'url(https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/6061aacc-ad35-4b83-8fcd-61f2cf44d0bc.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-background/95" />
+      </div>
+      <div className="relative z-10">
+        <Navigation />
       
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-7xl mx-auto">
@@ -150,7 +161,8 @@ const Courts = () => {
           </div>
         </div>
       </div>
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 };
