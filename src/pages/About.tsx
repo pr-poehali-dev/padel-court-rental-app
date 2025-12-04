@@ -77,6 +77,51 @@ const About = () => {
             </Card>
           </div>
 
+          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-muted/50">
+            <h2 className="text-3xl font-bold text-primary mb-6 text-center">
+              Новейшие корты профессионального уровня
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
+              Мы установили абсолютно новые корты с качественным покрытием последнего поколения. 
+              Современные материалы обеспечивают идеальный отскок мяча и комфортную игру для всех уровней подготовки. 
+              Каждый корт оборудован профессиональным LED-освещением, кондиционированием и системой вентиляции.
+            </p>
+          </Card>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <Card className="p-8 animate-fade-in hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 flex-shrink-0">
+                  <Icon name="Trophy" size={28} className="text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-primary mb-3">Система рейтинга игроков</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    В ближайшее время мы запустим уникальную систему рейтинга для всех участников клуба. 
+                    Каждая игра будет учитываться в личной статистике. Игроки с высоким рейтингом получат 
+                    специальные награды, бонусы и приоритетное бронирование кортов!
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 animate-fade-in hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 flex-shrink-0">
+                  <Icon name="Target" size={28} className="text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-primary mb-3">Регулярные турниры</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Планируем проводить еженедельные и ежемесячные соревнования для игроков всех уровней. 
+                    Призы, кубки, медали и возможность проявить себя в дружеской конкурентной атмосфере. 
+                    Следите за анонсами турниров в нашем клубе!
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+
           <div className="text-center animate-fade-in">
             <h2 className="text-3xl font-bold text-primary mb-6">
               Готовы присоединиться?
