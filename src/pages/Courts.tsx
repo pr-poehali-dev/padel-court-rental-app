@@ -19,19 +19,28 @@ const Courts = () => {
     },
     {
       id: 2,
-      name: 'Корт 2 - Открытый',
-      type: 'Открытый',
-      features: ['Натуральное покрытие', 'Трибуны', 'Парковка', 'Кафе'],
-      price: 1500,
+      name: 'Корт 2 - Премиум крытый',
+      type: 'Крытый',
+      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
+      price: 2000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
     {
       id: 3,
-      name: 'Корт 3 - VIP зона',
-      type: 'Крытый VIP',
-      features: ['Приватная зона', 'Премиум оборудование', 'Персональный тренер', 'Лаунж-зона'],
-      price: 3500,
+      name: 'Корт 3 - Премиум крытый',
+      type: 'Крытый',
+      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
+      price: 2000,
+      available: true,
+      image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
+    },
+    {
+      id: 4,
+      name: 'Корт 4 - Премиум крытый',
+      type: 'Крытый',
+      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
+      price: 2000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
@@ -52,7 +61,7 @@ const Courts = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {courts.map((court, index) => (
               <Card
                 key={court.id}
