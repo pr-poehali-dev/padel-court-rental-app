@@ -33,7 +33,7 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section className="relative pt-16 min-h-screen flex flex-col justify-between md:justify-start">
+      <section className="relative pt-16 min-h-screen flex flex-col justify-between">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -73,7 +73,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10 pb-12 md:pb-20">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 pb-6 md:pb-8">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
               <Link to="/rules" className="w-full md:order-2">
