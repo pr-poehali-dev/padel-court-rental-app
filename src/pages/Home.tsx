@@ -33,7 +33,7 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section className="relative pt-16 min-h-screen flex items-start md:items-center">
+      <section className="relative pt-16 min-h-screen flex items-start md:items-start md:pt-32">
         <div
           className="absolute inset-0 z-0"
           style={{
