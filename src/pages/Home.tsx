@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 const Home = () => {
   const features = [
@@ -117,6 +118,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

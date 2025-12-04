@@ -5,6 +5,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { toast } from 'sonner';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 const Booking = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
@@ -166,6 +167,7 @@ const Booking = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

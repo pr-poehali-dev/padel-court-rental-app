@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -226,6 +227,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
