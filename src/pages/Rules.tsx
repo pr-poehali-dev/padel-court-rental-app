@@ -73,15 +73,15 @@ const Rules = () => {
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Правила падела
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Падел — это микс тенниса и сквоша. Динамичная игра, доступная для новичков и увлекательная для профессионалов
             </p>
           </div>
 
-          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-accent/5 border-accent/20">
+          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-white/95 border-accent/20">
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 text-center">
               Что такое падел?
             </h2>
@@ -93,14 +93,14 @@ const Rules = () => {
           </Card>
 
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-8 text-center animate-fade-in">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center animate-fade-in">
               Основные правила
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {basicRules.map((rule, index) => (
                 <Card 
                   key={index} 
-                  className="p-6 hover:shadow-xl transition-shadow animate-fade-in"
+                  className="p-6 hover:shadow-xl transition-shadow animate-fade-in bg-white/95"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="flex items-start gap-4">
@@ -118,14 +118,14 @@ const Rules = () => {
           </div>
 
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-8 text-center animate-fade-in">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center animate-fade-in">
               Что нужно для игры
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {equipmentItems.map((item, index) => (
                 <Card 
                   key={index} 
-                  className="text-center p-6 hover:shadow-xl transition-shadow animate-fade-in"
+                  className="text-center p-6 hover:shadow-xl transition-shadow animate-fade-in bg-white/95"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-4">
@@ -136,12 +136,12 @@ const Rules = () => {
                 </Card>
               ))}
             </div>
-            <p className="text-center text-muted-foreground mt-6 animate-fade-in">
+            <p className="text-center text-white/90 mt-6 animate-fade-in">
               В клубе ЗВИ вы можете взять всё необходимое оборудование в аренду
             </p>
           </div>
 
-          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-muted/50">
+          <Card className="mb-12 p-8 md:p-10 animate-fade-in bg-white/95">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center">
               Советы начинающим
             </h2>
@@ -156,10 +156,10 @@ const Rules = () => {
           </Card>
 
           <div className="text-center animate-fade-in">
-            <h2 className="text-3xl font-bold text-primary mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Готовы попробовать?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Забронируйте корт и приходите на первую тренировку. Наши инструкторы помогут освоить основы игры!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
