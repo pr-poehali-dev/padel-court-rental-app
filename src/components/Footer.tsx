@@ -40,11 +40,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-6 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+        <div className="mt-6 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-center gap-4 text-center flex-wrap">
           <Link to="/" className="text-white/70 hover:text-white text-sm transition-colors">
             Главная
           </Link>
-
           <Link to="/courts" className="text-white/70 hover:text-white text-sm transition-colors">
             Корты
           </Link>
@@ -53,6 +52,9 @@ const Footer = () => {
           </Link>
           <Link to="/about" className="text-white/70 hover:text-white text-sm transition-colors">
             О клубе
+          </Link>
+          <Link to="/rules" className="text-white/70 hover:text-white text-sm transition-colors">
+            Правила
           </Link>
           <Link to="/contact" className="text-white/70 hover:text-white text-sm transition-colors">
             Контакты

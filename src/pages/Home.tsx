@@ -47,7 +47,7 @@ const Home = () => {
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10 py-20">
           <div className="max-w-3xl animate-fade-in">
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
               <a href="#" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-primary font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
                   <Icon name="Calendar" className="mr-2" size={20} />
@@ -64,6 +64,12 @@ const Home = () => {
                 <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 backdrop-blur-sm">
                   <Icon name="DollarSign" className="mr-2" size={20} />
                   Тарифы
+                </Button>
+              </Link>
+              <Link to="/about" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 backdrop-blur-sm">
+                  <Icon name="Info" className="mr-2" size={20} />
+                  О клубе
                 </Button>
               </Link>
             </div>
