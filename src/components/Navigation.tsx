@@ -12,6 +12,7 @@ const Navigation = () => {
     { path: '/', label: 'Главная', icon: 'Home' },
     { path: '/courts', label: 'Корты', icon: 'Grid3x3' },
     { path: '/pricing', label: 'Тарифы', icon: 'DollarSign' },
+    { path: '/about', label: 'О клубе', icon: 'Info' },
     { path: '/contact', label: 'Контакты', icon: 'Phone' },
   ];
 

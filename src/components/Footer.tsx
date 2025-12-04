@@ -44,14 +44,15 @@ const Footer = () => {
           <Link to="/" className="text-white/70 hover:text-white text-sm transition-colors">
             Главная
           </Link>
-          <Link to="/booking" className="text-white/70 hover:text-white text-sm transition-colors">
-            Бронирование
-          </Link>
+
           <Link to="/courts" className="text-white/70 hover:text-white text-sm transition-colors">
             Корты
           </Link>
           <Link to="/pricing" className="text-white/70 hover:text-white text-sm transition-colors">
             Тарифы
+          </Link>
+          <Link to="/about" className="text-white/70 hover:text-white text-sm transition-colors">
+            О клубе
           </Link>
           <Link to="/contact" className="text-white/70 hover:text-white text-sm transition-colors">
             Контакты
