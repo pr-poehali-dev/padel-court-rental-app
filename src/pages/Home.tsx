@@ -44,23 +44,23 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
 
-        <div className="container mx-auto px-4 relative z-10 py-20">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 py-20">
           <div className="max-w-3xl animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight break-words">
               Премиальные корты для игры в Padel
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed break-words">
               Забронируйте корт мгновенно и наслаждайтесь игрой в комфортной атмосфере
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/booking">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-6">
+              <Link to="/booking" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-primary font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
                   <Icon name="Calendar" className="mr-2" size={20} />
                   Забронировать корт
                 </Button>
               </Link>
-              <Link to="/courts">
-                <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-8 py-6 backdrop-blur-sm">
+              <Link to="/courts" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 backdrop-blur-sm">
                   <Icon name="Grid3x3" className="mr-2" size={20} />
                   Посмотреть корты
                 </Button>
