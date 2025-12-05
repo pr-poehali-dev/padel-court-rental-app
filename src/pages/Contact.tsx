@@ -79,7 +79,7 @@ const Contact = () => {
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-2xl mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                     <Icon name={info.icon as any} size={24} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="font-bold text-lg mb-3 text-white">{info.title}</h3>
+                  <h3 className="font-bold text-lg mb-3 text-accent">{info.title}</h3>
                   <div className="space-y-1">
                     {info.items.map((item, idx) => (
                       <div key={idx}>
