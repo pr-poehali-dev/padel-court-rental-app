@@ -243,7 +243,7 @@ const Pricing = () => {
           </div>
 
           <div className="mt-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center animate-fade-in">
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl font-bold text-accent mb-4">
               Остались вопросы о тарифах?
             </h3>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto text-lg">
