@@ -118,7 +118,7 @@ const Contact = () => {
               <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
                 Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a href="tel:+74953632100">
                   <Button
                     size="lg"
@@ -137,6 +137,41 @@ const Contact = () => {
                     +7 495 363-38-38
                   </Button>
                 </a>
+              </div>
+              <div className="border-t border-white/20 pt-8">
+                <p className="text-white/80 mb-4 text-base">
+                  Или напишите нам в мессенджеры:
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="https://wa.me/79361518253"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="bg-[#25D366] hover:bg-[#25D366]/90 text-white border-0 font-semibold"
+                    >
+                      <Icon name="MessageCircle" className="mr-2" size={20} />
+                      WhatsApp
+                    </Button>
+                  </a>
+                  <a 
+                    href="https://t.me/zvi_padel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="bg-[#0088cc] hover:bg-[#0088cc]/90 text-white border-0 font-semibold"
+                    >
+                      <Icon name="Send" className="mr-2" size={20} />
+                      Telegram
+                    </Button>
+                  </a>
+                </div>
               </div>
             </CardContent>
           </Card>
