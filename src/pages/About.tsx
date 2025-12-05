@@ -61,51 +61,51 @@ const About = () => {
           <div className="mb-6 animate-fade-in">
             <BackButton />
           </div>
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
+          <div className="text-center mb-8 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-tight">
               Это место — символ<br />энергии, ума и побед!
             </h1>
             <a href="#" className="inline-block">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-xl px-10 py-7 transition-all hover:scale-105 shadow-2xl">
-                <Icon name="Calendar" className="mr-3" size={24} />
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105">
+                <Icon name="Calendar" className="mr-2" size={20} />
                 Забронировать корт
               </Button>
             </a>
           </div>
 
-          <Card className="mb-16 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 border border-white/20 shadow-2xl">
-            <CardContent className="p-10 md:p-14">
-              <div className="text-center max-w-4xl mx-auto space-y-6">
-                <p className="text-xl md:text-2xl text-white leading-relaxed">
+          <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 border border-white/20 shadow-2xl">
+            <CardContent className="p-6 md:p-8">
+              <div className="text-center max-w-4xl mx-auto space-y-4">
+                <p className="text-lg md:text-xl text-white leading-relaxed">
                   В здании с историей, где <span className="font-bold">с 1930 года</span> ковали горячее железо и создавали двигатели. На территории легендарного <span className="font-bold">Завода Владимира Ильича</span>.
                 </p>
-                <p className="text-2xl md:text-3xl text-accent leading-relaxed font-bold">
+                <p className="text-xl md:text-2xl text-accent leading-relaxed font-bold">
                   Теперь здесь куются горячие спортивные игры!
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center animate-fade-in">
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center animate-fade-in">
               Преимущества нашего падел клуба
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {advantages.map((advantage, index) => (
                 <Card 
                   key={index}
-                  className="p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
+                  className="p-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="flex items-start gap-5">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/20 flex-shrink-0">
-                      <Icon name={advantage.icon as any} size={32} className="text-accent" />
+                  <div className="flex items-start gap-4">
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-accent/20 flex-shrink-0">
+                      <Icon name={advantage.icon as any} size={24} className="text-accent" />
                     </div>
                     <div>
-                      <h3 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight">
+                      <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">
                         {advantage.title}
                       </h3>
-                      <p className="text-white/80 text-lg leading-relaxed">
+                      <p className="text-white/80 text-base leading-relaxed">
                         {advantage.description}
                       </p>
                     </div>
@@ -118,20 +118,20 @@ const About = () => {
           <div className="text-center animate-fade-in">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-6">
-                  <Icon name="Calendar" className="mr-2" size={20} />
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5">
+                  <Icon name="Calendar" className="mr-2" size={18} />
                   Забронировать корт
                 </Button>
               </a>
               <Link to="/courts">
-                <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-white/10 hover:bg-white/20 text-white border-white/30">
-                  <Icon name="Grid3x3" className="mr-2" size={20} />
+                <Button size="lg" variant="outline" className="font-semibold text-base px-6 py-5 bg-white/10 hover:bg-white/20 text-white border-white/30">
+                  <Icon name="Grid3x3" className="mr-2" size={18} />
                   Посмотреть корты
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-white/10 hover:bg-white/20 text-white border-white/30">
-                  <Icon name="Phone" className="mr-2" size={20} />
+                <Button size="lg" variant="outline" className="font-semibold text-base px-6 py-5 bg-white/10 hover:bg-white/20 text-white border-white/30">
+                  <Icon name="Phone" className="mr-2" size={18} />
                   Связаться с нами
                 </Button>
               </Link>
