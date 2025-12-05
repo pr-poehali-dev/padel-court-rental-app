@@ -8,11 +8,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
           <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-auto">
-            <img 
-              src="https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png" 
-              alt="ЗВИ Padel Club"
-              className="h-10 md:h-12 object-contain object-left self-center md:self-start md:-ml-1"
-            />
+            <Link to="/" className="transition-opacity hover:opacity-80">
+              <img 
+                src="https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png" 
+                alt="ЗВИ Padel Club"
+                className="h-10 md:h-12 object-contain object-left self-center md:self-start md:-ml-1 cursor-pointer"
+              />
+            </Link>
             <div className="text-center md:text-left">
               <p className="text-white/90 text-xs md:text-sm font-semibold">
                 АО «ЗВИ»
