@@ -112,7 +112,7 @@ const Courts = () => {
           <div className="mt-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                <h2 className="text-2xl md:text-3xl font-bold text-accent mb-3">
                   Не знаете, какой корт выбрать?
                 </h2>
                 <p className="text-white/80 mb-4 text-base">
