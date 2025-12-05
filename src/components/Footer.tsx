@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src="https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png" 
               alt="ЗВИ Padel Club"
-              className="h-10 md:h-12 object-contain self-center md:self-start"
+              className="h-10 md:h-12 object-contain object-left self-center md:self-start md:-ml-1"
             />
             <div className="text-center md:text-left">
               <p className="text-white/90 text-xs md:text-sm font-semibold">
