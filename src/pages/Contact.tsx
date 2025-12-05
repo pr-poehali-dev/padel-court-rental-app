@@ -54,7 +54,7 @@ const Contact = () => {
           </div>
           <div className="text-center mb-8 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 tracking-tight relative">
+              <h1 className="text-4xl md:text-6xl font-bold text-accent mb-3 tracking-tight relative">
                 Контакты
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
@@ -105,8 +105,8 @@ const Contact = () => {
 
           <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-5">
-              <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-white">
-                <Icon name="MapPin" className="mr-2 text-accent" size={24} />
+              <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-accent">
+                <Icon name="MapPin" className="mr-2" size={24} />
                 Как нас найти
               </h3>
               <div className="bg-white/5 rounded-lg h-64 flex items-center justify-center overflow-hidden border border-white/10">
@@ -125,7 +125,7 @@ const Contact = () => {
           <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-6 md:p-8 text-center">
               <Icon name="Headphones" size={48} className="mx-auto mb-4 text-accent" />
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Есть вопросы?</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4">Есть вопросы?</h3>
               <p className="text-white/80 mb-6 text-base max-w-2xl mx-auto">
                 Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
               </p>
