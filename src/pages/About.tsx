@@ -69,10 +69,10 @@ const About = () => {
             </a>
           </div>
 
-          <Card className="mb-16 overflow-hidden animate-fade-in backdrop-blur-sm bg-white/95 border-0 shadow-2xl">
+          <Card className="mb-16 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 border border-white/20 shadow-2xl">
             <CardContent className="p-10 md:p-14">
               <div className="text-center max-w-4xl mx-auto space-y-6">
-                <p className="text-xl md:text-2xl text-primary leading-relaxed">
+                <p className="text-xl md:text-2xl text-white leading-relaxed">
                   В здании с историей, где <span className="font-bold">с 1930 года</span> ковали горячее железо и создавали двигатели. На территории легендарного <span className="font-bold">Завода Владимира Ильича</span>.
                 </p>
                 <p className="text-2xl md:text-3xl text-accent leading-relaxed font-bold">
@@ -90,18 +90,18 @@ const About = () => {
               {advantages.map((advantage, index) => (
                 <Card 
                   key={index}
-                  className="p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/95 backdrop-blur-sm border-0"
+                  className="p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="flex items-start gap-5">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/15 flex-shrink-0">
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/20 flex-shrink-0">
                       <Icon name={advantage.icon as any} size={32} className="text-accent" />
                     </div>
                     <div>
-                      <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 leading-tight">
+                      <h3 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight">
                         {advantage.title}
                       </h3>
-                      <p className="text-muted-foreground text-lg leading-relaxed">
+                      <p className="text-white/80 text-lg leading-relaxed">
                         {advantage.description}
                       </p>
                     </div>
