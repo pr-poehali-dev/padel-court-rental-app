@@ -49,6 +49,28 @@ const Footer = () => {
                 +7 495 363-38-38
               </Button>
             </a>
+            <div className="flex gap-2 w-full mt-1">
+              <a href="https://wa.me/74953632100" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full bg-green-500/20 hover:bg-green-500/30 text-white border-green-500/50 backdrop-blur-sm text-xs px-3 py-2"
+                >
+                  <Icon name="MessageCircle" className="mr-1" size={14} />
+                  WhatsApp
+                </Button>
+              </a>
+              <a href="https://t.me/zvipadelclub" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full bg-blue-500/20 hover:bg-blue-500/30 text-white border-blue-500/50 backdrop-blur-sm text-xs px-3 py-2"
+                >
+                  <Icon name="Send" className="mr-1" size={14} />
+                  Telegram
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
 
