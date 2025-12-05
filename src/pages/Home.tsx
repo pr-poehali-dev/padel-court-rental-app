@@ -91,12 +91,12 @@ const Home = () => {
                     Правила
                   </Button>
                 </Link>
-                <Link to="/about" className="w-full">
+                <a href="https://yandex.ru/maps/?text=Москва, Партийный пер., дом 1 корп.6" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
-                    <Icon name="Info" className="mr-2" size={20} />
-                    О клубе
+                    <Icon name="MapPin" className="mr-2" size={20} />
+                    Проезд
                   </Button>
-                </Link>
+                </a>
                 <Link to="/contact" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="Phone" className="mr-2" size={20} />
@@ -117,12 +117,12 @@ const Home = () => {
                   Правила
                 </Button>
               </Link>
-              <Link to="/about" className="w-full md:order-1">
+              <a href="https://yandex.ru/maps/?text=Москва, Партийный пер., дом 1 корп.6" target="_blank" rel="noopener noreferrer" className="w-full md:order-1">
                 <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
-                  <Icon name="Info" className="mr-2" size={20} />
-                  О клубе
+                  <Icon name="MapPin" className="mr-2" size={20} />
+                  Проезд
                 </Button>
-              </Link>
+              </a>
               <Link to="/contact" className="w-full md:order-3">
                 <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
                   <Icon name="Phone" className="mr-2" size={20} />
