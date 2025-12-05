@@ -102,7 +102,7 @@ const About = () => {
                       <Icon name={advantage.icon as any} size={24} className="text-accent" />
                     </div>
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">
+                      <h3 className="text-lg md:text-xl font-bold text-accent mb-2 leading-tight">
                         {advantage.title}
                       </h3>
                       <p className="text-white/80 text-base leading-relaxed">
