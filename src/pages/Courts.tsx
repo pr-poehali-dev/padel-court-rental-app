@@ -16,7 +16,7 @@ const Courts = () => {
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
       available: true,
-      image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
+      image: 'https://cdn.poehali.dev/files/8e9d1e41-b64b-48fd-a525-825cfcf5005a.png',
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Courts = () => {
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'],
       available: true,
-      image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
+      image: 'https://cdn.poehali.dev/files/8e9d1e41-b64b-48fd-a525-825cfcf5005a.png',
     },
   ];
 
