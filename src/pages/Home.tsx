@@ -53,7 +53,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 md:p-8 transition-all hover:scale-[1.02] hover:bg-white/15 hover:shadow-2xl cursor-pointer group">
                   <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <h1 className="relative text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
-                    САМЫЙ ЦЕНТРАЛЬНЫЙ<br />ПАДЕЛ КЛУБ СТОЛИЦЫ
+                    <span className="text-accent">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
                   </h1>
                   <div className="relative flex items-center justify-center gap-2 mt-3 md:mt-4 text-white/70 group-hover:text-white transition-colors">
                     <span className="text-sm md:text-base font-medium">Узнать больше о клубе</span>
