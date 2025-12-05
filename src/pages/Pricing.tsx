@@ -210,7 +210,7 @@ const Pricing = () => {
           <div className="mb-20">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-3xl md:text-4xl font-bold text-white relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-accent relative z-10">
                   Корпоративные и частные мероприятия
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -221,7 +221,7 @@ const Pricing = () => {
               <CardContent className="p-8 md:p-12">
                 <div className="max-w-3xl mx-auto text-center">
                   <Icon name="PartyPopper" size={64} className="mx-auto mb-6 text-accent" />
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6">
                     Проведите интересный и объединяющий новогодний корпоратив на кортах
                   </h3>
                   <div className="space-y-4 text-lg md:text-xl text-white/80 mb-8">
@@ -232,9 +232,9 @@ const Pricing = () => {
                       А после вас ждет разнообразный кейтеринг и любые напитки
                     </p>
                   </div>
-                  <Link to="/contact">
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-10 py-7 transition-all hover:scale-105">
-                      <Icon name="Phone" className="mr-2" size={22} />
+                  <Link to="/contact" className="inline-block">
+                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base md:text-lg px-6 md:px-10 py-5 md:py-7 transition-all hover:scale-105">
+                      <Icon name="Phone" className="mr-2" size={20} />
                       Обсудим ваш праздник по телефону
                     </Button>
                   </Link>
