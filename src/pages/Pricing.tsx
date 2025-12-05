@@ -94,26 +94,25 @@ const Pricing = () => {
                     </div>
                   )}
 
-                  <CardHeader className="text-center pb-8">
-                    <div className="w-20 h-20 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                      <Icon name={court.icon as any} size={40} className="text-accent" />
+                  <CardHeader className="text-center pb-4">
+                    <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <Icon name={court.icon as any} size={28} className="text-accent" />
                     </div>
-                    <CardTitle className="text-3xl mb-4 text-white font-bold">{court.name}</CardTitle>
-                    <div className="mt-4">
-                      <span className="text-5xl font-bold text-accent">
+                    <CardTitle className="text-xl mb-2 text-white font-bold">{court.name}</CardTitle>
+                    <div className="mt-2">
+                      <span className="text-3xl font-bold text-accent">
                         {court.price.toLocaleString('ru-RU')} ₽
                       </span>
-                      <span className="text-white/80 ml-2 text-xl">/ час</span>
+                      <span className="text-white/80 ml-1 text-base">/ час</span>
                     </div>
                   </CardHeader>
 
-                  <CardContent>
+                  <CardContent className="pb-4">
                     <a href="#" className="block">
                       <Button
-                        className="w-full font-semibold text-lg py-6 bg-accent hover:bg-accent/90 text-primary"
-                        size="lg"
+                        className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
                       >
-                        <Icon name="Calendar" className="mr-2" size={20} />
+                        <Icon name="Calendar" className="mr-2" size={18} />
                         Забронировать
                       </Button>
                     </a>
@@ -142,39 +141,38 @@ const Pricing = () => {
                     </div>
                   )}
 
-                  <CardHeader className="text-center pb-6">
-                    <div className="w-20 h-20 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                      <Icon name={item.icon as any} size={40} className="text-accent" />
+                  <CardHeader className="text-center pb-4">
+                    <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <Icon name={item.icon as any} size={28} className="text-accent" />
                     </div>
-                    <CardTitle className="text-2xl mb-3 text-white font-bold leading-tight">
+                    <CardTitle className="text-lg mb-2 text-white font-bold leading-tight">
                       {item.name}
                     </CardTitle>
                     {item.description && (
-                      <p className="text-white/70 text-lg">{item.description}</p>
+                      <p className="text-white/70 text-sm">{item.description}</p>
                     )}
-                    <div className="mt-4">
+                    <div className="mt-2">
                       {item.free ? (
-                        <span className="text-5xl font-bold text-green-400">
+                        <span className="text-3xl font-bold text-green-400">
                           Бесплатно!
                         </span>
                       ) : (
                         <>
-                          <span className="text-5xl font-bold text-accent">
+                          <span className="text-3xl font-bold text-accent">
                             {item.price.toLocaleString('ru-RU')} ₽
                           </span>
-                          <span className="text-white/80 ml-2 text-xl">/ час</span>
+                          <span className="text-white/80 ml-1 text-base">/ час</span>
                         </>
                       )}
                     </div>
                   </CardHeader>
 
-                  <CardContent>
+                  <CardContent className="pb-4">
                     <Link to="/contact" className="block">
                       <Button
-                        className="w-full font-semibold text-lg py-6 bg-accent hover:bg-accent/90 text-primary"
-                        size="lg"
+                        className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
                       >
-                        <Icon name="Phone" className="mr-2" size={20} />
+                        <Icon name="Phone" className="mr-2" size={18} />
                         Записаться
                       </Button>
                     </Link>
