@@ -49,8 +49,8 @@ const Courts = () => {
             <BackButton />
           </div>
           <div className="text-center mb-8 animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
-              Наши корты
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+              <span className="text-accent">Наши корты</span>
             </h1>
             <p className="text-lg text-white/90">
               Профессиональные корты для игры в Padel любого уровня
@@ -78,7 +78,7 @@ const Courts = () => {
                 </div>
 
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-xl text-white">{court.name}</CardTitle>
+                  <CardTitle className="text-xl text-accent">{court.name}</CardTitle>
                 </CardHeader>
 
                 <CardContent className="space-y-4 pt-0">
