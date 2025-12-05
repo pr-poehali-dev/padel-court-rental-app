@@ -114,9 +114,9 @@ const Pricing = () => {
                     <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                       <Icon name={court.icon as any} size={28} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <CardTitle className="text-xl mb-2 text-white font-bold">{court.name}</CardTitle>
+                    <CardTitle className="text-xl mb-2 text-accent font-bold">{court.name}</CardTitle>
                     <div className="mt-2">
-                      <span className="text-3xl font-bold text-accent">
+                      <span className="text-3xl font-bold text-white">
                         {court.price.toLocaleString('ru-RU')} ₽
                       </span>
                       <span className="text-white/80 ml-1 text-base">/ час</span>
@@ -170,7 +170,7 @@ const Pricing = () => {
                     <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                       <Icon name={item.icon as any} size={28} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <CardTitle className="text-lg mb-2 text-white font-bold leading-tight">
+                    <CardTitle className="text-lg mb-2 text-accent font-bold leading-tight">
                       {item.name}
                     </CardTitle>
                     {item.description && (
@@ -183,7 +183,7 @@ const Pricing = () => {
                         </span>
                       ) : (
                         <>
-                          <span className="text-3xl font-bold text-accent">
+                          <span className="text-3xl font-bold text-white">
                             {item.price.toLocaleString('ru-RU')} ₽
                           </span>
                           <span className="text-white/80 ml-1 text-base">/ час</span>
