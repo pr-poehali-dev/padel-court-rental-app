@@ -14,7 +14,7 @@ const Courts = () => {
       name: 'Корт 1 - Премиум крытый',
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 2000,
+      price: 6000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
@@ -23,7 +23,7 @@ const Courts = () => {
       name: 'Корт 2 - Премиум крытый',
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 2000,
+      price: 6000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
@@ -32,7 +32,7 @@ const Courts = () => {
       name: 'Корт 3 - Премиум крытый',
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 2000,
+      price: 6000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
@@ -41,7 +41,7 @@ const Courts = () => {
       name: 'Корт 4 - Премиум крытый',
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 2000,
+      price: 6000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
@@ -64,82 +64,82 @@ const Courts = () => {
       
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
               Наши корты
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-xl text-white/90">
               Профессиональные корты для игры в Padel любого уровня
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
             {courts.map((court, index) => (
               <Card
                 key={court.id}
-                className="overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-fade-in"
+                className="overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={court.image}
                     alt={court.name}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                   <div className="absolute top-4 right-4">
-                    <Badge className="bg-accent text-primary font-semibold">
+                    <Badge className="bg-accent text-primary font-semibold text-sm px-3 py-1">
                       {court.type}
                     </Badge>
                   </div>
                 </div>
 
                 <CardHeader>
-                  <CardTitle className="text-xl">{court.name}</CardTitle>
+                  <CardTitle className="text-2xl text-white">{court.name}</CardTitle>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-6">
                   <div>
-                    <p className="text-sm font-semibold text-muted-foreground mb-2">
+                    <p className="text-sm font-semibold text-white/70 mb-3">
                       Удобства:
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {court.features.map((feature, idx) => (
-                        <Badge key={idx} variant="outline" className="text-xs">
-                          <Icon name="Check" size={12} className="mr-1" />
+                        <Badge key={idx} variant="outline" className="text-sm bg-white/5 border-white/20 text-white/90">
+                          <Icon name="Check" size={14} className="mr-1" />
                           {feature}
                         </Badge>
                       ))}
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t">
+                  <div className="flex items-center justify-between pt-4 border-t border-white/20">
                     <div>
-                      <p className="text-sm text-muted-foreground">Стоимость</p>
-                      <p className="text-2xl font-bold text-accent">{court.price} ₽<span className="text-sm font-normal text-muted-foreground">/час</span></p>
+                      <p className="text-sm text-white/70">Стоимость</p>
+                      <p className="text-3xl font-bold text-accent">{court.price.toLocaleString('ru-RU')} ₽<span className="text-base font-normal text-white/70">/час</span></p>
                     </div>
-                    <Link to="/booking">
-                      <Button className="bg-accent hover:bg-accent/90 text-primary font-semibold">
+                    <a href="#">
+                      <Button className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5">
                         <Icon name="Calendar" className="mr-2" size={18} />
                         Забронировать
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="mt-16 bg-muted rounded-2xl p-8 md:p-12 animate-fade-in">
+          <div className="mt-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-10 md:p-12 animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                   Не знаете, какой корт выбрать?
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-white/80 mb-6 text-lg">
                   Наши консультанты помогут подобрать идеальный корт для вашего уровня игры и предпочтений.
                 </p>
                 <Link to="/contact">
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-6">
                     <Icon name="Phone" className="mr-2" size={20} />
                     Связаться с нами
                   </Button>
@@ -152,9 +152,9 @@ const Courts = () => {
                   { icon: 'Zap', title: 'Современное оборудование' },
                   { icon: 'Heart', title: 'Для всей семьи' },
                 ].map((item, idx) => (
-                  <div key={idx} className="bg-background rounded-lg p-4 text-center">
-                    <Icon name={item.icon as any} size={32} className="mx-auto mb-2 text-accent" />
-                    <p className="font-semibold text-sm">{item.title}</p>
+                  <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 text-center hover:bg-white/10 transition-colors">
+                    <Icon name={item.icon as any} size={36} className="mx-auto mb-3 text-accent" />
+                    <p className="font-semibold text-white text-sm">{item.title}</p>
                   </div>
                 ))}
               </div>
