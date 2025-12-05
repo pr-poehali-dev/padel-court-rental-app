@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white py-4 md:py-6 border-t border-primary/10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
-          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+          <div className="flex flex-col items-center md:items-start gap-3">
             <img 
               src="https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png" 
               alt="ЗВИ Padel Club"
@@ -26,22 +26,22 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex flex-row items-center gap-2">
-            <a href="tel:+74953632100">
+          <div className="flex flex-col items-center gap-2">
+            <a href="tel:+74953632100" className="w-full">
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs px-3 py-1.5"
+                className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs px-4 py-2"
               >
                 <Icon name="Phone" className="mr-1.5" size={14} />
                 +7 495 363-21-00
               </Button>
             </a>
-            <a href="tel:+74953633838">
+            <a href="tel:+74953633838" className="w-full">
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs px-3 py-1.5"
+                className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs px-4 py-2"
               >
                 <Icon name="Phone" className="mr-1.5" size={14} />
                 +7 495 363-38-38
