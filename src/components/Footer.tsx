@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-primary text-white py-4 md:py-6 border-t border-primary/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
-          <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-start gap-2 w-full md:w-auto">
             <Link to="/" className="transition-opacity hover:opacity-80">
               <img 
                 src="https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png" 
