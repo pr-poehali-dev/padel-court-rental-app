@@ -1,13 +1,22 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const BackButton = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleBack = () => {
+    if (window.history.length > 1 && document.referrer.includes(window.location.host)) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
+  };
 
   return (
     <Button
-      onClick={() => navigate(-1)}
+      onClick={handleBack}
       variant="outline"
       size="lg"
       className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm font-semibold"
