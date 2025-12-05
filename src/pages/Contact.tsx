@@ -48,11 +48,14 @@ const Contact = () => {
       
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Контакты
-            </h1>
-            <p className="text-lg text-muted-foreground">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-block">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight relative">
+                Контакты
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
+              </h1>
+            </div>
+            <p className="text-xl md:text-2xl text-white/80 mt-8 font-light">
               Свяжитесь с нами любым удобным способом
             </p>
           </div>
@@ -61,28 +64,32 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="hover:shadow-xl transition-shadow duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:border-accent/50 group"
+                style={{ 
+                  animationDelay: `${index * 150}ms`,
+                  animationDuration: '0.8s',
+                  animationTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                }}
               >
                 <CardContent className="p-8 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/10 rounded-full mb-4">
-                    <Icon name={info.icon as any} size={32} className="text-accent" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-2xl mb-4 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
+                    <Icon name={info.icon as any} size={32} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="font-bold text-xl mb-4 text-primary">{info.title}</h3>
+                  <h3 className="font-bold text-xl mb-4 text-white">{info.title}</h3>
                   <div className="space-y-2">
                     {info.items.map((item, idx) => (
                       <div key={idx}>
                         {item.link ? (
                           <a
                             href={item.link}
-                            className="text-muted-foreground hover:text-accent transition-colors font-medium"
+                            className="text-white/80 hover:text-accent transition-colors font-medium"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             {item.content}
                           </a>
                         ) : (
-                          <p className="text-muted-foreground font-medium">{item.content}</p>
+                          <p className="text-white/80 font-medium">{item.content}</p>
                         )}
                       </div>
                     ))}
@@ -92,13 +99,13 @@ const Contact = () => {
             ))}
           </div>
 
-          <Card className="mb-12 animate-fade-in">
+          <Card className="mb-12 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-8">
-              <h3 className="font-semibold text-xl mb-4 flex items-center justify-center">
-                <Icon name="MapPin" className="mr-2 text-accent" size={24} />
+              <h3 className="font-bold text-2xl mb-6 flex items-center justify-center text-white">
+                <Icon name="MapPin" className="mr-2 text-accent" size={28} />
                 Как нас найти
               </h3>
-              <div className="bg-muted rounded-lg h-96 flex items-center justify-center overflow-hidden">
+              <div className="bg-white/5 rounded-lg h-96 flex items-center justify-center overflow-hidden border border-white/10">
                 <iframe
                   src="https://yandex.ru/map-widget/v1/?ll=37.676574,55.698745&z=17&text=Москва, Партийный пер., дом 1 корп.6"
                   width="100%"
@@ -111,18 +118,18 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-primary text-white animate-fade-in">
+          <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-8 md:p-12 text-center">
               <Icon name="Headphones" size={64} className="mx-auto mb-6 text-accent" />
-              <h3 className="text-3xl font-bold mb-4">Есть вопросы?</h3>
-              <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">Есть вопросы?</h3>
+              <p className="text-white/80 mb-8 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
                 Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a href="tel:+74953632100">
                   <Button
                     size="lg"
-                    className="bg-accent hover:bg-accent/90 text-primary font-semibold"
+                    className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
                   >
                     <Icon name="Phone" className="mr-2" size={20} />
                     +7 495 363-21-00
@@ -131,7 +138,7 @@ const Contact = () => {
                 <a href="tel:+74953633838">
                   <Button
                     size="lg"
-                    className="bg-accent hover:bg-accent/90 text-primary font-semibold"
+                    className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
                   >
                     <Icon name="Phone" className="mr-2" size={20} />
                     +7 495 363-38-38
@@ -139,7 +146,7 @@ const Contact = () => {
                 </a>
               </div>
               <div className="border-t border-white/20 pt-8">
-                <p className="text-white/80 mb-4 text-base">
+                <p className="text-white/80 mb-6 text-lg">
                   Или напишите нам в мессенджеры:
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -151,7 +158,7 @@ const Contact = () => {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-[#25D366] hover:bg-[#25D366]/90 text-white border-0 font-semibold"
+                      className="bg-[#25D366]/90 hover:bg-[#25D366] text-white border-0 font-semibold text-base px-8 py-6 transition-all hover:scale-105"
                     >
                       <Icon name="MessageCircle" className="mr-2" size={20} />
                       WhatsApp
@@ -165,7 +172,7 @@ const Contact = () => {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-[#0088cc] hover:bg-[#0088cc]/90 text-white border-0 font-semibold"
+                      className="bg-[#0088cc]/90 hover:bg-[#0088cc] text-white border-0 font-semibold text-base px-8 py-6 transition-all hover:scale-105"
                     >
                       <Icon name="Send" className="mr-2" size={20} />
                       Telegram
