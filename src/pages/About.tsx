@@ -62,7 +62,7 @@ const About = () => {
             <BackButton />
           </div>
           <div className="text-center mb-8 animate-fade-in">
-            <h1 className="text-3xl md:text-6xl font-bold text-white mb-5 tracking-tight leading-tight">
+            <h1 className="text-3xl md:text-6xl font-bold text-accent mb-5 tracking-tight leading-tight">
               Это место — символ энергии,<br />ума и побед!
             </h1>
             <a href="#" className="inline-block">
@@ -87,7 +87,7 @@ const About = () => {
           </Card>
 
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6 text-center animate-fade-in">
               Преимущества нашего падел клуба
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
