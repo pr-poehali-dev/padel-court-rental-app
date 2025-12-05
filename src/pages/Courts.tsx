@@ -71,7 +71,7 @@ const Courts = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute top-4 right-4 z-10">
-                    <Badge className="bg-accent text-primary font-semibold text-sm px-3 py-1 shadow-lg">
+                    <Badge className="bg-accent text-primary font-bold text-sm px-4 py-1.5 shadow-xl border-2 border-primary">
                       {court.type}
                     </Badge>
                   </div>
