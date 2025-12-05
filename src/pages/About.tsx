@@ -62,8 +62,8 @@ const About = () => {
             <BackButton />
           </div>
           <div className="text-center mb-8 animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight leading-tight">
-              Это место — символ<br />энергии, ума и побед!
+            <h1 className="text-3xl md:text-6xl font-bold text-white mb-5 tracking-tight leading-tight">
+              Это место — символ энергии,<br />ума и побед!
             </h1>
             <a href="#" className="inline-block">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105">
