@@ -64,14 +64,14 @@ const Courts = () => {
                 className="overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden group">
                   <img
                     src={court.image}
                     alt={court.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-accent text-primary font-semibold text-sm px-3 py-1">
+                  <div className="absolute top-4 right-4 z-10">
+                    <Badge className="bg-accent text-primary font-semibold text-sm px-3 py-1 shadow-lg">
                       {court.type}
                     </Badge>
                   </div>
