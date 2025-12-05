@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const About = () => {
   return (
@@ -161,6 +162,7 @@ const About = () => {
         </div>
       </div>
 
+        <WhatsAppButton />
         <Footer />
       </div>
     </div>

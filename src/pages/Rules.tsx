@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Rules = () => {
   const basicRules = [
@@ -186,6 +187,7 @@ const Rules = () => {
         </div>
       </div>
 
+        <WhatsAppButton />
         <Footer />
       </div>
     </div>

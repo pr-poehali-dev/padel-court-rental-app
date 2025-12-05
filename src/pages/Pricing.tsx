@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Pricing = () => {
   const pricingPlans = [
@@ -192,6 +193,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+        <WhatsAppButton />
         <Footer />
       </div>
     </div>

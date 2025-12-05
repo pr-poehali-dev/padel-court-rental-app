@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Home = () => {
   const features = [
@@ -132,6 +133,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <WhatsAppButton />
       <Footer />
     </div>
   );
