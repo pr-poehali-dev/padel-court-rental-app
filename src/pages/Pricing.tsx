@@ -232,9 +232,9 @@ const Pricing = () => {
                       А после вас ждет разнообразный кейтеринг и любые напитки
                     </p>
                   </div>
-                  <Link to="/contact" className="inline-block">
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base md:text-lg px-6 md:px-10 py-5 md:py-7 transition-all hover:scale-105">
-                      <Icon name="Phone" className="mr-2" size={20} />
+                  <Link to="/contact" className="inline-block w-full max-w-md mx-auto">
+                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-sm md:text-lg px-4 md:px-10 py-5 md:py-7 transition-all hover:scale-105">
+                      <Icon name="Phone" className="mr-2" size={18} />
                       Обсудим ваш праздник по телефону
                     </Button>
                   </Link>
