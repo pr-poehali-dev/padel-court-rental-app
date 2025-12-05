@@ -72,7 +72,7 @@ const Pricing = () => {
           </div>
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight relative">
+              <h1 className="text-5xl md:text-7xl font-bold text-accent mb-4 tracking-tight relative">
                 Тарифы
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
@@ -85,7 +85,7 @@ const Pricing = () => {
           <div className="mb-20">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-3xl md:text-4xl font-bold text-white relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-accent relative z-10">
                   Аренда кортов
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -141,7 +141,7 @@ const Pricing = () => {
           <div className="mb-16">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-3xl md:text-4xl font-bold text-white relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-accent relative z-10">
                   Стоимость тренировок с нашими тренерами
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
