@@ -60,7 +60,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
@@ -99,7 +99,7 @@ const Contact = () => {
             ))}
           </div>
 
-          <Card className="mb-12 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
+          <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-8">
               <h3 className="font-bold text-2xl mb-6 flex items-center justify-center text-white">
                 <Icon name="MapPin" className="mr-2 text-accent" size={28} />
