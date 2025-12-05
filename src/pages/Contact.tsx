@@ -52,19 +52,19 @@ const Contact = () => {
           <div className="mb-6 animate-fade-in">
             <BackButton />
           </div>
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-8 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight relative">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 tracking-tight relative">
                 Контакты
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
             </div>
-            <p className="text-xl md:text-2xl text-white/80 mt-8 font-light">
+            <p className="text-lg text-white/80 mt-4 font-light">
               Свяжитесь с нами любым удобным способом
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
@@ -75,25 +75,25 @@ const Contact = () => {
                   animationTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
                 }}
               >
-                <CardContent className="p-8 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-2xl mb-4 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                    <Icon name={info.icon as any} size={32} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                <CardContent className="p-5 text-center">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-2xl mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
+                    <Icon name={info.icon as any} size={24} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="font-bold text-xl mb-4 text-white">{info.title}</h3>
-                  <div className="space-y-2">
+                  <h3 className="font-bold text-lg mb-3 text-white">{info.title}</h3>
+                  <div className="space-y-1">
                     {info.items.map((item, idx) => (
                       <div key={idx}>
                         {item.link ? (
                           <a
                             href={item.link}
-                            className="text-white/80 hover:text-accent transition-colors font-medium"
+                            className="text-white/80 hover:text-accent transition-colors font-medium text-sm"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             {item.content}
                           </a>
                         ) : (
-                          <p className="text-white/80 font-medium">{item.content}</p>
+                          <p className="text-white/80 font-medium text-sm">{item.content}</p>
                         )}
                       </div>
                     ))}
@@ -104,12 +104,12 @@ const Contact = () => {
           </div>
 
           <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
-            <CardContent className="p-8">
-              <h3 className="font-bold text-2xl mb-6 flex items-center justify-center text-white">
-                <Icon name="MapPin" className="mr-2 text-accent" size={28} />
+            <CardContent className="p-5">
+              <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-white">
+                <Icon name="MapPin" className="mr-2 text-accent" size={24} />
                 Как нас найти
               </h3>
-              <div className="bg-white/5 rounded-lg h-96 flex items-center justify-center overflow-hidden border border-white/10">
+              <div className="bg-white/5 rounded-lg h-64 flex items-center justify-center overflow-hidden border border-white/10">
                 <iframe
                   src="https://yandex.ru/map-widget/v1/?ll=37.676574,55.698745&z=17&text=Москва, Партийный пер., дом 1 корп.6"
                   width="100%"
@@ -123,19 +123,19 @@ const Contact = () => {
           </Card>
 
           <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
-            <CardContent className="p-8 md:p-12 text-center">
-              <Icon name="Headphones" size={64} className="mx-auto mb-6 text-accent" />
-              <h3 className="text-3xl md:text-4xl font-bold mb-6">Есть вопросы?</h3>
-              <p className="text-white/80 mb-8 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            <CardContent className="p-6 md:p-8 text-center">
+              <Icon name="Headphones" size={48} className="mx-auto mb-4 text-accent" />
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Есть вопросы?</h3>
+              <p className="text-white/80 mb-6 text-base max-w-2xl mx-auto">
                 Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
                 <a href="tel:+74953632100">
                   <Button
                     size="lg"
-                    className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
+                    className="bg-accent hover:bg-accent/90 text-primary font-semibold text-sm px-6 py-5"
                   >
-                    <Icon name="Phone" className="mr-2" size={20} />
+                    <Icon name="Phone" className="mr-2" size={18} />
                     +7 495 363-21-00
                   </Button>
                 </a>
@@ -149,11 +149,11 @@ const Contact = () => {
                   </Button>
                 </a>
               </div>
-              <div className="border-t border-white/20 pt-8">
-                <p className="text-white/80 mb-6 text-lg">
+              <div className="border-t border-white/20 pt-6">
+                <p className="text-white/80 mb-4 text-base">
                   Или напишите нам в мессенджеры:
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a 
                     href="https://wa.me/79361518253"
                     target="_blank"
@@ -162,9 +162,9 @@ const Contact = () => {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-[#25D366]/90 hover:bg-[#25D366] text-white border-0 font-semibold text-base px-8 py-6 transition-all hover:scale-105"
+                      className="bg-[#25D366]/90 hover:bg-[#25D366] text-white border-0 font-semibold text-sm px-6 py-5 transition-all hover:scale-105"
                     >
-                      <Icon name="MessageCircle" className="mr-2" size={20} />
+                      <Icon name="MessageCircle" className="mr-2" size={18} />
                       WhatsApp
                     </Button>
                   </a>
@@ -176,16 +176,16 @@ const Contact = () => {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-[#0088cc]/90 hover:bg-[#0088cc] text-white border-0 font-semibold text-base px-8 py-6 transition-all hover:scale-105"
+                      className="bg-[#0088cc]/90 hover:bg-[#0088cc] text-white border-0 font-semibold text-sm px-6 py-5 transition-all hover:scale-105"
                     >
-                      <Icon name="Send" className="mr-2" size={20} />
+                      <Icon name="Send" className="mr-2" size={18} />
                       Telegram
                     </Button>
                   </a>
                 </div>
               </div>
-              <div className="border-t border-white/20 pt-8 mt-8">
-                <div className="space-y-2 text-white/60 text-sm">
+              <div className="border-t border-white/20 pt-6 mt-6">
+                <div className="space-y-1 text-white/60 text-xs">
                   <p className="font-semibold text-white/80">АО «ЗВИ»</p>
                   <p>ИНН 7725008610 | КПП 772501001</p>
                   <p>115093, Москва, Партийный пер. д.1</p>
