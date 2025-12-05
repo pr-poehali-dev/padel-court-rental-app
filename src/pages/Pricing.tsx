@@ -67,18 +67,26 @@ const Pricing = () => {
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-              Тарифы
-            </h1>
-            <p className="text-xl text-white/90">
+            <div className="inline-block">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight relative">
+                Тарифы
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
+              </h1>
+            </div>
+            <p className="text-xl md:text-2xl text-white/80 mt-8 font-light">
               Выберите подходящий вариант для вашей игры
             </p>
           </div>
 
           <div className="mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center animate-fade-in">
-              Аренда кортов
-            </h2>
+            <div className="text-center mb-12 animate-fade-in">
+              <div className="inline-block relative">
+                <h2 className="text-3xl md:text-4xl font-bold text-white relative z-10">
+                  Аренда кортов
+                </h2>
+                <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
+              </div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {courts.map((court, index) => (
                 <Card
@@ -123,9 +131,14 @@ const Pricing = () => {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center animate-fade-in">
-              Стоимость тренировок с нашими тренерами
-            </h2>
+            <div className="text-center mb-12 animate-fade-in">
+              <div className="inline-block relative">
+                <h2 className="text-3xl md:text-4xl font-bold text-white relative z-10">
+                  Стоимость тренировок с нашими тренерами
+                </h2>
+                <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
+              </div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {training.map((item, index) => (
                 <Card
