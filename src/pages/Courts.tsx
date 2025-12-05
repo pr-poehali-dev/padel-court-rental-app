@@ -70,7 +70,7 @@ const Courts = () => {
                     alt={court.name}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 z-10">
+                  <div className="absolute top-4 right-4 z-10 pointer-events-none">
                     <Badge className="bg-accent text-primary font-bold text-sm px-4 py-1.5 shadow-xl border-2 border-primary">
                       {court.type}
                     </Badge>
