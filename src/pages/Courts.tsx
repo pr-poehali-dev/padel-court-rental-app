@@ -11,37 +11,17 @@ const Courts = () => {
   const courts = [
     {
       id: 1,
-      name: 'Корт 1 - Премиум крытый',
+      name: 'PANORAMIC',
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 6000,
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
     {
       id: 2,
-      name: 'Корт 2 - Премиум крытый',
+      name: 'ULTRA PANORAMIC',
       type: 'Крытый',
-      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 6000,
-      available: true,
-      image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
-    },
-    {
-      id: 3,
-      name: 'Корт 3 - Премиум крытый',
-      type: 'Крытый',
-      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 6000,
-      available: true,
-      image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
-    },
-    {
-      id: 4,
-      name: 'Корт 4 - Премиум крытый',
-      type: 'Крытый',
-      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'],
-      price: 6000,
+      features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'],
       available: true,
       image: 'https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/0c107f36-7781-4a84-9a7a-1c8b3dd79c76.jpg',
     },
@@ -112,13 +92,9 @@ const Courts = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between pt-4 border-t border-white/20">
-                    <div>
-                      <p className="text-sm text-white/70">Стоимость</p>
-                      <p className="text-3xl font-bold text-accent">{court.price.toLocaleString('ru-RU')} ₽<span className="text-base font-normal text-white/70">/час</span></p>
-                    </div>
-                    <a href="#">
-                      <Button className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5">
+                  <div className="flex justify-center pt-4 border-t border-white/20">
+                    <a href="#" className="w-full">
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5">
                         <Icon name="Calendar" className="mr-2" size={18} />
                         Забронировать
                       </Button>
