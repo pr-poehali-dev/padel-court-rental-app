@@ -118,7 +118,7 @@ const Courts = () => {
                 <p className="text-white/80 mb-4 text-base">
                   Наши консультанты помогут подобрать идеальный корт для вашего уровня игры и предпочтений.
                 </p>
-                <Link to="/contact">
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
                   <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5">
                     <Icon name="Phone" className="mr-2" size={18} />
                     Связаться с нами
