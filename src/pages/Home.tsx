@@ -48,14 +48,20 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col gap-4 md:gap-6">
-              <a href="#" className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
+              <div className="text-center mb-2 md:mb-4 animate-fade-in" style={{ animationDelay: '0ms' }}>
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+                  САМЫЙ ЦЕНТРАЛЬНЫЙ<br />ПАДЕЛ КЛУБ СТОЛИЦЫ
+                </h1>
+              </div>
+              
+              <a href="#" className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
                 <Button size="lg" className="w-full bg-accent/80 md:bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105 border-0">
                   <Icon name="Calendar" className="mr-3" size={24} />
                   Забронировать корт
                 </Button>
               </a>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '150ms' }}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
                 <Link to="/courts" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 md:bg-white/10 hover:bg-white/20 text-white border-white/20 md:border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="Grid3x3" className="mr-2" size={20} />
@@ -70,7 +76,7 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in md:hidden" style={{ animationDelay: '300ms' }}>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in md:hidden" style={{ animationDelay: '450ms' }}>
                 <Link to="/rules" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="BookOpen" className="mr-2" size={20} />
@@ -96,7 +102,7 @@ const Home = () => {
 
         <div className="hidden md:block container mx-auto px-4 sm:px-6 relative z-10 pb-6 md:pb-8">
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '450ms' }}>
               <Link to="/rules" className="w-full md:order-2">
                 <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
                   <Icon name="BookOpen" className="mr-2" size={20} />
