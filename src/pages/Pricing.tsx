@@ -203,6 +203,42 @@ const Pricing = () => {
             </div>
           </div>
 
+          <div className="mb-20">
+            <div className="text-center mb-12 animate-fade-in">
+              <div className="inline-block relative">
+                <h2 className="text-3xl md:text-4xl font-bold text-white relative z-10">
+                  Корпоративные и частные мероприятия
+                </h2>
+                <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
+              </div>
+            </div>
+            
+            <Card className="bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300 animate-fade-in overflow-hidden">
+              <CardContent className="p-8 md:p-12">
+                <div className="max-w-3xl mx-auto text-center">
+                  <Icon name="PartyPopper" size={64} className="mx-auto mb-6 text-accent" />
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                    Проведите интересный и объединяющий новогодний корпоратив на кортах
+                  </h3>
+                  <div className="space-y-4 text-lg md:text-xl text-white/80 mb-8">
+                    <p className="leading-relaxed">
+                      С нашими тренерами и ведущим создайте незабываемую атмосферу командного духа
+                    </p>
+                    <p className="leading-relaxed">
+                      А после вас ждет разнообразный кейтеринг и любые напитки
+                    </p>
+                  </div>
+                  <Link to="/contact">
+                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-10 py-7 transition-all hover:scale-105">
+                      <Icon name="Phone" className="mr-2" size={22} />
+                      Обсудим ваш праздник по телефону
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="mt-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center animate-fade-in">
             <h3 className="text-3xl font-bold text-white mb-4">
               Остались вопросы о тарифах?
