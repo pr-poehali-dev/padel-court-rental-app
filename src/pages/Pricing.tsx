@@ -91,10 +91,14 @@ const Pricing = () => {
               {courts.map((court, index) => (
                 <Card
                   key={index}
-                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 ${
+                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:border-accent/50 group ${
                     court.popular ? 'ring-2 ring-accent' : ''
                   }`}
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ 
+                    animationDelay: `${index * 150}ms`,
+                    animationDuration: '0.8s',
+                    animationTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                  }}
                 >
                   {court.popular && (
                     <div className="absolute top-0 right-0 bg-accent text-primary text-xs font-bold px-4 py-2 rounded-bl-xl">
@@ -103,8 +107,8 @@ const Pricing = () => {
                   )}
 
                   <CardHeader className="text-center pb-4">
-                    <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <Icon name={court.icon as any} size={28} className="text-accent" />
+                    <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
+                      <Icon name={court.icon as any} size={28} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <CardTitle className="text-xl mb-2 text-white font-bold">{court.name}</CardTitle>
                     <div className="mt-2">
@@ -143,10 +147,14 @@ const Pricing = () => {
               {training.map((item, index) => (
                 <Card
                   key={index}
-                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 ${
-                    item.free ? 'ring-2 ring-green-400' : ''
+                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:border-accent/50 group ${
+                    item.free ? 'ring-2 ring-green-400 hover:ring-green-300' : ''
                   }`}
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  style={{ 
+                    animationDelay: `${index * 150}ms`,
+                    animationDuration: '0.8s',
+                    animationTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                  }}
                 >
                   {item.free && (
                     <div className="absolute top-0 right-0 bg-green-400 text-primary text-xs font-bold px-4 py-2 rounded-bl-xl">
@@ -155,8 +163,8 @@ const Pricing = () => {
                   )}
 
                   <CardHeader className="text-center pb-4">
-                    <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <Icon name={item.icon as any} size={28} className="text-accent" />
+                    <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
+                      <Icon name={item.icon as any} size={28} className="text-accent group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <CardTitle className="text-lg mb-2 text-white font-bold leading-tight">
                       {item.name}
