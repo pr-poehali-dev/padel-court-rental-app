@@ -8,11 +8,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
           <div className="text-center md:text-left">
-            <p className="text-white/90 text-xs md:text-sm">
-              © 2025 Падел клуб ЗВИ
+            <p className="text-white/90 text-xs md:text-sm font-semibold">
+              АО «ЗВИ»
             </p>
             <p className="text-white/70 text-xs mt-0.5">
-              г. Москва, Партийный пер., дом 1 корп.6
+              ИНН 7725008610 | КПП 772501001
+            </p>
+            <p className="text-white/70 text-xs mt-0.5">
+              115093, Москва, Партийный пер. д.1
             </p>
           </div>
 

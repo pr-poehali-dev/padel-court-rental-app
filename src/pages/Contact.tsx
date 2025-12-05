@@ -180,6 +180,13 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+              <div className="border-t border-white/20 pt-8 mt-8">
+                <div className="space-y-2 text-white/60 text-sm">
+                  <p className="font-semibold text-white/80">АО «ЗВИ»</p>
+                  <p>ИНН 7725008610 | КПП 772501001</p>
+                  <p>115093, Москва, Партийный пер. д.1</p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
