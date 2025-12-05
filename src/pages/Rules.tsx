@@ -79,7 +79,7 @@ const Rules = () => {
           </div>
           <div className="text-center mb-8 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 tracking-tight relative">
+              <h1 className="text-4xl md:text-6xl font-bold text-accent mb-3 tracking-tight relative">
                 Правила падела
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
@@ -90,7 +90,7 @@ const Rules = () => {
           </div>
 
           <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl hover:shadow-2xl transition-all duration-300">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-accent mb-4 text-center">
               Что такое падел?
             </h2>
             <p className="text-lg text-white/80 text-center max-w-3xl mx-auto">
@@ -103,7 +103,7 @@ const Rules = () => {
           <div className="mb-8">
             <div className="text-center mb-6 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-2xl md:text-3xl font-bold text-white relative z-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-accent relative z-10">
                   Основные правила
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -137,7 +137,7 @@ const Rules = () => {
           <div className="mb-8">
             <div className="text-center mb-6 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-2xl md:text-3xl font-bold text-white relative z-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-accent relative z-10">
                   Что нужно для игры
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -168,7 +168,7 @@ const Rules = () => {
           </div>
 
           <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl hover:shadow-2xl transition-all duration-300">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center">
               Советы начинающим
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
@@ -182,7 +182,7 @@ const Rules = () => {
           </Card>
 
           <div className="text-center animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">
               Готовы попробовать?
             </h2>
             <p className="text-lg text-white/80 mb-6 max-w-2xl mx-auto">
