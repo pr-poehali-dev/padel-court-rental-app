@@ -5,6 +5,7 @@ import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import BackButton from '@/components/BackButton';
 
 const About = () => {
   const advantages = [
@@ -57,6 +58,9 @@ const About = () => {
       
       <div className="container mx-auto px-4 pt-24 pb-2">
         <div className="max-w-6xl mx-auto">
+          <div className="mb-6 animate-fade-in">
+            <BackButton />
+          </div>
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
               Это место — символ<br />энергии, ума и побед!
