@@ -41,6 +41,22 @@ const About = () => {
     {
       url: 'https://cdn.poehali.dev/files/кафе4.jpg',
       alt: 'Кафе в клубе'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/ресепшен0 копия.jpg',
+      alt: 'Входная зона клуба'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/кафе3.jpg',
+      alt: 'Кафе с видом на корты'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/кафе2.jpg',
+      alt: 'Зона отдыха Coffee Shop ZVI'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/25 (1).jpg',
+      alt: 'Раздевалка клуба'
     }
   ];
 
