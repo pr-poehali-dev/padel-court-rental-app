@@ -24,7 +24,7 @@ const Courts = () => {
       type: 'Крытый',
       features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'],
       available: true,
-      image: 'https://cdn.poehali.dev/files/8e9d1e41-b64b-48fd-a525-825cfcf5005a.png',
+      image: 'https://cdn.poehali.dev/files/зал1.jpg',
     },
   ];
 
