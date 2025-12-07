@@ -109,13 +109,12 @@ const Contact = () => {
                 <Icon name="MapPin" className="mr-2" size={24} />
                 Как нас найти
               </h3>
-              <div className="bg-white/5 rounded-lg h-64 flex items-center justify-center overflow-hidden border border-white/10">
+              <div className="bg-white/5 rounded-lg overflow-hidden border border-white/10">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=37.676574,55.698745&z=17&text=Москва, Партийный пер., дом 1 корп.6"
+                  src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=16411539476"
                   width="100%"
-                  height="100%"
+                  height="400"
                   frameBorder="0"
-                  allowFullScreen
                   className="rounded-lg"
                 ></iframe>
               </div>
