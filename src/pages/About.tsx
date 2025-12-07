@@ -21,6 +21,26 @@ const About = () => {
     {
       url: 'https://cdn.poehali.dev/files/ресепшн1.jpg',
       alt: 'Зона ресепшн'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/29 (1).jpg',
+      alt: 'Падел корт с цветными панелями'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/28 (2).jpg',
+      alt: 'Вид на корты'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/24 (2).jpg',
+      alt: 'Зона отдыха у кортов'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/кафе5.jpg',
+      alt: 'Coffee Shop ZVI'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/кафе4.jpg',
+      alt: 'Кафе в клубе'
     }
   ];
 
