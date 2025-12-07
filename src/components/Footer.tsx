@@ -74,25 +74,33 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-3 pt-3 border-t border-white/10 flex flex-row items-center justify-center gap-3 md:gap-4 text-center flex-wrap">
-          <Link to="/" className="text-white/70 hover:text-white text-xs transition-colors">
-            Главная
-          </Link>
-          <Link to="/courts" className="text-white/70 hover:text-white text-xs transition-colors">
-            Корты
-          </Link>
-          <Link to="/pricing" className="text-white/70 hover:text-white text-xs transition-colors">
-            Тарифы
-          </Link>
-          <Link to="/about" className="text-white/70 hover:text-white text-xs transition-colors">
-            О клубе
-          </Link>
-          <Link to="/rules" className="text-white/70 hover:text-white text-xs transition-colors">
-            Правила
-          </Link>
-          <Link to="/contact" className="text-white/70 hover:text-white text-xs transition-colors">
-            Контакты
-          </Link>
+        <div className="mt-3 pt-3 border-t border-white/10 flex flex-col gap-3">
+          <div className="flex flex-row items-center justify-center gap-3 md:gap-4 text-center flex-wrap">
+            <Link to="/" className="text-white/70 hover:text-white text-xs transition-colors">
+              Главная
+            </Link>
+            <Link to="/courts" className="text-white/70 hover:text-white text-xs transition-colors">
+              Корты
+            </Link>
+            <Link to="/pricing" className="text-white/70 hover:text-white text-xs transition-colors">
+              Тарифы
+            </Link>
+            <Link to="/about" className="text-white/70 hover:text-white text-xs transition-colors">
+              О клубе
+            </Link>
+            <Link to="/rules" className="text-white/70 hover:text-white text-xs transition-colors">
+              Правила
+            </Link>
+            <Link to="/contact" className="text-white/70 hover:text-white text-xs transition-colors">
+              Контакты
+            </Link>
+          </div>
+          <div className="text-center">
+            <a href="https://mosoblconnect.ru/business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-white/50 hover:text-white/80 text-xs transition-colors">
+              <Icon name="Code" size={12} />
+              Разработка сайта
+            </a>
+          </div>
         </div>
       </div>
     </footer>

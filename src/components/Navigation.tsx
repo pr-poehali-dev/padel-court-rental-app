@@ -43,6 +43,12 @@ const Navigation = () => {
               </Button>
             </Link>
           ))}
+          <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 text-primary font-semibold ml-2">
+              <Icon name="Calendar" size={18} className="mr-2" />
+              Забронировать
+            </Button>
+          </a>
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
@@ -68,6 +74,12 @@ const Navigation = () => {
                   <span className="text-lg">{item.label}</span>
                 </Link>
               ))}
+              <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+                <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold py-6">
+                  <Icon name="Calendar" size={20} className="mr-2" />
+                  Забронировать корт
+                </Button>
+              </a>
             </div>
           </SheetContent>
         </Sheet>
