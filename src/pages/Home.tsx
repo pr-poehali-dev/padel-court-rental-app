@@ -84,14 +84,19 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 animate-fade-in md:hidden" style={{ animationDelay: '450ms' }}>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in md:hidden" style={{ animationDelay: '450ms' }}>
                 <Link to="/rules" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="BookOpen" className="mr-2" size={20} />
                     Правила
                   </Button>
                 </Link>
-
+                <a href="https://yandex.ru/maps/org/16411539476" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
+                    <Icon name="MapPin" className="mr-2" size={20} />
+                    Проезд
+                  </Button>
+                </a>
                 <Link to="/contact" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
                     <Icon name="Phone" className="mr-2" size={20} />
@@ -105,15 +110,20 @@ const Home = () => {
 
         <div className="hidden md:block container mx-auto px-4 sm:px-6 relative z-10 pb-6 md:pb-8">
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '450ms' }}>
-              <Link to="/rules" className="w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '450ms' }}>
+              <Link to="/rules" className="w-full md:order-2">
                 <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
                   <Icon name="BookOpen" className="mr-2" size={20} />
                   Правила
                 </Button>
               </Link>
-
-              <Link to="/contact" className="w-full">
+              <a href="https://yandex.ru/maps/org/16411539476" target="_blank" rel="noopener noreferrer" className="w-full md:order-1">
+                <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
+                  <Icon name="MapPin" className="mr-2" size={20} />
+                  Проезд
+                </Button>
+              </a>
+              <Link to="/contact" className="w-full md:order-3">
                 <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
                   <Icon name="Phone" className="mr-2" size={20} />
                   Контакты
