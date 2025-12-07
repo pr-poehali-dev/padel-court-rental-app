@@ -6,8 +6,24 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import BackButton from '@/components/BackButton';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const About = () => {
+  const clubPhotos = [
+    {
+      url: 'https://cdn.poehali.dev/files/ресепшн2.jpg',
+      alt: 'Ресепшн клуба'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/зал1.jpg',
+      alt: 'Падел корт'
+    },
+    {
+      url: 'https://cdn.poehali.dev/files/ресепшн1.jpg',
+      alt: 'Зона ресепшн'
+    }
+  ];
+
   const advantages = [
     {
       icon: 'MapPin',
@@ -85,6 +101,36 @@ const About = () => {
               </div>
             </CardContent>
           </Card>
+
+          <div className="mb-8 animate-fade-in">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-2xl mx-auto"
+            >
+              <CarouselContent>
+                {clubPhotos.map((photo, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <Card className="border-white/20 bg-white/5 backdrop-blur-sm">
+                        <CardContent className="flex aspect-video items-center justify-center p-2">
+                          <img
+                            src={photo.url}
+                            alt={photo.alt}
+                            className="w-full h-full object-cover rounded-lg"
+                          />
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="bg-white/10 hover:bg-white/20 text-white border-white/30" />
+              <CarouselNext className="bg-white/10 hover:bg-white/20 text-white border-white/30" />
+            </Carousel>
+          </div>
 
           <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6 text-center animate-fade-in">
