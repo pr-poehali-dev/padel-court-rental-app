@@ -62,7 +62,7 @@ const Home = () => {
                 </div>
               </Link>
               
-              <a href="#" className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
+              <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
                 <Button size="lg" className="w-full bg-accent/80 md:bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105 border-0">
                   <Icon name="Calendar" className="mr-3" size={24} />
                   Забронировать корт

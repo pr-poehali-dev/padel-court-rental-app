@@ -97,7 +97,7 @@ const Courts = () => {
                   </div>
 
                   <div className="flex justify-center pt-3 border-t border-white/20">
-                    <a href="#" className="w-full">
+                    <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" className="w-full">
                       <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-sm px-4 py-4">
                         <Icon name="Calendar" className="mr-2" size={16} />
                         Забронировать
