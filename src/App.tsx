@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TermsModal from "./components/TermsModal";
+import CookieConsent from "./components/CookieConsent";
 import Home from "./pages/Home";
 import Courts from "./pages/Courts";
 import Pricing from "./pages/Pricing";
@@ -23,6 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <TermsModal />
+        <CookieConsent />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/courts" element={<Courts />} />
