@@ -168,7 +168,6 @@ const TermsModal = () => {
               <p className="text-muted-foreground mb-1">ОГРН: 1027700002351</p>
               <p className="text-muted-foreground mb-1">Адрес: г. Москва, Партийный переулок, дом 1, корпус 6, 115093</p>
               <p className="text-muted-foreground mb-1">Телефон: +7 (495) 363-21-00, +7 (495) 363-38-38</p>
-              <p className="text-muted-foreground mb-1">Email: info@zvipadel.ru</p>
               <p className="text-muted-foreground">Сайт: zvipadel.ru</p>
             </section>
 
