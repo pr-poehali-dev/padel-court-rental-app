@@ -39,7 +39,7 @@ const Footer = () => {
                   WhatsApp
                 </Button>
               </a>
-              <a href="https://t.me/zvipadelclub" target="_blank" rel="noopener noreferrer" className="flex-1">
+              <a href="https://t.me/zvi_padel" target="_blank" rel="noopener noreferrer" className="flex-1">
                 <Button
                   variant="outline"
                   size="sm"
