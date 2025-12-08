@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 
 export default function CookieConsent() {
@@ -31,7 +32,10 @@ export default function CookieConsent() {
             <h3 className="font-semibold text-lg mb-2">Мы используем файлы cookie</h3>
             <p className="text-sm text-muted-foreground">
               Мы используем файлы cookie для улучшения работы сайта, анализа посещаемости и предоставления персонализированного контента. 
-              Продолжая использовать сайт, вы соглашаетесь с использованием cookie.
+              Продолжая использовать сайт, вы соглашаетесь с использованием cookie.{' '}
+              <Link to="/terms" className="underline hover:text-foreground transition-colors">
+                Подробнее
+              </Link>
             </p>
           </div>
           <div className="flex gap-3 items-center">
