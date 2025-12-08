@@ -65,6 +65,9 @@ const Footer = () => {
                 АО «ЗВИ»
               </p>
               <p className="text-white/70 text-xs mt-0.5">
+                ОГРН 1027700002351
+              </p>
+              <p className="text-white/70 text-xs mt-0.5">
                 ИНН 7725008610 | КПП 772501001
               </p>
               <p className="text-white/70 text-xs mt-0.5">

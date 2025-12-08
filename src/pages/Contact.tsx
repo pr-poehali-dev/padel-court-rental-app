@@ -186,6 +186,7 @@ const Contact = () => {
               <div className="border-t border-white/20 pt-6 mt-6">
                 <div className="space-y-1 text-white/60 text-xs">
                   <p className="font-semibold text-white/80">АО «ЗВИ»</p>
+                  <p>ОГРН 1027700002351</p>
                   <p>ИНН 7725008610 | КПП 772501001</p>
                   <p>115093, Москва, Партийный пер. д.1</p>
                 </div>
