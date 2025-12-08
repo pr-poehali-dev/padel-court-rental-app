@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -6,23 +5,20 @@ import { Link } from 'react-router-dom';
 
 const TERMS_ACCEPTED_KEY = 'zvi_terms_accepted';
 
-const TermsModal = () => {
-  const [open, setOpen] = useState(false);
+interface TermsModalProps {
+  open: boolean;
+  onAccept: () => void;
+  onDecline: () => void;
+}
 
-  useEffect(() => {
-    const termsAccepted = localStorage.getItem(TERMS_ACCEPTED_KEY);
-    if (!termsAccepted) {
-      setOpen(true);
-    }
-  }, []);
-
+const TermsModal = ({ open, onAccept, onDecline }: TermsModalProps) => {
   const handleAccept = () => {
     localStorage.setItem(TERMS_ACCEPTED_KEY, 'true');
-    setOpen(false);
+    onAccept();
   };
 
   const handleDecline = () => {
-    window.location.href = 'https://www.ya.ru';
+    onDecline();
   };
 
   return (

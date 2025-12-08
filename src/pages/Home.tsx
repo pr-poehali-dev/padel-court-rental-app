@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -5,8 +6,34 @@ import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import TermsModal from '@/components/TermsModal';
 
 const Home = () => {
+  const [showTerms, setShowTerms] = useState(false);
+  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
+
+  const handleBookingClick = (url: string) => {
+    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
+    if (termsAccepted) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      setPendingUrl(url);
+      setShowTerms(true);
+    }
+  };
+
+  const handleTermsAccept = () => {
+    setShowTerms(false);
+    if (pendingUrl) {
+      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+      setPendingUrl(null);
+    }
+  };
+
+  const handleTermsDecline = () => {
+    setShowTerms(false);
+    setPendingUrl(null);
+  };
   const features = [
     {
       icon: 'Calendar',
@@ -62,12 +89,16 @@ const Home = () => {
                 </div>
               </Link>
               
-              <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
-                <Button size="lg" className="w-full bg-accent/80 md:bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105 border-0">
+              <div className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
+                <Button 
+                  size="lg" 
+                  className="w-full bg-accent/80 md:bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105 border-0"
+                  onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+                >
                   <Icon name="Calendar" className="mr-3" size={24} />
                   Забронировать корт
                 </Button>
-              </a>
+              </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
                 <Link to="/courts" className="w-full">
@@ -135,6 +166,11 @@ const Home = () => {
       </section>
       <WhatsAppButton />
       <Footer />
+      <TermsModal 
+        open={showTerms} 
+        onAccept={handleTermsAccept} 
+        onDecline={handleTermsDecline} 
+      />
     </div>
   );
 };

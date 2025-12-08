@@ -3,10 +3,37 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Icon from '@/components/ui/icon';
+import TermsModal from '@/components/TermsModal';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
   const location = useLocation();
+
+  const handleBookingClick = (url: string) => {
+    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
+    if (termsAccepted) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      setPendingUrl(url);
+      setShowTerms(true);
+    }
+    setOpen(false);
+  };
+
+  const handleTermsAccept = () => {
+    setShowTerms(false);
+    if (pendingUrl) {
+      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+      setPendingUrl(null);
+    }
+  };
+
+  const handleTermsDecline = () => {
+    setShowTerms(false);
+    setPendingUrl(null);
+  };
 
   const navItems = [
     { path: '/', label: 'Главная', icon: 'Home' },
@@ -43,12 +70,13 @@ const Navigation = () => {
               </Button>
             </Link>
           ))}
-          <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-accent hover:bg-accent/90 text-primary font-semibold ml-2">
-              <Icon name="Calendar" size={18} className="mr-2" />
-              Забронировать
-            </Button>
-          </a>
+          <Button 
+            className="bg-accent hover:bg-accent/90 text-primary font-semibold ml-2"
+            onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+          >
+            <Icon name="Calendar" size={18} className="mr-2" />
+            Забронировать
+          </Button>
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
@@ -74,16 +102,22 @@ const Navigation = () => {
                   <span className="text-lg">{item.label}</span>
                 </Link>
               ))}
-              <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
-                <Button className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold py-6">
-                  <Icon name="Calendar" size={20} className="mr-2" />
-                  Забронировать корт
-                </Button>
-              </a>
+              <Button 
+                className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold py-6"
+                onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+              >
+                <Icon name="Calendar" size={20} className="mr-2" />
+                Забронировать корт
+              </Button>
             </div>
           </SheetContent>
         </Sheet>
       </div>
+      <TermsModal 
+        open={showTerms} 
+        onAccept={handleTermsAccept} 
+        onDecline={handleTermsDecline} 
+      />
     </nav>
   );
 };

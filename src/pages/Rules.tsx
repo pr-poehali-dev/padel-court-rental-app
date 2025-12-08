@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,8 +7,34 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import BackButton from '@/components/BackButton';
+import TermsModal from '@/components/TermsModal';
 
 const Rules = () => {
+  const [showTerms, setShowTerms] = useState(false);
+  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
+
+  const handleBookingClick = (url: string) => {
+    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
+    if (termsAccepted) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      setPendingUrl(url);
+      setShowTerms(true);
+    }
+  };
+
+  const handleTermsAccept = () => {
+    setShowTerms(false);
+    if (pendingUrl) {
+      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+      setPendingUrl(null);
+    }
+  };
+
+  const handleTermsDecline = () => {
+    setShowTerms(false);
+    setPendingUrl(null);
+  };
   const basicRules = [
     {
       icon: 'Users',
@@ -189,12 +216,14 @@ const Rules = () => {
               Забронируйте корт и приходите на первую тренировку. Наши инструкторы помогут освоить основы игры!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-6">
-                  <Icon name="Calendar" className="mr-2" size={20} />
-                  Забронировать корт
-                </Button>
-              </a>
+              <Button 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-6"
+                onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+              >
+                <Icon name="Calendar" className="mr-2" size={20} />
+                Забронировать корт
+              </Button>
               <Link to="/courts">
                 <Button size="lg" variant="outline" className="font-semibold text-lg px-8 py-6 bg-white/10 hover:bg-white/20 text-white border-white/30">
                   <Icon name="Grid3x3" className="mr-2" size={20} />
@@ -215,6 +244,11 @@ const Rules = () => {
         <WhatsAppButton />
         <Footer />
       </div>
+      <TermsModal 
+        open={showTerms} 
+        onAccept={handleTermsAccept} 
+        onDecline={handleTermsDecline} 
+      />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,8 +7,34 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import BackButton from '@/components/BackButton';
+import TermsModal from '@/components/TermsModal';
 
 const Pricing = () => {
+  const [showTerms, setShowTerms] = useState(false);
+  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
+
+  const handleBookingClick = (url: string) => {
+    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
+    if (termsAccepted) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      setPendingUrl(url);
+      setShowTerms(true);
+    }
+  };
+
+  const handleTermsAccept = () => {
+    setShowTerms(false);
+    if (pendingUrl) {
+      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+      setPendingUrl(null);
+    }
+  };
+
+  const handleTermsDecline = () => {
+    setShowTerms(false);
+    setPendingUrl(null);
+  };
   const courts = [
     {
       name: 'PANORAMIC',
@@ -124,14 +151,13 @@ const Pricing = () => {
                   </CardHeader>
 
                   <CardContent className="pb-4">
-                    <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" className="block">
-                      <Button
-                        className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
-                      >
-                        <Icon name="Calendar" className="mr-2" size={18} />
-                        Забронировать
-                      </Button>
-                    </a>
+                    <Button
+                      className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
+                      onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+                    >
+                      <Icon name="Calendar" className="mr-2" size={18} />
+                      Забронировать
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -193,14 +219,13 @@ const Pricing = () => {
                   </CardHeader>
 
                   <CardContent className="pb-4">
-                    <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" className="block">
-                      <Button
-                        className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
-                      >
-                        <Icon name="Phone" className="mr-2" size={18} />
-                        Записаться
-                      </Button>
-                    </a>
+                    <Button
+                      className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
+                      onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+                    >
+                      <Icon name="Phone" className="mr-2" size={18} />
+                      Записаться
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -261,6 +286,11 @@ const Pricing = () => {
         <WhatsAppButton />
         <Footer />
       </div>
+      <TermsModal 
+        open={showTerms} 
+        onAccept={handleTermsAccept} 
+        onDecline={handleTermsDecline} 
+      />
     </div>
   );
 };

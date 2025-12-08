@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -7,8 +8,34 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import BackButton from '@/components/BackButton';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import TermsModal from '@/components/TermsModal';
 
 const About = () => {
+  const [showTerms, setShowTerms] = useState(false);
+  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
+
+  const handleBookingClick = (url: string) => {
+    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
+    if (termsAccepted) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      setPendingUrl(url);
+      setShowTerms(true);
+    }
+  };
+
+  const handleTermsAccept = () => {
+    setShowTerms(false);
+    if (pendingUrl) {
+      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
+      setPendingUrl(null);
+    }
+  };
+
+  const handleTermsDecline = () => {
+    setShowTerms(false);
+    setPendingUrl(null);
+  };
   const clubPhotos = [
     {
       url: 'https://cdn.poehali.dev/files/ресепшн2.jpg',
@@ -129,12 +156,14 @@ const About = () => {
             <h1 className="text-3xl md:text-6xl font-bold text-accent mb-5 tracking-tight leading-tight">
               Это место — символ энергии,<br />ума и побед!
             </h1>
-            <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer" className="inline-block">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105">
-                <Icon name="Calendar" className="mr-2" size={20} />
-                Забронировать корт
-              </Button>
-            </a>
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105"
+              onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+            >
+              <Icon name="Calendar" className="mr-2" size={20} />
+              Забронировать корт
+            </Button>
           </div>
 
           <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 border border-white/20 shadow-2xl">
@@ -211,12 +240,14 @@ const About = () => {
 
           <div className="text-center animate-fade-in">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5">
-                  <Icon name="Calendar" className="mr-2" size={18} />
-                  Забронировать корт
-                </Button>
-              </a>
+              <Button 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-6 py-5"
+                onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+              >
+                <Icon name="Calendar" className="mr-2" size={18} />
+                Забронировать корт
+              </Button>
               <Link to="/courts">
                 <Button size="lg" variant="outline" className="font-semibold text-base px-6 py-5 bg-white/10 hover:bg-white/20 text-white border-white/30">
                   <Icon name="Grid3x3" className="mr-2" size={18} />
@@ -237,6 +268,11 @@ const About = () => {
         <WhatsAppButton />
         <Footer />
       </div>
+      <TermsModal 
+        open={showTerms} 
+        onAccept={handleTermsAccept} 
+        onDecline={handleTermsDecline} 
+      />
     </div>
   );
 };
