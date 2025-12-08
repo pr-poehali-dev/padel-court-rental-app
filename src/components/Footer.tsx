@@ -91,6 +91,9 @@ const Footer = () => {
             <Link to="/rules" className="text-white/70 hover:text-white text-xs transition-colors">
               Правила
             </Link>
+            <Link to="/terms" className="text-white/70 hover:text-white text-xs transition-colors">
+              Оферта
+            </Link>
             <Link to="/contact" className="text-white/70 hover:text-white text-xs transition-colors">
               Контакты
             </Link>
