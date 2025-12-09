@@ -67,6 +67,7 @@ const Home = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24">
