@@ -3,7 +3,11 @@ import Icon from '@/components/ui/icon';
 const ComingSoon = () => {
   return (
     <div className="min-h-screen bg-background relative flex items-center justify-center">
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 z-0" style={{
+        backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80" />
       </div>
 

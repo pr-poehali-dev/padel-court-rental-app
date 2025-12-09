@@ -62,7 +62,11 @@ const Home = () => {
       <Navigation />
       
       <section className="relative pt-16 min-h-screen flex flex-col md:justify-between">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0" style={{
+          backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
 
