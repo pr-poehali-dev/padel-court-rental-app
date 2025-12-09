@@ -134,14 +134,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <div
-        className="fixed inset-0 z-0"
-        style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/projects/a8b6f311-aa7e-42cb-b70d-c987efb9afa4/files/6061aacc-ad35-4b83-8fcd-61f2cf44d0bc.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
       </div>
       <div className="relative z-10">
