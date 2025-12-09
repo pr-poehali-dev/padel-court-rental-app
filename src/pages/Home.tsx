@@ -106,7 +106,7 @@ const Home = () => {
                 </Link>
                 <Link to="/pricing" className="w-full">
                   <Button size="lg" variant="outline" className="w-full bg-white/5 md:bg-white/10 hover:bg-white/20 text-white border-white/20 md:border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105">
-                    <Icon name="DollarSign" className="mr-2" size={20} />
+                    <Icon name="Ruble" className="mr-2" size={20} />
                     Тарифы
                   </Button>
                 </Link>
