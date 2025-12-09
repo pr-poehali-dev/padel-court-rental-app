@@ -22,7 +22,7 @@ const App = () => (
       <div 
         className="min-h-screen"
         style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
+          backgroundImage: 'url("https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg?t=' + Date.now() + '")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
