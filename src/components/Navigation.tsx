@@ -50,9 +50,11 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary/10">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-            <span className="text-primary font-bold text-sm tracking-tight">ЗВИ</span>
-          </div>
+          <img 
+            src="https://cdn.poehali.dev/files/лог.png" 
+            alt="ЗВИ Padel Club" 
+            className="w-12 h-12 object-contain rounded-full"
+          />
           <span className="text-white font-bold text-xl font-['Montserrat']">Padel Club</span>
         </Link>
 
