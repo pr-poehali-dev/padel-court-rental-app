@@ -19,39 +19,21 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <div 
-        className="min-h-screen"
-        style={{
-          backgroundImage: 'url("https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg?t=' + Date.now() + '")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div 
-          className="min-h-screen"
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.75)'
-          }}
-        >
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <CookieConsent />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/courts" element={<Courts />} />
-              <Route path="/pricing" element={<Pricing />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/rules" element={<Rules />} />
-              <Route path="/terms" element={<Terms />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-      </div>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <CookieConsent />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/courts" element={<Courts />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
