@@ -150,7 +150,7 @@ const Pricing = () => {
                   <CardContent className="pb-4">
                     <Button
                       className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
-                      onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+                      onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
                     >
                       <Icon name="Calendar" className="mr-2" size={18} />
                       Забронировать
@@ -218,7 +218,7 @@ const Pricing = () => {
                   <CardContent className="pb-4">
                     <Button
                       className="w-full font-semibold text-base py-4 bg-accent hover:bg-accent/90 text-primary"
-                      onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+                      onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
                     >
                       <Icon name="Phone" className="mr-2" size={18} />
                       Записаться

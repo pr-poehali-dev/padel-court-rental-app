@@ -156,7 +156,7 @@ const About = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105"
-              onClick={() => handleBookingClick('https://www.fitness1c.ru/club/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+              onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
             >
               <Icon name="Calendar" className="mr-2" size={20} />
               Забронировать корт
