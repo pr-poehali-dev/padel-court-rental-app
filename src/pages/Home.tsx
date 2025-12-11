@@ -139,98 +139,12 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
-                <Button 
-                  size="lg" 
-                  className="w-full bg-accent/80 md:bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105 border-0"
-                  onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
-                >
-                  <Icon name="Calendar" className="mr-3" size={24} />
-                  Забронировать корт
-                </Button>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full bg-white/5 md:bg-white/10 hover:bg-white/20 text-white border-white/20 md:border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105"
-                  onClick={() => scrollToSection('courts')}
-                >
-                  <Icon name="Grid3x3" className="mr-2" size={20} />
-                  Посмотреть корты
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full bg-white/5 md:bg-white/10 hover:bg-white/20 text-white border-white/20 md:border-white/30 font-semibold text-base md:text-lg px-6 py-5 md:py-6 backdrop-blur-sm transition-all hover:scale-105"
-                  onClick={() => scrollToSection('pricing')}
-                >
-                  <Icon name="Ruble" className="mr-2" size={20} />
-                  Тарифы
-                </Button>
-              </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in md:hidden" style={{ animationDelay: '450ms' }}>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105"
-                  onClick={() => scrollToSection('rules')}
-                >
-                  <Icon name="BookOpen" className="mr-2" size={20} />
-                  Правила
-                </Button>
-                <a href="https://yandex.ru/maps/org/16411539476" target="_blank" rel="noopener noreferrer" className="w-full">
-                  <Button size="lg" variant="outline" className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105">
-                    <Icon name="MapPin" className="mr-2" size={20} />
-                    Проезд
-                  </Button>
-                </a>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full bg-white/5 hover:bg-white/20 text-white border-white/20 font-semibold text-base px-6 py-5 backdrop-blur-sm transition-all hover:scale-105"
-                  onClick={() => scrollToSection('contact')}
-                >
-                  <Icon name="Phone" className="mr-2" size={20} />
-                  Контакты
-                </Button>
-              </div>
             </div>
           </div>
         </div>
 
-        <div className="hidden md:block container mx-auto px-4 sm:px-6 relative z-10 pb-6 md:pb-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 animate-fade-in" style={{ animationDelay: '450ms' }}>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105 md:order-2"
-                onClick={() => scrollToSection('rules')}
-              >
-                <Icon name="BookOpen" className="mr-2" size={20} />
-                Правила
-              </Button>
-              <a href="https://yandex.ru/maps/org/16411539476" target="_blank" rel="noopener noreferrer" className="w-full md:order-1">
-                <Button size="lg" variant="outline" className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105">
-                  <Icon name="MapPin" className="mr-2" size={20} />
-                  Проезд
-                </Button>
-              </a>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 font-semibold text-lg px-6 py-6 backdrop-blur-sm transition-all hover:scale-105 md:order-3"
-                onClick={() => scrollToSection('contact')}
-              >
-                <Icon name="Phone" className="mr-2" size={20} />
-                Контакты
-              </Button>
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <section id="about" className="relative py-16 md:py-24">
