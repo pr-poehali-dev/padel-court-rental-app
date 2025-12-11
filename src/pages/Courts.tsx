@@ -56,15 +56,8 @@ const Courts = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background relative">
-      <div className="fixed inset-0 z-0" style={{
-        backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
-      </div>
-      <div className="relative z-10">
-        <Navigation />
+    <div className="min-h-screen relative">
+      <Navigation />
       
       <div className="container mx-auto px-4 pt-24 pb-2">
         <div className="max-w-7xl mx-auto">
@@ -166,9 +159,8 @@ const Courts = () => {
           </div>
         </div>
       </div>
-        <WhatsAppButton />
-        <Footer />
-      </div>
+      <WhatsAppButton />
+      <Footer />
       <TermsModal 
         open={showTerms} 
         onAccept={handleTermsAccept} 

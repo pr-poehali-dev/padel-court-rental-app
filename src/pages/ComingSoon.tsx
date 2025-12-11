@@ -2,16 +2,8 @@ import Icon from '@/components/ui/icon';
 
 const ComingSoon = () => {
   return (
-    <div className="min-h-screen bg-background relative flex items-center justify-center">
-      <div className="fixed inset-0 z-0" style={{
-        backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80" />
-      </div>
-
-      <div className="relative z-10 container mx-auto px-4">
+    <div className="min-h-screen relative flex items-center justify-center">
+      <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
           <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-accent/20 mb-6 animate-pulse">
             <Icon name="Construction" size={48} className="text-accent" />
@@ -23,7 +15,6 @@ const ComingSoon = () => {
             Мы работаем над созданием чего-то особенного для вас
           </p>
         </div>
-      </div>
     </div>
   );
 };

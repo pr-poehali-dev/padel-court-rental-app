@@ -151,14 +151,7 @@ const Home = () => {
       </section>
 
       <section id="about" className="relative py-16 md:py-24">
-        <div className="fixed inset-0 z-0" style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8 animate-fade-in">
               <h2 className="text-3xl md:text-6xl font-bold text-black mb-5 tracking-tight leading-tight">
