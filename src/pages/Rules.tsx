@@ -105,7 +105,7 @@ const Rules = () => {
             </p>
           </div>
 
-          <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md shadow-2xl hover:shadow-2xl transition-all duration-300">
+          <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md shadow-2xl hover:shadow-2xl transition-all duration-300 border-0">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4 text-center">
               Что такое падел?
             </h2>
@@ -129,7 +129,7 @@ const Rules = () => {
               {basicRules.map((rule, index) => (
                 <Card 
                   key={index} 
-                  className="p-5 hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group"
+                  className="p-5 hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group border-0"
                   style={{ 
                     animationDelay: `${index * 150}ms`,
                     animationDuration: '0.8s',
@@ -163,7 +163,7 @@ const Rules = () => {
               {equipmentItems.map((item, index) => (
                 <Card 
                   key={index} 
-                  className="text-center p-5 hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:border-accent/50 group"
+                  className="text-center p-5 hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border-0 hover:border-accent/50 group"
                   style={{ 
                     animationDelay: `${index * 150}ms`,
                     animationDuration: '0.8s',
@@ -183,7 +183,7 @@ const Rules = () => {
             </p>
           </div>
 
-          <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md shadow-2xl hover:shadow-2xl transition-all duration-300">
+          <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md shadow-2xl hover:shadow-2xl transition-all duration-300 border-0">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 text-center">
               Советы начинающим
             </h2>

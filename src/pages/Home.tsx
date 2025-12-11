@@ -166,7 +166,7 @@ const Home = () => {
               </h2>
             </div>
 
-            <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 shadow-2xl">
+            <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 shadow-2xl border-0">
               <CardContent className="p-6 md:p-8">
                 <div className="text-center max-w-4xl mx-auto space-y-4">
                   <p className="text-lg md:text-xl text-white leading-relaxed">
@@ -191,7 +191,7 @@ const Home = () => {
                   {clubPhotos.map((photo, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
-                        <Card className="bg-white/5 backdrop-blur-sm">
+                        <Card className="bg-white/5 backdrop-blur-sm border-0">
                           <CardContent className="flex aspect-video items-center justify-center p-2">
                             <img
                               src={photo.url}

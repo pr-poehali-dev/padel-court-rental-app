@@ -155,7 +155,7 @@ const About = () => {
             </Button>
           </div>
 
-          <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 shadow-2xl">
+          <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 shadow-2xl border-0">
             <CardContent className="p-6 md:p-8">
               <div className="text-center max-w-4xl mx-auto space-y-4">
                 <p className="text-lg md:text-xl text-white leading-relaxed">
@@ -180,7 +180,7 @@ const About = () => {
                 {clubPhotos.map((photo, index) => (
                   <CarouselItem key={index}>
                     <div className="p-1">
-                      <Card className="bg-white/5 backdrop-blur-sm">
+                      <Card className="bg-white/5 backdrop-blur-sm border-0">
                         <CardContent className="flex aspect-video items-center justify-center p-2">
                           <img
                             src={photo.url}
@@ -206,7 +206,7 @@ const About = () => {
               {advantages.map((advantage, index) => (
                 <Card 
                   key={index}
-                  className="p-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md"
+                  className="p-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border-0"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="flex items-start gap-4">
