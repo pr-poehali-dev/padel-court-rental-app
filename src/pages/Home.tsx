@@ -124,7 +124,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto w-full text-center">
             <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
               <h1 className="font-black leading-tight tracking-tighter mb-6">
-                <span className="block text-3xl md:text-5xl lg:text-7xl bg-gradient-to-r from-accent via-yellow-400 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.5)] mb-2">
+                <span className="block text-3xl md:text-5xl lg:text-7xl bg-gradient-to-r from-accent via-yellow-400 via-yellow-300 to-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.5)] mb-2 animate-gradient">
                   САМЫЙ ЦЕНТРАЛЬНЫЙ
                 </span>
                 <span className="block text-2xl md:text-4xl lg:text-5xl text-white drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)] font-extrabold">
