@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    border-color: transparent !important;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 215 25% 15%;
