@@ -120,7 +120,7 @@ const Home = () => {
       
       <section id="hero" className="relative pt-16 min-h-screen flex flex-col justify-between">
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24 flex-grow flex items-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-32 flex-grow flex items-start">
           <div className="max-w-4xl mx-auto w-full">
             <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
