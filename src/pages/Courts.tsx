@@ -62,7 +62,6 @@ const Courts = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
       </div>
       <div className="relative z-10">
         <Navigation />
