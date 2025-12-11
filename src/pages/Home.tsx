@@ -157,7 +157,7 @@ const Home = () => {
                 <span className="block bg-gradient-to-r from-white via-accent via-yellow-300 to-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)] animate-gradient">
                   Это место — символ энергии,
                 </span>
-                <span className="block text-accent drop-shadow-[0_2px_10px_rgba(218,165,32,0.6)] font-extrabold">
+                <span className="block bg-gradient-to-r from-accent via-yellow-300 via-yellow-400 to-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.6)] font-extrabold animate-gradient">
                   ума и побед!
                 </span>
               </h2>
