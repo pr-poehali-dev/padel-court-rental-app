@@ -451,64 +451,52 @@ const Home = () => {
       <section id="contact" className="relative py-16 md:py-24">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8 animate-fade-in">
-              <div className="inline-block">
-                <h2 className="text-4xl md:text-6xl font-bold text-black mb-3 tracking-tight relative">
+            <div className="text-center mb-10 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+                <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Контакты
-                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
-                </h2>
-              </div>
-              <p className="text-lg text-white/80 mt-4 font-light">
-                Свяжитесь с нами любым удобным способом
-              </p>
+                </span>
+              </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              {contactInfo.map((info, index) => (
-                <Card
-                  key={index}
-                  className="hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:border-accent/50 group"
-                  style={{ 
-                    animationDelay: `${index * 150}ms`,
-                    animationDuration: '0.8s',
-                    animationTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
-                  }}
-                >
-                  <CardContent className="p-5 text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-2xl mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                      <Icon name={info.icon as any} size={24} className="text-black group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <h3 className="font-bold text-lg mb-3 text-black">{info.title}</h3>
-                    <div className="space-y-1">
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="space-y-6">
+                {contactInfo.map((info, index) => (
+                  <div
+                    key={index}
+                    className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <h3 className="text-xl md:text-2xl font-bold text-accent mb-3">
+                      {info.title}
+                    </h3>
+                    <div className="space-y-2">
                       {info.items.map((item, idx) => (
                         <div key={idx}>
                           {item.link ? (
                             <a
                               href={item.link}
-                              className="text-white/80 hover:text-black transition-colors font-medium text-sm"
+                              className="text-lg md:text-xl text-white/90 hover:text-white transition-colors"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               {item.content}
                             </a>
                           ) : (
-                            <p className="text-white/80 font-medium text-sm">{item.content}</p>
+                            <p className="text-lg md:text-xl text-white/90">{item.content}</p>
                           )}
                         </div>
                       ))}
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                  </div>
+                ))}
+              </div>
 
-            <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
-              <CardContent className="p-5">
-                <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-black">
-                  <Icon name="MapPin" className="mr-2" size={24} />
+              <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+                <h3 className="text-xl md:text-2xl font-bold text-accent mb-4">
                   Как нас найти
                 </h3>
-                <div className="bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                <div className="rounded-lg overflow-hidden">
                   <iframe
                     src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=16411539476"
                     width="100%"
@@ -517,14 +505,11 @@ const Home = () => {
                     className="rounded-lg"
                   ></iframe>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
-              <CardContent className="p-6 md:p-8 text-center">
-                <Icon name="Headphones" size={48} className="mx-auto mb-4 text-black" />
-                <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Есть вопросы?</h3>
-                <p className="text-white/80 mb-6 text-base max-w-2xl mx-auto">
+              <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center">
+                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4">Есть вопросы?</h3>
+                <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl mx-auto">
                   Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
