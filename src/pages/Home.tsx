@@ -218,7 +218,7 @@ const Home = () => {
             <div className="mb-6 max-w-4xl mx-auto">
               <div className="text-center mb-6 animate-fade-in">
                 <h3 className="text-3xl md:text-5xl font-black tracking-tight">
-                  <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
+                  <span className="bg-gradient-to-r from-white via-accent via-yellow-300 to-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)] animate-gradient">
                     Преимущества нашего падел клуба
                   </span>
                 </h3>
