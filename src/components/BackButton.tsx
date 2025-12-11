@@ -19,7 +19,7 @@ const BackButton = () => {
       onClick={handleBack}
       variant="outline"
       size="lg"
-      className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm font-semibold"
+      className="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm font-semibold"
     >
       <Icon name="ArrowLeft" className="mr-2" size={20} />
       Назад
