@@ -118,7 +118,7 @@ const Home = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section id="hero" className="relative pt-16 min-h-screen flex flex-col md:justify-between">
+      <section id="hero" className="relative pt-16 min-h-screen flex flex-col justify-between">
         <div className="absolute inset-0 z-0" style={{
           backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
           backgroundSize: 'cover',
@@ -126,33 +126,33 @@ const Home = () => {
         }}>
         </div>
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col gap-4 md:gap-6">
-              <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
-                <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 md:p-8 transition-all hover:scale-[1.02] hover:bg-white/15 hover:shadow-2xl group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <h1 className="relative text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
-                    <span className="text-accent">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
-                  </h1>
-                </div>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24 flex-grow flex items-center">
+          <div className="max-w-4xl mx-auto w-full">
+            <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
+              <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 md:p-8 transition-all hover:scale-[1.02] hover:bg-white/15 hover:shadow-2xl group">
+                <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <h1 className="relative text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
+                  <span className="text-accent">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
+                </h1>
               </div>
-              
-              <div className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
-                <Button 
-                  size="lg" 
-                  className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105"
-                  onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
-                >
-                  <Icon name="Calendar" className="mr-3" size={24} />
-                  Забронировать корт
-                </Button>
-              </div>
-
             </div>
           </div>
         </div>
 
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 pb-8 md:pb-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
+              <Button 
+                size="lg" 
+                className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105"
+                onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
+              >
+                <Icon name="Calendar" className="mr-3" size={24} />
+                Забронировать корт
+              </Button>
+            </div>
+          </div>
+        </div>
 
       </section>
 
