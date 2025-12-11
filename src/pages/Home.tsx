@@ -163,18 +163,16 @@ const Home = () => {
               </h2>
             </div>
 
-            <Card className="mb-8 overflow-hidden animate-fade-in backdrop-blur-md bg-white/10 shadow-2xl border-0">
-              <CardContent className="p-6 md:p-8">
-                <div className="text-center max-w-4xl mx-auto space-y-4">
-                  <p className="text-lg md:text-xl text-white leading-relaxed">
-                    В здании с историей, где <span className="font-bold">с 1930 года</span> ковали горячее железо и создавали двигатели. На территории легендарного <span className="font-bold">Завода Владимира Ильича</span>.
-                  </p>
-                  <p className="text-xl md:text-2xl text-black leading-relaxed font-bold">
-                    Теперь здесь куются горячие спортивные игры!
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="mb-8 animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 md:p-8 hover:bg-white/10 transition-all duration-300">
+              <div className="text-center max-w-4xl mx-auto space-y-4">
+                <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                  В здании с историей, где <span className="font-bold text-accent">с 1930 года</span> ковали горячее железо и создавали двигатели. На территории легендарного <span className="font-bold text-accent">Завода Владимира Ильича</span>.
+                </p>
+                <p className="text-xl md:text-2xl text-accent leading-relaxed font-bold">
+                  Теперь здесь куются горячие спортивные игры!
+                </p>
+              </div>
+            </div>
 
             <div className="mb-8 animate-fade-in">
               <Carousel
