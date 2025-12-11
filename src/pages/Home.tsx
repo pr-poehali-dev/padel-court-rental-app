@@ -273,13 +273,12 @@ const Home = () => {
                   </div>
                   <Button
                     className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg py-6"
-                      onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
-                    >
-                      <Icon name="Calendar" className="mr-2" size={20} />
-                      Забронировать
-                    </Button>
-                  </CardContent>
-                </Card>
+                    onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
+                  >
+                    <Icon name="Calendar" className="mr-2" size={20} />
+                    Забронировать
+                  </Button>
+                </div>
               ))}
             </div>
           </div>
