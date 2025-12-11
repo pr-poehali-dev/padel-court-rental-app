@@ -123,11 +123,11 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-8 md:pt-16 flex-grow flex items-start">
           <div className="max-w-4xl mx-auto w-full">
             <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
-              <h1 className="text-3xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tighter text-center">
-                <span className="block bg-gradient-to-r from-accent via-yellow-400 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.5)] mb-2">
+              <h1 className="font-black leading-tight tracking-tighter text-center">
+                <span className="block text-3xl md:text-5xl lg:text-7xl bg-gradient-to-r from-accent via-yellow-400 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.5)] mb-2">
                   САМЫЙ ЦЕНТРАЛЬНЫЙ
                 </span>
-                <span className="block text-white drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)] font-extrabold">
+                <span className="block text-2xl md:text-4xl lg:text-5xl text-white drop-shadow-[0_2px_15px_rgba(0,0,0,0.8)] font-extrabold">
                   ПАДЕЛ КЛУБ СТОЛИЦЫ
                 </span>
               </h1>
