@@ -383,7 +383,7 @@ const Home = () => {
 
             <div className="max-w-4xl mx-auto">
               <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center mb-6">
-                <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-6">
+                <p className="text-xl md:text-2xl text-accent leading-relaxed mb-6 font-bold">
                   Организуем незабываемые корпоративные мероприятия для вашей команды
                 </p>
                 <p className="text-lg md:text-xl text-white/80 leading-relaxed">
