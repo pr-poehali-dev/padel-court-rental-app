@@ -152,7 +152,7 @@ const Home = () => {
 
       </section>
 
-      <section id="about" className="relative py-16 md:py-24">
+      <section id="about" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8 animate-fade-in">
@@ -209,15 +209,15 @@ const Home = () => {
               </Carousel>
             </div>
 
-            <div className="mb-8 max-w-4xl mx-auto">
-              <div className="text-center mb-10 animate-fade-in">
+            <div className="mb-6 max-w-4xl mx-auto">
+              <div className="text-center mb-6 animate-fade-in">
                 <h3 className="text-3xl md:text-5xl font-black tracking-tight">
                   <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                     Преимущества нашего падел клуба
                   </span>
                 </h3>
               </div>
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {advantages.map((advantage, index) => (
                   <div 
                     key={index}
@@ -238,10 +238,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="courts" className="relative py-16 md:py-24">
+      <section id="courts" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-10 animate-fade-in">
+            <div className="text-center mb-6 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                 <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Наши корты
@@ -285,10 +285,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="pricing" className="relative py-16 md:py-24">
+      <section id="pricing" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-10 animate-fade-in">
+            <div className="text-center mb-6 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                 <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Тарифы
@@ -296,7 +296,7 @@ const Home = () => {
               </h2>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-12">
+            <div className="max-w-4xl mx-auto space-y-8">
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
                   Аренда кортов
@@ -375,10 +375,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="rules" className="relative py-16 md:py-24">
+      <section id="rules" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-10 animate-fade-in">
+            <div className="text-center mb-6 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                 <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Правила игры в Падел
@@ -386,7 +386,7 @@ const Home = () => {
               </h2>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-12">
+            <div className="max-w-4xl mx-auto space-y-8">
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
                   Основные правила
@@ -448,10 +448,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="contact" className="relative py-16 md:py-24">
+      <section id="contact" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-10 animate-fade-in">
+            <div className="text-center mb-6 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                 <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Контакты
