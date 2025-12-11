@@ -123,12 +123,9 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24 flex-grow flex items-center">
           <div className="max-w-4xl mx-auto w-full">
             <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
-              <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 md:p-8 transition-all hover:scale-[1.02] hover:bg-white/15 hover:shadow-2xl group">
-                <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <h1 className="relative text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
-                  <span className="text-black">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
-                </h1>
-              </div>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
+                <span className="text-black">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
+              </h1>
             </div>
           </div>
         </div>
