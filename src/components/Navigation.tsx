@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Icon from '@/components/ui/icon';
@@ -9,7 +8,6 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
   const [pendingUrl, setPendingUrl] = useState<string | null>(null);
-  const location = useLocation();
 
   const handleBookingClick = (url: string) => {
     const termsAccepted = localStorage.getItem('zvi_terms_accepted');
@@ -35,42 +33,49 @@ const Navigation = () => {
     setPendingUrl(null);
   };
 
-  const navItems = [
-    { path: '/', label: 'Главная', icon: 'Home' },
-    { path: '/courts', label: 'Корты', icon: 'Grid3x3' },
-    { path: '/pricing', label: 'Тарифы', icon: 'DollarSign' },
-    { path: '/about', label: 'О клубе', icon: 'Info' },
-    { path: '/rules', label: 'Правила', icon: 'BookOpen' },
-    { path: '/contact', label: 'Контакты', icon: 'Phone' },
-  ];
+  const scrollToSection = (sectionId: string) => {
+    setOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-  const isActive = (path: string) => location.pathname === path;
+  const navItems = [
+    { section: 'hero', label: 'Главная', icon: 'Home' },
+    { section: 'about', label: 'О клубе', icon: 'Info' },
+    { section: 'courts', label: 'Корты', icon: 'Grid3x3' },
+    { section: 'pricing', label: 'Тарифы', icon: 'DollarSign' },
+    { section: 'rules', label: 'Правила', icon: 'BookOpen' },
+    { section: 'contact', label: 'Контакты', icon: 'Phone' },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary/10">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-2">
+        <button 
+          onClick={() => scrollToSection('hero')}
+          className="flex items-center space-x-2 cursor-pointer"
+        >
           <img 
             src="https://cdn.poehali.dev/files/лог.png" 
             alt="ЗВИ Padel Club" 
             className="w-12 h-12 object-contain rounded-full"
           />
           <span className="text-white font-bold text-xl font-['Montserrat']">Padel Club</span>
-        </Link>
+        </button>
 
         <div className="hidden md:flex items-center space-x-1">
           {navItems.map((item) => (
-            <Link key={item.path} to={item.path}>
-              <Button
-                variant={isActive(item.path) ? 'secondary' : 'ghost'}
-                className={`text-white hover:text-primary ${
-                  isActive(item.path) ? 'text-primary' : ''
-                }`}
-              >
-                <Icon name={item.icon as any} size={18} className="mr-2" />
-                {item.label}
-              </Button>
-            </Link>
+            <Button
+              key={item.section}
+              variant="ghost"
+              className="text-white hover:text-primary"
+              onClick={() => scrollToSection(item.section)}
+            >
+              <Icon name={item.icon as any} size={18} className="mr-2" />
+              {item.label}
+            </Button>
           ))}
           <Button 
             className="bg-accent hover:bg-accent/90 text-primary font-semibold ml-2"
@@ -90,19 +95,14 @@ const Navigation = () => {
           <SheetContent side="top" className="h-auto bg-sidebar/98 backdrop-blur-md mt-16 border-0">
             <div className="flex flex-col space-y-3 pb-4">
               {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setOpen(false)}
-                  className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${
-                    isActive(item.path)
-                      ? 'bg-sidebar-accent text-sidebar-foreground'
-                      : 'text-sidebar-foreground hover:bg-sidebar-accent'
-                  }`}
+                <button
+                  key={item.section}
+                  onClick={() => scrollToSection(item.section)}
+                  className="flex items-center space-x-3 p-3 rounded-lg transition-colors text-sidebar-foreground hover:bg-sidebar-accent"
                 >
                   <Icon name={item.icon as any} size={20} />
                   <span className="text-lg">{item.label}</span>
-                </Link>
+                </button>
               ))}
               <Button 
                 className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold py-6"

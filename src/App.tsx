@@ -6,11 +6,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookieConsent from "./components/CookieConsent";
 import Home from "./pages/Home";
-import Courts from "./pages/Courts";
-import Pricing from "./pages/Pricing";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Rules from "./pages/Rules";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
@@ -25,12 +20,7 @@ const App = () => (
         <CookieConsent />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/courts" element={<Courts />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/rules" element={<Rules />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
