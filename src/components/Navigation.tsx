@@ -73,7 +73,6 @@ const Navigation = () => {
               className="text-white hover:text-primary"
               onClick={() => scrollToSection(item.section)}
             >
-              <Icon name={item.icon as any} size={18} className="mr-2" />
               {item.label}
             </Button>
           ))}
@@ -81,7 +80,6 @@ const Navigation = () => {
             className="bg-accent hover:bg-accent/90 text-primary font-semibold ml-2"
             onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
           >
-            <Icon name="Calendar" size={18} className="mr-2" />
             Забронировать
           </Button>
         </div>
@@ -98,9 +96,8 @@ const Navigation = () => {
                 <button
                   key={item.section}
                   onClick={() => scrollToSection(item.section)}
-                  className="flex items-center space-x-3 p-3 rounded-lg transition-colors text-sidebar-foreground hover:bg-sidebar-accent"
+                  className="p-3 rounded-lg transition-colors text-sidebar-foreground hover:bg-sidebar-accent text-center"
                 >
-                  <Icon name={item.icon as any} size={20} />
                   <span className="text-lg">{item.label}</span>
                 </button>
               ))}
@@ -108,7 +105,6 @@ const Navigation = () => {
                 className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold py-6"
                 onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
               >
-                <Icon name="Calendar" size={20} className="mr-2" />
                 Забронировать корт
               </Button>
             </div>
