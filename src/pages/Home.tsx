@@ -139,6 +139,16 @@ const Home = () => {
                 </div>
               </div>
               
+              <div className="w-full animate-fade-in" style={{ animationDelay: '150ms' }}>
+                <Button 
+                  size="lg" 
+                  className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-6 md:py-8 transition-all hover:scale-105"
+                  onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule/140c8d1f-aef1-42dc-943d-2f7e06d636a2')}
+                >
+                  <Icon name="Calendar" className="mr-3" size={24} />
+                  Забронировать корт
+                </Button>
+              </div>
 
             </div>
           </div>
