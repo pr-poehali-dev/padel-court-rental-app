@@ -124,6 +124,7 @@
   @media (max-width: 768px) {
     body::before {
       background-position: right center;
+      background-attachment: scroll;
     }
   }
 
