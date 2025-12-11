@@ -241,46 +241,38 @@ const Home = () => {
       <section id="courts" className="relative py-16 md:py-24">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-8 animate-fade-in">
-              <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
-                <span className="text-black">Наши корты</span>
+            <div className="text-center mb-10 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+                <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
+                  Наши корты
+                </span>
               </h2>
-              <p className="text-lg text-white/90">
-                Профессиональные корты для игры в Padel любого уровня
-              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="max-w-4xl mx-auto space-y-8 mb-8">
               {courts.map((court, index) => (
-                <Card
+                <div
                   key={court.id}
-                  className="overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md"
+                  className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="relative h-48 overflow-hidden group">
+                  <div className="relative h-64 md:h-80 overflow-hidden rounded-xl mb-6 group">
                     <img
                       src={court.image}
                       alt={court.name}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                    <div className="absolute top-4 right-4 z-10 pointer-events-none">
-                      <Badge className="bg-accent text-primary font-bold text-sm px-4 py-1.5 shadow-xl border-2 border-primary">
-                        {court.type}
-                      </Badge>
-                    </div>
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold text-black mb-4">{court.name}</h3>
-                    <div className="space-y-2 mb-6">
-                      {court.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-2 text-white/80">
-                          <Icon name="Check" size={18} className="text-black flex-shrink-0" />
-                          <span className="text-base">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <Button
-                      className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg py-6"
+                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-4">{court.name}</h3>
+                  <div className="space-y-2 mb-6">
+                    {court.features.map((feature, idx) => (
+                      <p key={idx} className="text-lg md:text-xl text-white/90 leading-relaxed">
+                        • {feature}
+                      </p>
+                    ))}
+                  </div>
+                  <Button
+                    className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg py-6"
                       onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
                     >
                       <Icon name="Calendar" className="mr-2" size={20} />
