@@ -115,16 +115,10 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navigation />
       
       <section id="hero" className="relative pt-16 min-h-screen flex flex-col justify-between">
-        <div className="absolute inset-0 z-0" style={{
-          backgroundImage: 'url(https://cdn.poehali.dev/files/%D0%BA%D0%BE%D1%80%D1%82.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}>
-        </div>
 
         <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 md:pt-24 flex-grow flex items-center">
           <div className="max-w-4xl mx-auto w-full">
