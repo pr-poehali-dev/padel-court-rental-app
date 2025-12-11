@@ -209,19 +209,26 @@ const Home = () => {
               </Carousel>
             </div>
 
-            <div className="mb-8 max-w-3xl mx-auto">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
-                Преимущества нашего падел клуба
-              </h3>
-              <div className="space-y-4 text-center">
+            <div className="mb-8 max-w-4xl mx-auto">
+              <div className="text-center mb-10 animate-fade-in">
+                <h3 className="text-3xl md:text-5xl font-black tracking-tight">
+                  <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
+                    Преимущества нашего падел клуба
+                  </span>
+                </h3>
+              </div>
+              <div className="space-y-8">
                 {advantages.map((advantage, index) => (
                   <div 
                     key={index}
-                    className="animate-fade-in"
+                    className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <p className="text-lg md:text-xl text-white leading-relaxed">
-                      <span className="font-bold text-black">{advantage.title}</span> — {advantage.description}
+                    <h4 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                      {advantage.title}
+                    </h4>
+                    <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                      {advantage.description}
                     </p>
                   </div>
                 ))}
