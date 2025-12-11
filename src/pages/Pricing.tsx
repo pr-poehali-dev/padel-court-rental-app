@@ -95,7 +95,7 @@ const Pricing = () => {
           </div>
           <div className="text-center mb-16 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-5xl md:text-7xl font-bold text-accent mb-4 tracking-tight relative">
+              <h1 className="text-5xl md:text-7xl font-bold text-black mb-4 tracking-tight relative">
                 Тарифы
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
@@ -108,7 +108,7 @@ const Pricing = () => {
           <div className="mb-20">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-3xl md:text-4xl font-bold text-accent relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-black relative z-10">
                   Аренда кортов
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -135,9 +135,9 @@ const Pricing = () => {
 
                   <CardHeader className="text-center pb-4">
                     <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                      <Icon name={court.icon as any} size={28} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                      <Icon name={court.icon as any} size={28} className="text-black group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <CardTitle className="text-xl mb-2 text-accent font-bold">{court.name}</CardTitle>
+                    <CardTitle className="text-xl mb-2 text-black font-bold">{court.name}</CardTitle>
                     <div className="mt-2">
                       <span className="text-3xl font-bold text-white">
                         {court.price.toLocaleString('ru-RU')} ₽
@@ -163,7 +163,7 @@ const Pricing = () => {
           <div className="mb-16">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-3xl md:text-4xl font-bold text-accent relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-black relative z-10">
                   Стоимость тренировок с нашими тренерами
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -190,9 +190,9 @@ const Pricing = () => {
 
                   <CardHeader className="text-center pb-4">
                     <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                      <Icon name={item.icon as any} size={28} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                      <Icon name={item.icon as any} size={28} className="text-black group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <CardTitle className="text-lg mb-2 text-accent font-bold leading-tight">
+                    <CardTitle className="text-lg mb-2 text-black font-bold leading-tight">
                       {item.name}
                     </CardTitle>
                     {item.description && (
@@ -231,7 +231,7 @@ const Pricing = () => {
           <div className="mb-20">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-3xl md:text-4xl font-bold text-accent relative z-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-black relative z-10">
                   Корпоративные и частные мероприятия
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -241,8 +241,8 @@ const Pricing = () => {
             <Card className="bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300 animate-fade-in overflow-hidden">
               <CardContent className="p-8 md:p-12">
                 <div className="max-w-3xl mx-auto text-center">
-                  <Icon name="PartyPopper" size={64} className="mx-auto mb-6 text-accent" />
-                  <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6">
+                  <Icon name="PartyPopper" size={64} className="mx-auto mb-6 text-black" />
+                  <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
                     Проведите интересный и объединяющий новогодний корпоратив на кортах
                   </h3>
                   <div className="space-y-4 text-lg md:text-xl text-white/80 mb-8">
@@ -264,7 +264,7 @@ const Pricing = () => {
           </div>
 
           <div className="mt-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-10 text-center animate-fade-in">
-            <h3 className="text-3xl font-bold text-accent mb-4">
+            <h3 className="text-3xl font-bold text-black mb-4">
               Остались вопросы о тарифах?
             </h3>
             <p className="text-white/80 mb-8 max-w-2xl mx-auto text-lg">

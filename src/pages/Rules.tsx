@@ -102,7 +102,7 @@ const Rules = () => {
           </div>
           <div className="text-center mb-8 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-4xl md:text-6xl font-bold text-accent mb-3 tracking-tight relative">
+              <h1 className="text-4xl md:text-6xl font-bold text-black mb-3 tracking-tight relative">
                 Правила падела
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
@@ -113,7 +113,7 @@ const Rules = () => {
           </div>
 
           <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl hover:shadow-2xl transition-all duration-300">
-            <h2 className="text-2xl md:text-3xl font-bold text-accent mb-4 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-4 text-center">
               Что такое падел?
             </h2>
             <p className="text-lg text-white/80 text-center max-w-3xl mx-auto">
@@ -126,7 +126,7 @@ const Rules = () => {
           <div className="mb-8">
             <div className="text-center mb-6 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-2xl md:text-3xl font-bold text-accent relative z-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-black relative z-10">
                   Основные правила
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -145,7 +145,7 @@ const Rules = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-accent/20 flex-shrink-0 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                      <Icon name={rule.icon as any} size={24} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                      <Icon name={rule.icon as any} size={24} className="text-black group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">{rule.title}</h3>
@@ -160,7 +160,7 @@ const Rules = () => {
           <div className="mb-8">
             <div className="text-center mb-6 animate-fade-in">
               <div className="inline-block relative">
-                <h2 className="text-2xl md:text-3xl font-bold text-accent relative z-10">
+                <h2 className="text-2xl md:text-3xl font-bold text-black relative z-10">
                   Что нужно для игры
                 </h2>
                 <div className="absolute inset-0 bg-accent/20 blur-2xl -z-10 scale-110" />
@@ -178,7 +178,7 @@ const Rules = () => {
                   }}
                 >
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/20 mb-4 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                    <Icon name={item.icon as any} size={30} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                    <Icon name={item.icon as any} size={30} className="text-black group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
                   <p className="text-white/80 text-base">{item.description}</p>
@@ -191,13 +191,13 @@ const Rules = () => {
           </div>
 
           <Card className="mb-8 p-6 md:p-8 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl hover:shadow-2xl transition-all duration-300">
-            <h2 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 text-center">
               Советы начинающим
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               {tips.map((tip, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <Icon name="CheckCircle2" size={20} className="text-accent flex-shrink-0 mt-1" />
+                  <Icon name="CheckCircle2" size={20} className="text-black flex-shrink-0 mt-1" />
                   <p className="text-white/80 text-base">{tip}</p>
                 </div>
               ))}
@@ -205,7 +205,7 @@ const Rules = () => {
           </Card>
 
           <div className="text-center animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Готовы попробовать?
             </h2>
             <p className="text-lg text-white/80 mb-6 max-w-2xl mx-auto">

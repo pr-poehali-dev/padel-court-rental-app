@@ -149,7 +149,7 @@ const About = () => {
             <BackButton />
           </div>
           <div className="text-center mb-8 animate-fade-in">
-            <h1 className="text-3xl md:text-6xl font-bold text-accent mb-5 tracking-tight leading-tight">
+            <h1 className="text-3xl md:text-6xl font-bold text-black mb-5 tracking-tight leading-tight">
               Это место — символ энергии,<br />ума и побед!
             </h1>
             <Button 
@@ -168,7 +168,7 @@ const About = () => {
                 <p className="text-lg md:text-xl text-white leading-relaxed">
                   В здании с историей, где <span className="font-bold">с 1930 года</span> ковали горячее железо и создавали двигатели. На территории легендарного <span className="font-bold">Завода Владимира Ильича</span>.
                 </p>
-                <p className="text-xl md:text-2xl text-accent leading-relaxed font-bold">
+                <p className="text-xl md:text-2xl text-black leading-relaxed font-bold">
                   Теперь здесь куются горячие спортивные игры!
                 </p>
               </div>
@@ -206,7 +206,7 @@ const About = () => {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6 text-center animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
               Преимущества нашего падел клуба
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -218,10 +218,10 @@ const About = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-accent/20 flex-shrink-0">
-                      <Icon name={advantage.icon as any} size={24} className="text-accent" />
+                      <Icon name={advantage.icon as any} size={24} className="text-black" />
                     </div>
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold text-accent mb-2 leading-tight">
+                      <h3 className="text-lg md:text-xl font-bold text-black mb-2 leading-tight">
                         {advantage.title}
                       </h3>
                       <p className="text-white/80 text-base leading-relaxed">

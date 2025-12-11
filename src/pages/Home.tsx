@@ -132,7 +132,7 @@ const Home = () => {
               <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 md:p-8 transition-all hover:scale-[1.02] hover:bg-white/15 hover:shadow-2xl group">
                 <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <h1 className="relative text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight text-center">
-                  <span className="text-accent">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
+                  <span className="text-black">САМЫЙ ЦЕНТРАЛЬНЫЙ</span><br />ПАДЕЛ КЛУБ СТОЛИЦЫ
                 </h1>
               </div>
             </div>
@@ -167,7 +167,7 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8 animate-fade-in">
-              <h2 className="text-3xl md:text-6xl font-bold text-accent mb-5 tracking-tight leading-tight">
+              <h2 className="text-3xl md:text-6xl font-bold text-black mb-5 tracking-tight leading-tight">
                 Это место — символ энергии,<br />ума и побед!
               </h2>
             </div>
@@ -178,7 +178,7 @@ const Home = () => {
                   <p className="text-lg md:text-xl text-white leading-relaxed">
                     В здании с историей, где <span className="font-bold">с 1930 года</span> ковали горячее железо и создавали двигатели. На территории легендарного <span className="font-bold">Завода Владимира Ильича</span>.
                   </p>
-                  <p className="text-xl md:text-2xl text-accent leading-relaxed font-bold">
+                  <p className="text-xl md:text-2xl text-black leading-relaxed font-bold">
                     Теперь здесь куются горячие спортивные игры!
                   </p>
                 </div>
@@ -216,7 +216,7 @@ const Home = () => {
             </div>
 
             <div className="mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold text-accent mb-6 text-center animate-fade-in">
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
                 Преимущества нашего падел клуба
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -228,10 +228,10 @@ const Home = () => {
                   >
                     <div className="flex items-start gap-4">
                       <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-accent/20 flex-shrink-0">
-                        <Icon name={advantage.icon as any} size={24} className="text-accent" />
+                        <Icon name={advantage.icon as any} size={24} className="text-black" />
                       </div>
                       <div>
-                        <h4 className="text-lg md:text-xl font-bold text-accent mb-2 leading-tight">
+                        <h4 className="text-lg md:text-xl font-bold text-black mb-2 leading-tight">
                           {advantage.title}
                         </h4>
                         <p className="text-white/80 text-base leading-relaxed">
@@ -252,7 +252,7 @@ const Home = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8 animate-fade-in">
               <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
-                <span className="text-accent">Наши корты</span>
+                <span className="text-black">Наши корты</span>
               </h2>
               <p className="text-lg text-white/90">
                 Профессиональные корты для игры в Padel любого уровня
@@ -279,11 +279,11 @@ const Home = () => {
                     </div>
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold text-accent mb-4">{court.name}</h3>
+                    <h3 className="text-2xl font-bold text-black mb-4">{court.name}</h3>
                     <div className="space-y-2 mb-6">
                       {court.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center gap-2 text-white/80">
-                          <Icon name="Check" size={18} className="text-accent flex-shrink-0" />
+                          <Icon name="Check" size={18} className="text-black flex-shrink-0" />
                           <span className="text-base">{feature}</span>
                         </div>
                       ))}
@@ -308,7 +308,7 @@ const Home = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16 animate-fade-in">
               <div className="inline-block">
-                <h2 className="text-5xl md:text-7xl font-bold text-accent mb-4 tracking-tight relative">
+                <h2 className="text-5xl md:text-7xl font-bold text-black mb-4 tracking-tight relative">
                   Тарифы
                   <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
                 </h2>
@@ -319,7 +319,7 @@ const Home = () => {
             </div>
 
             <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-accent mb-8 text-center animate-fade-in">
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-8 text-center animate-fade-in">
                 Аренда кортов
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -342,9 +342,9 @@ const Home = () => {
                     )}
                     <div className="text-center pt-4">
                       <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-2xl mb-4">
-                        <Icon name={court.icon as any} size={32} className="text-accent" />
+                        <Icon name={court.icon as any} size={32} className="text-black" />
                       </div>
-                      <h4 className="text-2xl md:text-3xl font-bold text-accent mb-4">
+                      <h4 className="text-2xl md:text-3xl font-bold text-black mb-4">
                         {court.name}
                       </h4>
                       <div className="mb-6">
@@ -367,7 +367,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold text-accent mb-8 text-center animate-fade-in">
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-8 text-center animate-fade-in">
                 Тренировки
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -383,9 +383,9 @@ const Home = () => {
                   >
                     <div className="text-center">
                       <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-2xl mb-4">
-                        <Icon name={item.icon as any} size={32} className="text-accent" />
+                        <Icon name={item.icon as any} size={32} className="text-black" />
                       </div>
-                      <h4 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                      <h4 className="text-xl md:text-2xl font-bold text-black mb-2">
                         {item.name}
                       </h4>
                       {item.description && (
@@ -419,7 +419,7 @@ const Home = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <div className="inline-block">
-                <h2 className="text-4xl md:text-6xl font-bold text-accent mb-4 tracking-tight relative">
+                <h2 className="text-4xl md:text-6xl font-bold text-black mb-4 tracking-tight relative">
                   Правила игры в Падел
                   <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
                 </h2>
@@ -430,7 +430,7 @@ const Home = () => {
             </div>
 
             <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-accent mb-6 text-center animate-fade-in">
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
                 Основные правила
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -442,10 +442,10 @@ const Home = () => {
                   >
                     <div className="flex items-start gap-4">
                       <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-accent/20 flex-shrink-0">
-                        <Icon name={rule.icon as any} size={24} className="text-accent" />
+                        <Icon name={rule.icon as any} size={24} className="text-black" />
                       </div>
                       <div>
-                        <h4 className="text-xl font-bold text-accent mb-2">{rule.title}</h4>
+                        <h4 className="text-xl font-bold text-black mb-2">{rule.title}</h4>
                         <p className="text-white/80 text-base leading-relaxed">{rule.description}</p>
                       </div>
                     </div>
@@ -455,7 +455,7 @@ const Home = () => {
             </div>
 
             <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-accent mb-6 text-center animate-fade-in">
+              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
                 Необходимое снаряжение
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -467,9 +467,9 @@ const Home = () => {
                   >
                     <div className="text-center">
                       <div className="inline-flex items-center justify-center w-14 h-14 bg-accent/20 rounded-2xl mb-4">
-                        <Icon name={item.icon as any} size={28} className="text-accent" />
+                        <Icon name={item.icon as any} size={28} className="text-black" />
                       </div>
-                      <h4 className="text-xl font-bold text-accent mb-2">{item.title}</h4>
+                      <h4 className="text-xl font-bold text-black mb-2">{item.title}</h4>
                       <p className="text-white/80 text-sm">{item.description}</p>
                     </div>
                   </Card>
@@ -478,14 +478,14 @@ const Home = () => {
             </div>
 
             <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 animate-fade-in">
-              <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4 text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 text-center">
                 <Icon name="Lightbulb" className="inline mr-2 mb-1" size={28} />
                 Полезные советы
               </h3>
               <div className="space-y-3">
                 {tips.map((tip, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={20} className="text-accent flex-shrink-0 mt-1" />
+                    <Icon name="CheckCircle2" size={20} className="text-black flex-shrink-0 mt-1" />
                     <p className="text-white/80 text-base">{tip}</p>
                   </div>
                 ))}
@@ -500,7 +500,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 animate-fade-in">
               <div className="inline-block">
-                <h2 className="text-4xl md:text-6xl font-bold text-accent mb-3 tracking-tight relative">
+                <h2 className="text-4xl md:text-6xl font-bold text-black mb-3 tracking-tight relative">
                   Контакты
                   <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
                 </h2>
@@ -523,16 +523,16 @@ const Home = () => {
                 >
                   <CardContent className="p-5 text-center">
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-2xl mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                      <Icon name={info.icon as any} size={24} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                      <Icon name={info.icon as any} size={24} className="text-black group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <h3 className="font-bold text-lg mb-3 text-accent">{info.title}</h3>
+                    <h3 className="font-bold text-lg mb-3 text-black">{info.title}</h3>
                     <div className="space-y-1">
                       {info.items.map((item, idx) => (
                         <div key={idx}>
                           {item.link ? (
                             <a
                               href={item.link}
-                              className="text-white/80 hover:text-accent transition-colors font-medium text-sm"
+                              className="text-white/80 hover:text-black transition-colors font-medium text-sm"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -551,7 +551,7 @@ const Home = () => {
 
             <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-5">
-                <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-accent">
+                <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-black">
                   <Icon name="MapPin" className="mr-2" size={24} />
                   Как нас найти
                 </h3>
@@ -569,8 +569,8 @@ const Home = () => {
 
             <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-6 md:p-8 text-center">
-                <Icon name="Headphones" size={48} className="mx-auto mb-4 text-accent" />
-                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4">Есть вопросы?</h3>
+                <Icon name="Headphones" size={48} className="mx-auto mb-4 text-black" />
+                <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Есть вопросы?</h3>
                 <p className="text-white/80 mb-6 text-base max-w-2xl mx-auto">
                   Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
                 </p>

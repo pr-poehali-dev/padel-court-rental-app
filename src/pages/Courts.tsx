@@ -73,7 +73,7 @@ const Courts = () => {
           </div>
           <div className="text-center mb-8 animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              <span className="text-accent">Наши корты</span>
+              <span className="text-black">Наши корты</span>
             </h1>
             <p className="text-lg text-white/90">
               Профессиональные корты для игры в Padel любого уровня
@@ -101,7 +101,7 @@ const Courts = () => {
                 </div>
 
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-xl text-accent">{court.name}</CardTitle>
+                  <CardTitle className="text-xl text-black">{court.name}</CardTitle>
                 </CardHeader>
 
                 <CardContent className="space-y-4 pt-0">
@@ -136,7 +136,7 @@ const Courts = () => {
           <div className="mt-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-accent mb-3">
+                <h2 className="text-2xl md:text-3xl font-bold text-black mb-3">
                   Не знаете, какой корт выбрать?
                 </h2>
                 <p className="text-white/80 mb-4 text-base">
@@ -157,7 +157,7 @@ const Courts = () => {
                   { icon: 'Heart', title: 'Для всей семьи' },
                 ].map((item, idx) => (
                   <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 transition-colors">
-                    <Icon name={item.icon as any} size={28} className="mx-auto mb-2 text-accent" />
+                    <Icon name={item.icon as any} size={28} className="mx-auto mb-2 text-black" />
                     <p className="font-semibold text-white text-xs">{item.title}</p>
                   </div>
                 ))}

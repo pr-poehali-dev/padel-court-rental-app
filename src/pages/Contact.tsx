@@ -50,7 +50,7 @@ const Contact = () => {
           </div>
           <div className="text-center mb-8 animate-fade-in">
             <div className="inline-block">
-              <h1 className="text-4xl md:text-6xl font-bold text-accent mb-3 tracking-tight relative">
+              <h1 className="text-4xl md:text-6xl font-bold text-black mb-3 tracking-tight relative">
                 Контакты
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
               </h1>
@@ -73,16 +73,16 @@ const Contact = () => {
               >
                 <CardContent className="p-5 text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/20 rounded-2xl mb-3 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
-                    <Icon name={info.icon as any} size={24} className="text-accent group-hover:scale-110 transition-transform duration-300" />
+                    <Icon name={info.icon as any} size={24} className="text-black group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="font-bold text-lg mb-3 text-accent">{info.title}</h3>
+                  <h3 className="font-bold text-lg mb-3 text-black">{info.title}</h3>
                   <div className="space-y-1">
                     {info.items.map((item, idx) => (
                       <div key={idx}>
                         {item.link ? (
                           <a
                             href={item.link}
-                            className="text-white/80 hover:text-accent transition-colors font-medium text-sm"
+                            className="text-white/80 hover:text-black transition-colors font-medium text-sm"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -101,7 +101,7 @@ const Contact = () => {
 
           <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-5">
-              <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-accent">
+              <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-black">
                 <Icon name="MapPin" className="mr-2" size={24} />
                 Как нас найти
               </h3>
@@ -119,8 +119,8 @@ const Contact = () => {
 
           <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-6 md:p-8 text-center">
-              <Icon name="Headphones" size={48} className="mx-auto mb-4 text-accent" />
-              <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4">Есть вопросы?</h3>
+              <Icon name="Headphones" size={48} className="mx-auto mb-4 text-black" />
+              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Есть вопросы?</h3>
               <p className="text-white/80 mb-6 text-base max-w-2xl mx-auto">
                 Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
               </p>
