@@ -532,8 +532,8 @@ const Home = () => {
                     </Button>
                   </a>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
