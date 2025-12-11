@@ -156,8 +156,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8 animate-fade-in">
-              <h2 className="text-3xl md:text-6xl font-bold text-black mb-5 tracking-tight leading-tight">
-                Это место — символ энергии,<br />ума и побед!
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                <span className="block bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
+                  Это место — символ энергии,
+                </span>
+                <span className="block text-accent drop-shadow-[0_2px_10px_rgba(218,165,32,0.6)] font-extrabold">
+                  ума и побед!
+                </span>
               </h2>
             </div>
 
