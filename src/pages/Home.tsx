@@ -699,6 +699,22 @@ const Home = () => {
                         </div>
                       ))}
                     </div>
+                    {info.title === 'Адрес' && (
+                      <div className="mt-4">
+                        <a 
+                          href="https://yandex.ru/maps/?rtext=~55.698745,37.676574&rtt=auto" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <Button
+                            className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-base py-4"
+                          >
+                            <Icon name="Navigation" className="mr-2" size={18} />
+                            Построить маршрут
+                          </Button>
+                        </a>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
