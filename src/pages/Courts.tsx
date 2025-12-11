@@ -77,7 +77,7 @@ const Courts = () => {
             {courts.map((court, index) => (
               <Card
                 key={court.id}
-                className="overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
+                className="overflow-hidden hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative h-48 overflow-hidden group">
@@ -126,7 +126,7 @@ const Courts = () => {
             ))}
           </div>
 
-          <div className="mt-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 animate-fade-in">
+          <div className="mt-8 bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-8 animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-black mb-3">
@@ -149,7 +149,7 @@ const Courts = () => {
                   { icon: 'Zap', title: 'Современное оборудование' },
                   { icon: 'Heart', title: 'Для всей семьи' },
                 ].map((item, idx) => (
-                  <div key={idx} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center hover:bg-white/10 transition-colors">
+                  <div key={idx} className="bg-white/5 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white/10 transition-colors">
                     <Icon name={item.icon as any} size={28} className="mx-auto mb-2 text-black" />
                     <p className="font-semibold text-white text-xs">{item.title}</p>
                   </div>

@@ -57,7 +57,7 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:border-accent/50 group"
+                className="hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group"
                 style={{ 
                   animationDelay: `${index * 150}ms`,
                   animationDuration: '0.8s',
@@ -92,13 +92,13 @@ const Contact = () => {
             ))}
           </div>
 
-          <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20 hover:shadow-2xl transition-all duration-300">
+          <Card className="mb-6 animate-fade-in bg-white/10 backdrop-blur-md hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-5">
               <h3 className="font-bold text-xl mb-4 flex items-center justify-center text-black">
                 <Icon name="MapPin" className="mr-2" size={24} />
                 Как нас найти
               </h3>
-              <div className="bg-white/5 rounded-lg overflow-hidden border border-white/10">
+              <div className="bg-white/5 rounded-lg overflow-hidden">
                 <iframe
                   src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=16411539476"
                   width="100%"
@@ -110,7 +110,7 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 backdrop-blur-md border border-white/20 text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
+          <Card className="bg-white/10 backdrop-blur-md text-white animate-fade-in hover:shadow-2xl transition-all duration-300">
             <CardContent className="p-6 md:p-8 text-center">
               <Icon name="Headphones" size={48} className="mx-auto mb-4 text-black" />
               <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Есть вопросы?</h3>
