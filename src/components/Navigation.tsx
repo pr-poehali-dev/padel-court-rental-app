@@ -51,7 +51,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-black/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-white/5 border-b border-white/10">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <button 
           onClick={() => scrollToSection('hero')}
@@ -62,7 +62,7 @@ const Navigation = () => {
             alt="ЗВИ Padel Club" 
             className="w-12 h-12 object-contain rounded-full"
           />
-          <span className="text-black font-bold text-xl font-['Montserrat']">Padel Club</span>
+          <span className="text-white font-bold text-xl font-['Montserrat']">Padel Club</span>
         </button>
 
         <div className="hidden md:flex items-center space-x-1">
@@ -70,7 +70,7 @@ const Navigation = () => {
             <Button
               key={item.section}
               variant="ghost"
-              className="text-black hover:text-primary hover:bg-black/5"
+              className="text-white hover:text-accent hover:bg-white/10"
               onClick={() => scrollToSection(item.section)}
             >
               {item.label}
@@ -86,7 +86,7 @@ const Navigation = () => {
 
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-black">
+            <Button variant="ghost" size="icon" className="text-white">
               <Icon name="Menu" size={24} />
             </Button>
           </SheetTrigger>
