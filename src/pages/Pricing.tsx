@@ -111,9 +111,7 @@ const Pricing = () => {
               {courts.map((court, index) => (
                 <Card
                   key={index}
-                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group border-0 ${
-                    court.popular ? 'ring-2 ring-accent' : ''
-                  }`}
+                  className="relative overflow-hidden hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group border-0"
                   style={{ 
                     animationDelay: `${index * 150}ms`,
                     animationDuration: '0.8s',
@@ -166,9 +164,7 @@ const Pricing = () => {
               {training.map((item, index) => (
                 <Card
                   key={index}
-                  className={`relative overflow-hidden hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group border-0 ${
-                    item.free ? 'ring-2 ring-green-400 hover:ring-green-300' : ''
-                  }`}
+                  className="relative overflow-hidden hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 animate-fade-in bg-white/10 backdrop-blur-md hover:border-accent/50 group border-0"
                   style={{ 
                     animationDelay: `${index * 150}ms`,
                     animationDuration: '0.8s',
