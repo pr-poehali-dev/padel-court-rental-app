@@ -139,17 +139,7 @@
 
 @layer utilities {
   * {
-    border-style: none !important;
-    border-width: 0 !important;
+    border: 0 !important;
     outline: none !important;
-  }
-
-  .shadow-sm,
-  .shadow,
-  .shadow-md,
-  .shadow-lg,
-  .shadow-xl,
-  .shadow-2xl {
-    box-shadow: none !important;
   }
 }
