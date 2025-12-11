@@ -454,6 +454,108 @@ const Home = () => {
         </div>
       </section>
 
+      <section id="trainers" className="relative py-8 md:py-12">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-6 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+                <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
+                  Наши тренеры
+                </span>
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center mb-6">
+                <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+                  Профессиональные тренеры с международным опытом помогут вам освоить падел и повысить уровень игры
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-3">
+                    Программы обучения
+                  </h3>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-3">
+                    <span className="font-bold text-accent">Для новичков</span> — базовая техника, правила игры, тактика передвижения по корту
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-3">
+                    <span className="font-bold text-accent">Средний уровень</span> — отработка ударов, игра от стены, парные комбинации
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    <span className="font-bold text-accent">Продвинутый уровень</span> — турнирная подготовка, сложные тактические схемы
+                  </p>
+                </div>
+
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-3">
+                    Форматы тренировок
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4">
+                      <p className="text-lg font-bold text-white mb-2">Персональные</p>
+                      <p className="text-base text-white/80">Индивидуальная работа с тренером</p>
+                      <p className="text-xl font-bold text-accent mt-2">10 000 ₽</p>
+                    </div>
+                    <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4">
+                      <p className="text-lg font-bold text-white mb-2">Сплит (3-4 человека)</p>
+                      <p className="text-base text-white/80">Тренировка в малой группе</p>
+                      <p className="text-xl font-bold text-accent mt-2">11 000 ₽</p>
+                    </div>
+                    <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4">
+                      <p className="text-lg font-bold text-white mb-2">Мини-группы</p>
+                      <p className="text-base text-white/80">Групповые занятия до 8 человек</p>
+                      <p className="text-xl font-bold text-accent mt-2">4 000 ₽</p>
+                    </div>
+                    <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4">
+                      <p className="text-lg font-bold text-white mb-2">Открытые тренировки</p>
+                      <p className="text-base text-white/80">Для новичков падела</p>
+                      <p className="text-xl font-bold text-green-400 mt-2">Бесплатно</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-3">
+                    Почему выбирают наших тренеров
+                  </h3>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Сертифицированные специалисты с опытом игры на международных турнирах
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Индивидуальный подход к каждому ученику
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Современные методики обучения
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Видеоанализ техники игры
+                  </p>
+                </div>
+
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4">Записаться на тренировку</h3>
+                  <p className="text-lg md:text-xl text-white/90 mb-6">
+                    Позвоните нам, и мы подберем удобное время и формат тренировки
+                  </p>
+                  <div className="flex justify-center">
+                    <a href="tel:+74953632100">
+                      <Button
+                        size="lg"
+                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
+                      >
+                        +7 495 363-21-00
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="rules" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
