@@ -101,6 +101,11 @@
     @apply bg-background text-foreground;
     font-family: "Inter", sans-serif;
     letter-spacing: -0.01em;
+    background-image: url("https://cdn.poehali.dev/files/ресепшн2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   h1,
