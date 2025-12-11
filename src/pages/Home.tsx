@@ -120,10 +120,10 @@ const Home = () => {
       
       <section id="hero" className="relative pt-16 min-h-screen flex flex-col justify-between">
 
-        <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-8 md:pt-16 flex-grow flex items-start">
-          <div className="max-w-4xl mx-auto w-full">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-8 md:pt-16 flex-grow flex items-center">
+          <div className="max-w-4xl mx-auto w-full text-center">
             <div className="w-full animate-fade-in" style={{ animationDelay: '0ms' }}>
-              <h1 className="font-black leading-tight tracking-tighter text-center">
+              <h1 className="font-black leading-tight tracking-tighter mb-6">
                 <span className="block text-3xl md:text-5xl lg:text-7xl bg-gradient-to-r from-accent via-yellow-400 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.5)] mb-2">
                   САМЫЙ ЦЕНТРАЛЬНЫЙ
                 </span>
@@ -131,12 +131,10 @@ const Home = () => {
                   ПАДЕЛ КЛУБ СТОЛИЦЫ
                 </span>
               </h1>
+              <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
+                Партийный переулок, 1к6 • Ежедневно 8:00 - 23:00
+              </p>
             </div>
-          </div>
-        </div>
-
-        <div className="container mx-auto px-4 sm:px-6 relative z-10 pb-8 md:pb-12">
-          <div className="max-w-4xl mx-auto">
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: '150ms' }}>
               <Button 
                 size="lg" 
