@@ -378,80 +378,72 @@ const Home = () => {
       <section id="rules" className="relative py-16 md:py-24">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12 animate-fade-in">
-              <div className="inline-block">
-                <h2 className="text-4xl md:text-6xl font-bold text-black mb-4 tracking-tight relative">
+            <div className="text-center mb-10 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+                <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Правила игры в Падел
-                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
-                </h2>
-              </div>
-              <p className="text-lg text-white/80 mt-6 font-light max-w-2xl mx-auto">
-                Узнайте основные правила и начните играть уже сегодня
-              </p>
+                </span>
+              </h2>
             </div>
 
-            <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
-                Основные правила
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {basicRules.map((rule, index) => (
-                  <Card
-                    key={index}
-                    className="p-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <div className="flex items-start gap-4">
-                      <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-accent/20 flex-shrink-0">
-                        <Icon name={rule.icon as any} size={24} className="text-black" />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-bold text-black mb-2">{rule.title}</h4>
-                        <p className="text-white/80 text-base leading-relaxed">{rule.description}</p>
-                      </div>
+            <div className="max-w-4xl mx-auto space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
+                  Основные правила
+                </h3>
+                <div className="space-y-6">
+                  {basicRules.map((rule, index) => (
+                    <div
+                      key={index}
+                      className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <h4 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                        {rule.title}
+                      </h4>
+                      <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                        {rule.description}
+                      </p>
                     </div>
-                  </Card>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center animate-fade-in">
-                Необходимое снаряжение
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {equipmentItems.map((item, index) => (
-                  <Card
-                    key={index}
-                    className="p-6 hover:shadow-2xl hover:scale-[1.05] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md border border-white/20"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-14 h-14 bg-accent/20 rounded-2xl mb-4">
-                        <Icon name={item.icon as any} size={28} className="text-black" />
-                      </div>
-                      <h4 className="text-xl font-bold text-black mb-2">{item.title}</h4>
-                      <p className="text-white/80 text-sm">{item.description}</p>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
+                  Необходимое снаряжение
+                </h3>
+                <div className="space-y-6">
+                  {equipmentItems.map((item, index) => (
+                    <div
+                      key={index}
+                      className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <h4 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                        {item.description}
+                      </p>
                     </div>
-                  </Card>
-                ))}
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
+                  Полезные советы
+                </h3>
+                <div className="space-y-4 animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6">
+                  {tips.map((tip, index) => (
+                    <p key={index} className="text-lg md:text-xl text-white/90 leading-relaxed">
+                      • {tip}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
-
-            <Card className="p-8 bg-white/10 backdrop-blur-md border border-white/20 animate-fade-in">
-              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4 text-center">
-                <Icon name="Lightbulb" className="inline mr-2 mb-1" size={28} />
-                Полезные советы
-              </h3>
-              <div className="space-y-3">
-                {tips.map((tip, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={20} className="text-black flex-shrink-0 mt-1" />
-                    <p className="text-white/80 text-base">{tip}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
           </div>
         </div>
       </section>
