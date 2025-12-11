@@ -288,52 +288,36 @@ const Home = () => {
       <section id="pricing" className="relative py-16 md:py-24">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16 animate-fade-in">
-              <div className="inline-block">
-                <h2 className="text-5xl md:text-7xl font-bold text-black mb-4 tracking-tight relative">
+            <div className="text-center mb-10 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+                <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                   Тарифы
-                  <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent" />
-                </h2>
-              </div>
-              <p className="text-lg text-white/80 mt-6 font-light">
-                Выберите подходящий вариант для игры и тренировок
-              </p>
+                </span>
+              </h2>
             </div>
 
-            <div className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-8 text-center animate-fade-in">
-                Аренда кортов
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {pricingCourts.map((court, index) => (
-                  <Card
-                    key={index}
-                    className={`p-6 md:p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in ${
-                      court.popular 
-                        ? 'bg-gradient-to-br from-accent/20 to-accent/10 border-2 border-accent' 
-                        : 'bg-white/10 border border-white/20'
-                    } backdrop-blur-md relative overflow-hidden`}
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    {court.popular && (
-                      <div className="absolute top-0 right-0">
-                        <div className="bg-accent text-primary text-xs font-bold px-4 py-1 transform rotate-0 shadow-lg">
-                          ПОПУЛЯРНЫЙ
+            <div className="max-w-4xl mx-auto space-y-12">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
+                  Аренда кортов
+                </h3>
+                <div className="space-y-6">
+                  {pricingCourts.map((court, index) => (
+                    <div
+                      key={index}
+                      className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <div className="flex items-center justify-between mb-4">
+                        <h4 className="text-xl md:text-2xl font-bold text-accent">
+                          {court.name}
+                        </h4>
+                        <div className="text-right">
+                          <span className="text-3xl md:text-4xl font-bold text-white">
+                            {court.price}
+                          </span>
+                          <span className="text-xl text-white/80 ml-2">₽/час</span>
                         </div>
-                      </div>
-                    )}
-                    <div className="text-center pt-4">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-2xl mb-4">
-                        <Icon name={court.icon as any} size={32} className="text-black" />
-                      </div>
-                      <h4 className="text-2xl md:text-3xl font-bold text-black mb-4">
-                        {court.name}
-                      </h4>
-                      <div className="mb-6">
-                        <span className="text-5xl md:text-6xl font-bold text-white">
-                          {court.price}
-                        </span>
-                        <span className="text-2xl text-white/80 ml-2">₽/час</span>
                       </div>
                       <Button
                         className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg py-6"
@@ -343,53 +327,48 @@ const Home = () => {
                         Забронировать
                       </Button>
                     </div>
-                  </Card>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div>
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-8 text-center animate-fade-in">
-                Тренировки
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {training.map((item, index) => (
-                  <Card
-                    key={index}
-                    className={`p-6 md:p-8 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in ${
-                      item.free 
-                        ? 'bg-gradient-to-br from-green-500/20 to-green-500/10 border-2 border-green-500' 
-                        : 'bg-white/10 border border-white/20'
-                    } backdrop-blur-md`}
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-accent/20 rounded-2xl mb-4">
-                        <Icon name={item.icon as any} size={32} className="text-black" />
-                      </div>
-                      <h4 className="text-xl md:text-2xl font-bold text-black mb-2">
-                        {item.name}
-                      </h4>
-                      {item.description && (
-                        <p className="text-white/70 mb-4 text-base">{item.description}</p>
-                      )}
-                      <div className="mb-6">
-                        {item.free ? (
-                          <span className="text-5xl md:text-6xl font-bold text-green-400">
-                            Бесплатно
-                          </span>
-                        ) : (
-                          <>
-                            <span className="text-4xl md:text-5xl font-bold text-white">
-                              {item.price}
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
+                  Тренировки
+                </h3>
+                <div className="space-y-6">
+                  {training.map((item, index) => (
+                    <div
+                      key={index}
+                      className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="flex-1">
+                          <h4 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                            {item.name}
+                          </h4>
+                          {item.description && (
+                            <p className="text-lg text-white/80">{item.description}</p>
+                          )}
+                        </div>
+                        <div className="text-right flex-shrink-0">
+                          {item.free ? (
+                            <span className="text-2xl md:text-3xl font-bold text-green-400">
+                              Бесплатно
                             </span>
-                            <span className="text-xl text-white/80 ml-2">₽</span>
-                          </>
-                        )}
+                          ) : (
+                            <>
+                              <span className="text-3xl md:text-4xl font-bold text-white">
+                                {item.price}
+                              </span>
+                              <span className="text-xl text-white/80 ml-2">₽</span>
+                            </>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </Card>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
