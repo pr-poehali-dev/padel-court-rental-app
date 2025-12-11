@@ -372,6 +372,88 @@ const Home = () => {
         </div>
       </section>
 
+      <section id="corporate" className="relative py-8 md:py-12">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-6 animate-fade-in">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+                <span className="bg-gradient-to-r from-white via-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
+                  Корпоративные мероприятия
+                </span>
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center mb-6">
+                <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-6">
+                  Организуем незабываемые корпоративные мероприятия для вашей команды
+                </p>
+                <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+                  Падел — идеальный формат для тимбилдинга. Динамичная командная игра, которая объединяет коллег и создает позитивную атмосферу.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                    Что мы предлагаем
+                  </h3>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Аренда всех 4 кортов для вашего мероприятия
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Профессиональные тренеры для обучения новичков
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Организация турниров и соревнований
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • VIP-раздевалки для комфорта команды
+                  </p>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    • Фуршет и напитки в зоне кафе
+                  </p>
+                </div>
+
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-2">
+                    Для команд от 8 до 30 человек
+                  </h3>
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    Мы адаптируем программу под размер вашей команды и уровень подготовки участников. Подходит как для опытных игроков, так и для тех, кто впервые берет ракетку в руки.
+                  </p>
+                </div>
+
+                <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4">Обсудим детали?</h3>
+                  <p className="text-lg md:text-xl text-white/90 mb-6">
+                    Свяжитесь с нами, и мы подберем идеальный формат мероприятия для вашей компании
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <a href="tel:+74953632100">
+                      <Button
+                        size="lg"
+                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
+                      >
+                        +7 495 363-21-00
+                      </Button>
+                    </a>
+                    <a href="tel:+74953633838">
+                      <Button
+                        size="lg"
+                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
+                      >
+                        +7 495 363-38-38
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="rules" className="relative py-8 md:py-12">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
