@@ -93,10 +93,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply text-foreground;
     font-family: "Inter", sans-serif;
