@@ -215,9 +215,9 @@ const Home = () => {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {advantages.map((advantage, index) => (
-                  <Card 
+                  <div 
                     key={index}
-                    className="p-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md"
+                    className="p-5 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 animate-fade-in bg-white/10 backdrop-blur-md rounded-lg"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <div className="flex items-start gap-4">
@@ -233,7 +233,7 @@ const Home = () => {
                         </p>
                       </div>
                     </div>
-                  </Card>
+                  </div>
                 ))}
               </div>
             </div>
