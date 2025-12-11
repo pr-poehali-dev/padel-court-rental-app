@@ -137,7 +137,8 @@
   }
 }
 
-* {
-  border: 0 !important;
-  border-width: 0 !important;
+@layer utilities {
+  * {
+    border-style: none !important;
+  }
 }
