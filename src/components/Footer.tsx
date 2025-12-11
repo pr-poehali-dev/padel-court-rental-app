@@ -4,7 +4,7 @@ import Icon from '@/components/ui/icon';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-4 md:py-6 border-t border-primary/10">
+    <footer className="backdrop-blur-sm bg-white/5 text-white py-4 md:py-6 border-t border-white/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
           <div className="flex flex-col items-center gap-2 md:order-2 order-1">
