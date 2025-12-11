@@ -6,7 +6,7 @@
 
 @layer base {
   * {
-    border-color: transparent !important;
+    border: none !important;
   }
 
   :root {
