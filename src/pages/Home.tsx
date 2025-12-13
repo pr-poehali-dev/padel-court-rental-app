@@ -373,13 +373,32 @@ const Home = () => {
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center mb-6">
-                <p className="text-xl md:text-2xl text-accent leading-relaxed mb-6 font-bold">
-                  Организуем незабываемые корпоративные мероприятия для вашей команды
-                </p>
-                <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-                  Падел — идеальный формат для тимбилдинга. Динамичная командная игра, которая объединяет коллег и создает позитивную атмосферу.
-                </p>
+              <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-300 mb-6">
+                <div className="relative h-64 md:h-96 overflow-hidden">
+                  <img
+                    src="https://cdn.poehali.dev/files/18 (1).jpg"
+                    alt="Ресторан клуба"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent flex items-end justify-center pb-8">
+                    <h3 className="text-2xl md:text-4xl font-black text-center px-4 leading-tight">
+                      <span className="block bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient mb-2">
+                        🎄 Встречайте Новый 2026 год у нас, 🎄
+                      </span>
+                      <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold">
+                        играя в падел!
+                      </span>
+                    </h3>
+                  </div>
+                </div>
+                <div className="p-8 text-center">
+                  <p className="text-xl md:text-2xl text-accent leading-relaxed mb-6 font-bold">
+                    Организуем незабываемые корпоративные мероприятия для вашей команды
+                  </p>
+                  <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+                    Падел — идеальный формат для тимбилдинга. Динамичная командная игра, которая объединяет коллег и создает позитивную атмосферу.
+                  </p>
+                </div>
               </div>
 
               <div className="space-y-6">
