@@ -401,19 +401,11 @@ const Home = () => {
                       
                       <div className="absolute -top-6 md:-top-7 left-0 right-0 h-0.5 md:h-1 bg-gradient-to-r from-transparent via-green-400 via-red-400 via-yellow-400 via-green-400 to-transparent animate-gradient opacity-80"></div>
                       
-                      <h3 className="text-xl md:text-4xl font-black text-center leading-tight">
-                        <span className="block mb-2 md:mb-3">
-                          <span className="relative hidden md:inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)] text-4xl">
-                            🎄
-                            <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-sm font-bold" style={{ color: '#CC0000', filter: 'brightness(1.5) drop-shadow(0 0 6px rgba(204, 0, 0, 1))' }}>★</span>
-                          </span>
-                          <span className="bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient px-1"> Встречайте Новый 2026 год у нас, </span>
-                          <span className="relative hidden md:inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)] text-4xl">
-                            🎄
-                            <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-sm font-bold" style={{ color: '#CC0000', filter: 'brightness(1.5) drop-shadow(0 0 6px rgba(204, 0, 0, 1))' }}>★</span>
-                          </span>
+                      <h3 className="text-xl md:text-5xl font-black text-center leading-tight">
+                        <span className="block mb-3 bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient">
+                          Встречайте Новый 2026 год
                         </span>
-                        <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold text-xl md:text-4xl">
+                        <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold text-xl md:text-5xl">
                           играя в падел!
                         </span>
                       </h3>
