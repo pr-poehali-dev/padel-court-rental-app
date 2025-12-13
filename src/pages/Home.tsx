@@ -403,9 +403,15 @@ const Home = () => {
                       
                       <h3 className="text-2xl md:text-4xl font-black text-center px-4 leading-tight pt-4">
                         <span className="block mb-2">
-                          <span className="text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)]">🎄</span>
+                          <span className="relative inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)]">
+                            🎄
+                            <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                          </span>
                           <span className="bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient"> Встречайте Новый 2026 год у нас, </span>
-                          <span className="text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)]">🎄</span>
+                          <span className="relative inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)]">
+                            🎄
+                            <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                          </span>
                         </span>
                         <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold">
                           играя в падел!
@@ -413,11 +419,26 @@ const Home = () => {
                       </h3>
                       
                       <div className="absolute -bottom-6 left-0 right-0 flex justify-center gap-3 md:gap-6">
-                        <span className="text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '0ms' }}>🎄</span>
-                        <span className="text-green-400 text-xl md:text-2xl animate-bounce" style={{ animationDelay: '200ms' }}>🎄</span>
-                        <span className="text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '400ms' }}>🎄</span>
-                        <span className="text-green-400 text-xl md:text-2xl animate-bounce" style={{ animationDelay: '600ms' }}>🎄</span>
-                        <span className="text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '800ms' }}>🎄</span>
+                        <span className="relative inline-block text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '0ms' }}>
+                          🎄
+                          <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs md:text-sm" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                        </span>
+                        <span className="relative inline-block text-green-400 text-xl md:text-2xl animate-bounce" style={{ animationDelay: '200ms' }}>
+                          🎄
+                          <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 text-[10px] md:text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                        </span>
+                        <span className="relative inline-block text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '400ms' }}>
+                          🎄
+                          <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs md:text-sm" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                        </span>
+                        <span className="relative inline-block text-green-400 text-xl md:text-2xl animate-bounce" style={{ animationDelay: '600ms' }}>
+                          🎄
+                          <span className="absolute -top-0.5 left-1/2 -translate-x-1/2 text-[10px] md:text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                        </span>
+                        <span className="relative inline-block text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '800ms' }}>
+                          🎄
+                          <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs md:text-sm" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                        </span>
                       </div>
                     </div>
                   </div>
