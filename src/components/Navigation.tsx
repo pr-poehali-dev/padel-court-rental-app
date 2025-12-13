@@ -62,7 +62,7 @@ const Navigation = () => {
             alt="ЗВИ Padel Club" 
             className="w-12 h-12 object-contain rounded-full"
           />
-          <span className="text-white font-bold text-xl font-['Montserrat']">Padel Club</span>
+          <span className="text-white font-bold text-xl font-['Montserrat']">ZVI Padel club</span>
         </button>
 
         <div className="hidden md:flex items-center space-x-1">
