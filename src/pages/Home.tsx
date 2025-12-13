@@ -139,7 +139,7 @@ const Home = () => {
               <Button 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-4 transition-all hover:scale-105"
-                onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
+                onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule&type=rent&club_id=53c417e2-c5db-11f0-9578-00505683cb0f')}
               >
                 Забронировать корт
               </Button>
