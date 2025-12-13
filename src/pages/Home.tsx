@@ -403,14 +403,14 @@ const Home = () => {
                       
                       <h3 className="text-xl md:text-4xl font-black text-center leading-tight">
                         <span className="block mb-2 md:mb-3">
-                          <span className="relative inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)] text-lg md:text-4xl">
+                          <span className="relative hidden md:inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)] text-4xl">
                             🎄
-                            <span className="absolute -top-0.5 md:-top-1 left-1/2 -translate-x-1/2 text-[10px] md:text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                            <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
                           </span>
                           <span className="bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient px-1"> Встречайте Новый 2026 год у нас, </span>
-                          <span className="relative inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)] text-lg md:text-4xl">
+                          <span className="relative hidden md:inline-block text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)] text-4xl">
                             🎄
-                            <span className="absolute -top-0.5 md:-top-1 left-1/2 -translate-x-1/2 text-[10px] md:text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
+                            <span className="absolute -top-1 left-1/2 -translate-x-1/2 text-xs" style={{ color: '#DC143C', filter: 'brightness(1.2) drop-shadow(0 0 4px rgba(220, 20, 60, 0.8))' }}>★</span>
                           </span>
                         </span>
                         <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold text-xl md:text-4xl">
