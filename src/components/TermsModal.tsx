@@ -61,8 +61,7 @@ const TermsModal = ({ open, onAccept, onDecline }: TermsModalProps) => {
             <section>
               <h3 className="font-semibold mb-2">3. Порядок бронирования и оплаты</h3>
               <p className="text-muted-foreground mb-2">
-                3.1. Бронирование осуществляется через сайт zvipadel.ru, по телефону +7 (495) 363-21-00 
-                или +7 (495) 363-38-38.
+                3.1. Бронирование осуществляется через сайт zvipadel.ru или по телефону +7 (495) 363-38-38.
               </p>
               <p className="text-muted-foreground mb-2">
                 3.2. Оплата услуг производится онлайн на сайте или на месте в клубе наличными, банковской картой 
@@ -160,7 +159,7 @@ const TermsModal = ({ open, onAccept, onDecline }: TermsModalProps) => {
               </p>
               <p className="text-muted-foreground mb-1">ОГРН: 1027700002351</p>
               <p className="text-muted-foreground mb-1">Адрес: г. Москва, Партийный переулок, дом 1, корпус 6, 115093</p>
-              <p className="text-muted-foreground mb-1">Телефон: +7 (495) 363-21-00, +7 (495) 363-38-38</p>
+              <p className="text-muted-foreground mb-1">Телефон: +7 (495) 363-38-38</p>
               <p className="text-muted-foreground">Сайт: zvipadel.ru</p>
             </section>
 

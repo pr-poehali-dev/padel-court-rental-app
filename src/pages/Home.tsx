@@ -109,7 +109,7 @@ const Home = () => {
   ];
 
   const contactInfo = [
-    { icon: 'Phone', title: 'Телефоны', items: [{ content: '+7 495 363-21-00', link: 'tel:+74953632100' }, { content: '+7 495 363-38-38', link: 'tel:+74953633838' }] },
+    { icon: 'Phone', title: 'Телефоны', items: [{ content: '+7 495 363-38-38', link: 'tel:+74953633838' }] },
     { icon: 'MapPin', title: 'Адрес', items: [{ content: 'г. Москва, Партийный пер., дом 1 корп.6', link: 'https://yandex.ru/maps/?text=Москва, Партийный пер., дом 1 корп.6' }, { content: 'м. Павелецкая', link: null }] },
     { icon: 'Clock', title: 'Режим работы', items: [{ content: 'Ежедневно 7:00 - 23:00', link: null }] }
   ];
@@ -490,14 +490,6 @@ const Home = () => {
                     Свяжитесь с нами, и мы подберем идеальный формат мероприятия для вашей компании
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="tel:+74953632100">
-                      <Button
-                        size="lg"
-                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
-                      >
-                        +7 495 363-21-00
-                      </Button>
-                    </a>
                     <a href="tel:+74953633838">
                       <Button
                         size="lg"
@@ -612,14 +604,6 @@ const Home = () => {
                     Позвоните нам, и мы подберем удобное время и формат тренировки
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="tel:+74953632100">
-                      <Button
-                        size="lg"
-                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6 w-full sm:w-auto"
-                      >
-                        +7 495 363-21-00
-                      </Button>
-                    </a>
                     <a href="https://t.me/ZVI_Padel_club_bot" target="_blank" rel="noopener noreferrer">
                       <Button
                         size="lg"
@@ -791,15 +775,6 @@ const Home = () => {
                   Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="tel:+74953632100">
-                    <Button
-                      size="lg"
-                      className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
-                    >
-                      <Icon name="Phone" className="mr-2" size={20} />
-                      +7 495 363-21-00
-                    </Button>
-                  </a>
                   <a href="tel:+74953633838">
                     <Button
                       size="lg"

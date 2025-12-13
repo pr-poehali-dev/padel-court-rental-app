@@ -10,9 +10,8 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: 'Phone',
-      title: 'Телефоны',
+      title: 'Телефон',
       items: [
-        { content: '+7 495 363-21-00', link: 'tel:+74953632100' },
         { content: '+7 495 363-38-38', link: 'tel:+74953633838' }
       ]
     },
@@ -118,15 +117,6 @@ const Contact = () => {
                 Позвоните нам по любому из указанных номеров, и мы с радостью ответим на все ваши вопросы о бронировании, тарифах и услугах клуба
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
-                <a href="tel:+74953632100">
-                  <Button
-                    size="lg"
-                    className="bg-accent hover:bg-accent/90 text-primary font-semibold text-sm px-6 py-5"
-                  >
-                    <Icon name="Phone" className="mr-2" size={18} />
-                    +7 495 363-21-00
-                  </Button>
-                </a>
                 <a href="tel:+74953633838">
                   <Button
                     size="lg"

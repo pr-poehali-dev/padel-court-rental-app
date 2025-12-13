@@ -8,16 +8,6 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
           <div className="flex flex-col items-center gap-2 md:order-2 order-1">
-            <a href="tel:+74953632100" className="w-full">
-              <Button
-                variant="outline"
-                size="sm"
-                className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs px-4 py-2"
-              >
-                <Icon name="Phone" className="mr-1.5" size={14} />
-                +7 495 363-21-00
-              </Button>
-            </a>
             <a href="tel:+74953633838" className="w-full">
               <Button
                 variant="outline"
@@ -29,7 +19,7 @@ const Footer = () => {
               </Button>
             </a>
             <div className="flex gap-2 w-full mt-1">
-              <a href="https://wa.me/74953632100" target="_blank" rel="noopener noreferrer" className="flex-1">
+              <a href="https://wa.me/74953633838" target="_blank" rel="noopener noreferrer" className="flex-1">
                 <Button
                   variant="outline"
                   size="sm"
