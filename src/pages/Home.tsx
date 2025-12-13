@@ -384,9 +384,9 @@ const Home = () => {
                     <div className="relative">
                       <div className="absolute -top-8 left-0 right-0 flex justify-center gap-2 md:gap-4 animate-pulse">
                         <span className="text-2xl md:text-4xl">🎄</span>
-                        <span className="text-xl md:text-3xl">✨</span>
+                        <span className="text-xl md:text-3xl text-red-500 drop-shadow-[0_2px_8px_rgba(239,68,68,0.8)]">⭐</span>
                         <span className="text-2xl md:text-4xl">🎄</span>
-                        <span className="text-xl md:text-3xl">✨</span>
+                        <span className="text-xl md:text-3xl text-red-500 drop-shadow-[0_2px_8px_rgba(239,68,68,0.8)]">⭐</span>
                         <span className="text-2xl md:text-4xl">🎄</span>
                       </div>
                       
