@@ -60,6 +60,17 @@ const Footer = () => {
           </div>
 
         </div>
+        
+        <div className="text-center mt-4 pt-4 border-t border-white/10">
+          <a 
+            href="https://poehali.dev" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/50 hover:text-white/80 text-xs transition-colors inline-flex items-center gap-1"
+          >
+            Сделано на <span className="font-semibold">poehali.dev</span>
+          </a>
+        </div>
       </div>
     </footer>
   );
