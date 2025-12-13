@@ -1,95 +1,64 @@
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <footer className="backdrop-blur-sm bg-white/5 text-white py-4 md:py-6 border-t border-white/10">
+    <footer className="backdrop-blur-sm bg-white/5 text-white py-4 border-t border-white/10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
-          <div className="flex flex-col items-center gap-2 md:order-2 order-1">
-            <a href="tel:+74953633838" className="w-full">
-              <Button
-                variant="outline"
-                size="sm"
-                className="w-full bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-xs px-4 py-2"
-              >
-                <Icon name="Phone" className="mr-1.5" size={14} />
-                +7 495 363-38-38
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <div className="text-center md:text-left order-1">
+            <p className="text-white/90 text-xs font-semibold">АО «ЗВИ»</p>
+            <p className="text-white/70 text-xs">ОГРН 1027700002351 | ИНН 7725008610</p>
+            <p className="text-white/70 text-xs">115093, Москва, Партийный пер. д.1</p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 order-2">
+            <button onClick={() => scrollToSection('hero')} className="text-white/70 hover:text-white text-xs transition-colors">
+              Главная
+            </button>
+            <button onClick={() => scrollToSection('about')} className="text-white/70 hover:text-white text-xs transition-colors">
+              О клубе
+            </button>
+            <button onClick={() => scrollToSection('courts')} className="text-white/70 hover:text-white text-xs transition-colors">
+              Корты
+            </button>
+            <button onClick={() => scrollToSection('pricing')} className="text-white/70 hover:text-white text-xs transition-colors">
+              Тренировки
+            </button>
+            <button onClick={() => scrollToSection('rules')} className="text-white/70 hover:text-white text-xs transition-colors">
+              Правила
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="text-white/70 hover:text-white text-xs transition-colors">
+              Контакты
+            </button>
+          </div>
+
+          <div className="flex gap-2 order-3">
+            <a href="tel:+74953633838">
+              <Button variant="outline" size="sm" className="bg-white/10 hover:bg-white/20 text-white border-white/30 text-xs px-3 py-2">
+                <Icon name="Phone" size={14} />
               </Button>
             </a>
-            <div className="flex gap-2 w-full mt-1">
-              <a href="https://wa.me/74953633838" target="_blank" rel="noopener noreferrer" className="flex-1">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-green-500/20 hover:bg-green-500/30 text-white border-green-500/50 backdrop-blur-sm text-xs px-3 py-2"
-                >
-                  <Icon name="MessageCircle" className="mr-1" size={14} />
-                  WhatsApp
-                </Button>
-              </a>
-              <a href="https://t.me/zvi_padel" target="_blank" rel="noopener noreferrer" className="flex-1">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-blue-500/20 hover:bg-blue-500/30 text-white border-blue-500/50 backdrop-blur-sm text-xs px-3 py-2"
-                >
-                  <Icon name="Send" className="mr-1" size={14} />
-                  Telegram
-                </Button>
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center md:items-start gap-2 w-full md:w-auto md:order-1 order-2">
-            <div className="text-center md:text-left">
-              <p className="text-white/90 text-xs md:text-sm font-semibold">
-                АО «ЗВИ»
-              </p>
-              <p className="text-white/70 text-xs mt-0.5">
-                ОГРН 1027700002351
-              </p>
-              <p className="text-white/70 text-xs mt-0.5">
-                ИНН 7725008610 | КПП 772501001
-              </p>
-              <p className="text-white/70 text-xs mt-0.5">
-                115093, Москва, Партийный пер. д.1
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-3 pt-3 border-t border-white/10 flex flex-col gap-3">
-          <div className="flex flex-row items-center justify-center gap-3 md:gap-4 text-center flex-wrap">
-            <Link to="/" className="text-white/70 hover:text-white text-xs transition-colors">
-              Главная
-            </Link>
-            <Link to="/courts" className="text-white/70 hover:text-white text-xs transition-colors">
-              Корты
-            </Link>
-            <Link to="/pricing" className="text-white/70 hover:text-white text-xs transition-colors">
-              Тарифы
-            </Link>
-            <Link to="/about" className="text-white/70 hover:text-white text-xs transition-colors">
-              О клубе
-            </Link>
-            <Link to="/rules" className="text-white/70 hover:text-white text-xs transition-colors">
-              Правила
-            </Link>
-            <Link to="/terms" className="text-white/70 hover:text-white text-xs transition-colors">
-              Оферта
-            </Link>
-            <Link to="/contact" className="text-white/70 hover:text-white text-xs transition-colors">
-              Контакты
-            </Link>
-          </div>
-          <div className="text-center">
-            <a href="https://mosoblconnect.ru/business" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-white/50 hover:text-white/80 text-xs transition-colors">
-              <Icon name="Code" size={12} />
-              Разработка сайта
+            <a href="https://wa.me/74953633838" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="bg-green-500/20 hover:bg-green-500/30 text-white border-green-500/50 text-xs px-3 py-2">
+                <Icon name="MessageCircle" size={14} />
+              </Button>
+            </a>
+            <a href="https://t.me/zvi_padel" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="sm" className="bg-blue-500/20 hover:bg-blue-500/30 text-white border-blue-500/50 text-xs px-3 py-2">
+                <Icon name="Send" size={14} />
+              </Button>
             </a>
           </div>
+
         </div>
       </div>
     </footer>
