@@ -110,8 +110,8 @@ const Home = () => {
 
   const contactInfo = [
     { icon: 'Phone', title: 'Телефоны', items: [{ content: '+7 495 363-21-00', link: 'tel:+74953632100' }, { content: '+7 495 363-38-38', link: 'tel:+74953633838' }] },
-    { icon: 'MapPin', title: 'Адрес', items: [{ content: 'г. Москва, Партийный пер., дом 1 корп.6', link: 'https://yandex.ru/maps/?text=Москва, Партийный пер., дом 1 корп.6' }] },
-    { icon: 'Clock', title: 'Режим работы', items: [{ content: 'Ежедневно 8:00 - 23:00', link: null }] }
+    { icon: 'MapPin', title: 'Адрес', items: [{ content: 'г. Москва, Партийный пер., дом 1 корп.6', link: 'https://yandex.ru/maps/?text=Москва, Партийный пер., дом 1 корп.6' }, { content: 'м. Павелецкая', link: null }] },
+    { icon: 'Clock', title: 'Режим работы', items: [{ content: 'Ежедневно 7:00 - 23:00', link: null }] }
   ];
 
   return (
@@ -694,7 +694,7 @@ const Home = () => {
                               {item.content}
                             </a>
                           ) : (
-                            <p className="text-lg md:text-xl text-white/90">{item.content}</p>
+                            <p className="text-lg md:text-xl text-white/90 text-center md:text-left">{item.content}</p>
                           )}
                         </div>
                       ))}
