@@ -393,8 +393,10 @@ const Home = () => {
                       <div className="absolute -top-4 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-400 via-red-400 via-yellow-400 via-green-400 to-transparent animate-gradient opacity-80"></div>
                       
                       <h3 className="text-2xl md:text-4xl font-black text-center px-4 leading-tight pt-4">
-                        <span className="block bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient mb-2">
-                          🎄 Встречайте Новый 2026 год у нас, 🎄
+                        <span className="block mb-2">
+                          <span className="text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)]">🎄</span>
+                          <span className="bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient"> Встречайте Новый 2026 год у нас, </span>
+                          <span className="text-green-400 drop-shadow-[0_2px_10px_rgba(74,222,128,0.8)]">🎄</span>
                         </span>
                         <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold">
                           играя в падел!
