@@ -303,16 +303,13 @@ const Home = () => {
             <div className="text-center mb-6 animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                 <span className="bg-gradient-to-r from-white via-accent via-yellow-300 to-accent to-white bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)] animate-gradient">
-                  Тарифы
+                  Тренировки
                 </span>
               </h2>
             </div>
 
             <div className="max-w-4xl mx-auto space-y-8">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
-                  Тренировки
-                </h3>
                 <div className="space-y-6">
                   {training.map((item, index) => (
                     <div
