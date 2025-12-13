@@ -380,7 +380,7 @@ const Home = () => {
                     alt="Ресторан клуба"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/70 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/70 flex items-start justify-center pt-8 md:pt-12">
                     <div className="relative">
                       <div className="absolute -top-8 left-0 right-0 flex justify-center gap-2 md:gap-4 animate-pulse">
                         <span className="text-2xl md:text-4xl">🎄</span>
