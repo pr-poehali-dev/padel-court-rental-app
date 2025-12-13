@@ -569,13 +569,22 @@ const Home = () => {
                   <p className="text-lg md:text-xl text-white/90 mb-6">
                     Позвоните нам, и мы подберем удобное время и формат тренировки
                   </p>
-                  <div className="flex justify-center">
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="tel:+74953632100">
                       <Button
                         size="lg"
-                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6"
+                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6 w-full sm:w-auto"
                       >
                         +7 495 363-21-00
+                      </Button>
+                    </a>
+                    <a href="https://t.me/ZVI_Padel_club_bot" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="lg"
+                        className="bg-accent hover:bg-accent/90 text-primary font-semibold text-base px-8 py-6 w-full sm:w-auto"
+                      >
+                        <Icon name="Send" className="mr-2" size={18} />
+                        Индивидуальные тренировки
                       </Button>
                     </a>
                   </div>
