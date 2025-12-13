@@ -61,13 +61,13 @@ const Footer = () => {
 
         </div>
         
-        <div className="text-center mt-4 pt-4 border-t border-white/10">
+        <div className="text-center mt-2 pt-2 border-t border-white/10">
           <a 
             href="https://mosoblconnect.ru/business" 
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="sm" className="bg-white/10 hover:bg-white/20 text-white border-white/30 text-xs">
+            <Button variant="outline" size="sm" className="bg-white/10 hover:bg-white/20 text-white border-white/30 text-xs px-3 py-1">
               Разработка сайта
             </Button>
           </a>
