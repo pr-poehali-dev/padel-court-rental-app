@@ -45,7 +45,7 @@ const Navigation = () => {
     { section: 'hero', label: 'Главная', icon: 'Home' },
     { section: 'about', label: 'О клубе', icon: 'Info' },
     { section: 'courts', label: 'Корты', icon: 'Grid3x3' },
-    { section: 'pricing', label: 'Тарифы', icon: 'DollarSign' },
+    { section: 'pricing', label: 'Тренировки', icon: 'DollarSign' },
     { section: 'rules', label: 'Правила', icon: 'BookOpen' },
     { section: 'contact', label: 'Контакты', icon: 'Phone' },
   ];
