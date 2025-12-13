@@ -71,8 +71,8 @@ const Home = () => {
   ];
 
   const courts = [
-    { id: 1, name: 'PANORAMIC', type: 'Крытый', features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'], image: 'https://cdn.poehali.dev/files/29 (1).jpg' },
-    { id: 2, name: 'ULTRA PANORAMIC', type: 'Крытый', features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'], image: 'https://cdn.poehali.dev/files/зал1.jpg' }
+    { id: 1, name: 'PANORAMIC', type: 'Крытый', price: 6000, features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'], image: 'https://cdn.poehali.dev/files/29 (1).jpg' },
+    { id: 2, name: 'ULTRA PANORAMIC', type: 'Крытый', price: 7000, features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'], image: 'https://cdn.poehali.dev/files/зал1.jpg' }
   ];
 
   const pricingCourts = [
@@ -269,7 +269,13 @@ const Home = () => {
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-accent mb-4">{court.name}</h3>
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl md:text-2xl font-bold text-accent">{court.name}</h3>
+                    <div className="text-right">
+                      <span className="text-3xl md:text-4xl font-bold text-white">{court.price}</span>
+                      <span className="text-xl text-white/80 ml-2">₽/час</span>
+                    </div>
+                  </div>
                   <div className="space-y-2 mb-6">
                     {court.features.map((feature, idx) => (
                       <p key={idx} className="text-lg md:text-xl text-white/90 leading-relaxed">
@@ -303,40 +309,6 @@ const Home = () => {
             </div>
 
             <div className="max-w-4xl mx-auto space-y-8">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
-                  Аренда кортов
-                </h3>
-                <div className="space-y-6">
-                  {pricingCourts.map((court, index) => (
-                    <div
-                      key={index}
-                      className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <div className="flex items-center justify-between mb-4">
-                        <h4 className="text-xl md:text-2xl font-bold text-accent">
-                          {court.name}
-                        </h4>
-                        <div className="text-right">
-                          <span className="text-3xl md:text-4xl font-bold text-white">
-                            {court.price}
-                          </span>
-                          <span className="text-xl text-white/80 ml-2">₽/час</span>
-                        </div>
-                      </div>
-                      <Button
-                        className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold text-lg py-6"
-                        onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule&type=rent&club_id=53c417e2-c5db-11f0-9578-00505683cb0f')}
-                      >
-                        <Icon name="Calendar" className="mr-2" size={20} />
-                        Забронировать
-                      </Button>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center animate-fade-in">
                   Тренировки
