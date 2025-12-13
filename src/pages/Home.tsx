@@ -380,15 +380,35 @@ const Home = () => {
                     alt="Ресторан клуба"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-transparent flex items-end justify-center pb-8">
-                    <h3 className="text-2xl md:text-4xl font-black text-center px-4 leading-tight">
-                      <span className="block bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient mb-2">
-                        🎄 Встречайте Новый 2026 год у нас, 🎄
-                      </span>
-                      <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold">
-                        играя в падел!
-                      </span>
-                    </h3>
+                  <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/70 flex items-center justify-center">
+                    <div className="relative">
+                      <div className="absolute -top-8 left-0 right-0 flex justify-center gap-2 md:gap-4 animate-pulse">
+                        <span className="text-2xl md:text-4xl">🎄</span>
+                        <span className="text-xl md:text-3xl">✨</span>
+                        <span className="text-2xl md:text-4xl">🎄</span>
+                        <span className="text-xl md:text-3xl">✨</span>
+                        <span className="text-2xl md:text-4xl">🎄</span>
+                      </div>
+                      
+                      <div className="absolute -top-4 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-green-400 via-red-400 via-yellow-400 via-green-400 to-transparent animate-gradient opacity-80"></div>
+                      
+                      <h3 className="text-2xl md:text-4xl font-black text-center px-4 leading-tight pt-4">
+                        <span className="block bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient mb-2">
+                          🎄 Встречайте Новый 2026 год у нас, 🎄
+                        </span>
+                        <span className="block text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] font-extrabold">
+                          играя в падел!
+                        </span>
+                      </h3>
+                      
+                      <div className="absolute -bottom-6 left-0 right-0 flex justify-center gap-3 md:gap-6">
+                        <span className="text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '0ms' }}>🎄</span>
+                        <span className="text-green-400 text-xl md:text-2xl animate-bounce" style={{ animationDelay: '200ms' }}>🎄</span>
+                        <span className="text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '400ms' }}>🎄</span>
+                        <span className="text-green-400 text-xl md:text-2xl animate-bounce" style={{ animationDelay: '600ms' }}>🎄</span>
+                        <span className="text-green-400 text-2xl md:text-3xl animate-bounce" style={{ animationDelay: '800ms' }}>🎄</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="p-8 text-center">
