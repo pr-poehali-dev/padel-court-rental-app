@@ -381,6 +381,53 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/50 to-primary/75 flex items-start md:items-center justify-center px-4 pt-16 md:pt-0">
+                    <style>{`
+                      @keyframes snowfall {
+                        0% { transform: translateY(-10px) translateX(0); opacity: 0; }
+                        10% { opacity: 1; }
+                        90% { opacity: 1; }
+                        100% { transform: translateY(400px) translateX(50px); opacity: 0; }
+                      }
+                      @keyframes text-shimmer {
+                        0% { background-position: 0% 50%; }
+                        50% { background-position: 100% 50%; }
+                        100% { background-position: 0% 50%; }
+                      }
+                      .snowflake {
+                        position: absolute;
+                        top: -10px;
+                        color: white;
+                        font-size: 1rem;
+                        opacity: 0.8;
+                        animation: snowfall linear infinite;
+                        pointer-events: none;
+                      }
+                      .animated-text {
+                        background: linear-gradient(90deg, #DAA520 0%, #FFD700 25%, #FFFFFF 50%, #FFD700 75%, #DAA520 100%);
+                        background-size: 200% auto;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        animation: text-shimmer 3s ease-in-out infinite;
+                      }
+                    `}</style>
+                    
+                    {/* Падающие снежинки */}
+                    {[...Array(15)].map((_, i) => (
+                      <span 
+                        key={i}
+                        className="snowflake"
+                        style={{
+                          left: `${Math.random() * 100}%`,
+                          animationDuration: `${5 + Math.random() * 5}s`,
+                          animationDelay: `${Math.random() * 5}s`,
+                          fontSize: `${0.8 + Math.random() * 0.8}rem`
+                        }}
+                      >
+                        ❄
+                      </span>
+                    ))}
+                    
                     <div className="relative w-full max-w-2xl">
                       <div className="absolute -top-10 md:-top-12 left-0 right-0 flex justify-center gap-2 md:gap-4 animate-pulse">
                         <span className="relative inline-block text-xl md:text-4xl">
@@ -402,7 +449,7 @@ const Home = () => {
                       <div className="absolute -top-6 md:-top-7 left-0 right-0 h-0.5 md:h-1 bg-gradient-to-r from-transparent via-green-400 via-red-400 via-yellow-400 via-green-400 to-transparent animate-gradient opacity-80"></div>
                       
                       <h3 className="text-xl md:text-5xl font-black text-center leading-tight">
-                        <span className="bg-gradient-to-r from-accent via-yellow-300 to-accent bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(218,165,32,0.8)] animate-gradient">
+                        <span className="animated-text drop-shadow-[0_3px_15px_rgba(255,255,255,0.9)]">
                           Встречайте Новый 2026 год играя в падел!
                         </span>
                       </h3>
