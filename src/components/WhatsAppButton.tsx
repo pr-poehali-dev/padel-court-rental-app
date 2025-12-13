@@ -31,7 +31,7 @@ const WhatsAppButton = () => {
         href={telegramUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-20 right-20 z-40 flex items-center justify-center w-12 h-12 bg-[#0088cc]/40 hover:bg-[#0088cc]/70 backdrop-blur-md rounded-full shadow-xl transition-all hover:scale-110"
+        className="fixed bottom-36 right-6 z-40 flex items-center justify-center w-12 h-12 bg-[#0088cc]/40 hover:bg-[#0088cc]/70 backdrop-blur-md rounded-full shadow-xl transition-all hover:scale-110"
         aria-label="Написать в Telegram"
         style={{
           animation: 'bounce-gentle 3s ease-in-out infinite',
