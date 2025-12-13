@@ -384,9 +384,13 @@ const Home = () => {
                     <div className="relative">
                       <div className="absolute -top-8 left-0 right-0 flex justify-center gap-2 md:gap-4 animate-pulse">
                         <span className="text-2xl md:text-4xl">🎄</span>
-                        <span className="text-xl md:text-3xl" style={{ color: '#CC0000', filter: 'drop-shadow(0 2px 8px rgba(204, 0, 0, 0.9))' }}>⭐</span>
+                        <svg className="w-6 h-6 md:w-8 md:h-8" viewBox="0 0 24 24" fill="#DC143C" style={{ filter: 'drop-shadow(0 2px 8px rgba(220, 20, 60, 0.9))' }}>
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
                         <span className="text-2xl md:text-4xl">🎄</span>
-                        <span className="text-xl md:text-3xl" style={{ color: '#CC0000', filter: 'drop-shadow(0 2px 8px rgba(204, 0, 0, 0.9))' }}>⭐</span>
+                        <svg className="w-6 h-6 md:w-8 md:h-8" viewBox="0 0 24 24" fill="#DC143C" style={{ filter: 'drop-shadow(0 2px 8px rgba(220, 20, 60, 0.9))' }}>
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
                         <span className="text-2xl md:text-4xl">🎄</span>
                       </div>
                       
