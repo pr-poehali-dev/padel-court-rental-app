@@ -58,9 +58,9 @@ const Navigation = () => {
           className="flex items-center space-x-2 cursor-pointer"
         >
           <img 
-            src="https://cdn.poehali.dev/files/лог.png" 
+            src="https://cdn.poehali.dev/files/ЛОГО.png" 
             alt="ЗВИ Padel Club" 
-            className="w-12 h-12 object-contain rounded-full"
+            className="w-12 h-12 object-contain"
           />
           <span className="text-white font-bold text-xl font-['Montserrat']">ZVI Padel club</span>
         </button>
