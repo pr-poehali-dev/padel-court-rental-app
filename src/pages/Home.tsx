@@ -508,14 +508,15 @@ const Home = () => {
                 </div>
 
                 <div className="text-center my-8 animate-fade-in">
-                  <Button 
-                    size="lg" 
-                    className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105"
-                    onClick={() => handleBookingClick('https://www.fitness1c.ru/schedule_new/140c8d1f-aef1-42dc-943d-2f7e06d636a2#page=schedule')}
-                  >
-                    <Icon name="Calendar" className="mr-2" size={20} />
-                    Записаться на тренировку
-                  </Button>
+                  <a href="https://t.me/ZVI_Padel_club_bot" target="_blank" rel="noopener noreferrer">
+                    <Button 
+                      size="lg" 
+                      className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg px-8 py-5 transition-all hover:scale-105"
+                    >
+                      <Icon name="Calendar" className="mr-2" size={20} />
+                      Записаться на тренировку
+                    </Button>
+                  </a>
                 </div>
 
                 <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300">
