@@ -454,7 +454,7 @@ const Home = () => {
                         </span>
                       </h3>
                       
-                      <div className="absolute -bottom-8 md:-bottom-10 left-0 right-0 flex justify-center gap-2 md:gap-6">
+                      <div className="absolute -bottom-16 md:-bottom-20 left-0 right-0 flex justify-center gap-2 md:gap-6">
                         <span className="relative inline-block text-green-400 text-xl md:text-3xl animate-bounce" style={{ animationDelay: '0ms' }}>
                           🎄
                           <span className="absolute -top-0.5 md:-top-1 left-1/2 -translate-x-1/2 text-xs md:text-base font-bold" style={{ color: '#CC0000', filter: 'brightness(1.5) drop-shadow(0 0 6px rgba(204, 0, 0, 1))' }}>★</span>
