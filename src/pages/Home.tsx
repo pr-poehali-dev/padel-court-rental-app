@@ -148,7 +148,6 @@ const Home = () => {
                   size="lg" 
                   className="bg-white hover:bg-white/90 text-primary font-semibold text-base md:text-xl px-6 md:px-8 py-4 transition-all hover:scale-105 w-full"
                 >
-                  <Icon name="User" className="mr-2" size={18} />
                   Индивидуальные тренировки
                 </Button>
               </a>
