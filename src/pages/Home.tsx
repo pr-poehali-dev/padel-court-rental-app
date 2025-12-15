@@ -132,7 +132,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
-                Партийный переулок, 1к6 • Ежедневно 7:00 - 23:00
+                м. Павелецкая • Партийный переулок, 1к6 • Ежедневно 7:00 - 23:00
               </p>
             </div>
             <div className="flex justify-center animate-fade-in" style={{ animationDelay: '150ms' }}>
