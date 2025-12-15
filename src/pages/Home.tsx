@@ -135,7 +135,7 @@ const Home = () => {
                 м. Павелецкая • Партийный переулок, 1к6 • Ежедневно 7:00 - 23:00
               </p>
             </div>
-            <div className="flex justify-center animate-fade-in" style={{ animationDelay: '150ms' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '150ms' }}>
               <Button 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-primary font-semibold text-lg md:text-xl px-8 py-4 transition-all hover:scale-105"
@@ -143,6 +143,15 @@ const Home = () => {
               >
                 Забронировать корт
               </Button>
+              <a href="https://t.me/ZVI_Padel_club_bot" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="bg-white hover:bg-white/90 text-primary font-semibold text-lg md:text-xl px-8 py-4 transition-all hover:scale-105"
+                >
+                  <Icon name="User" className="mr-2" size={20} />
+                  Индивидуальные тренировки
+                </Button>
+              </a>
             </div>
           </div>
         </div>
