@@ -752,20 +752,20 @@ const Home = () => {
                     <h3 className="text-xl md:text-2xl font-bold text-accent mb-3">
                       {info.title}
                     </h3>
-                    <div className="space-y-2">
+                    <div className="space-y-2 text-center md:text-left">
                       {info.items.map((item, idx) => (
                         <div key={idx}>
                           {item.link ? (
                             <a
                               href={item.link}
-                              className="text-lg md:text-xl text-white/90 hover:text-white transition-colors"
+                              className="text-lg md:text-xl text-white/90 hover:text-white transition-colors block"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               {item.content}
                             </a>
                           ) : (
-                            <p className="text-lg md:text-xl text-white/90 text-center md:text-left">{item.content}</p>
+                            <p className="text-lg md:text-xl text-white/90">{item.content}</p>
                           )}
                         </div>
                       ))}
