@@ -314,6 +314,7 @@ const Home = () => {
                   Тренировки
                 </span>
               </h2>
+              <p className="text-lg text-white/70 mt-3">корт и инвентарь включены</p>
             </div>
 
             <div className="max-w-4xl mx-auto space-y-8">
