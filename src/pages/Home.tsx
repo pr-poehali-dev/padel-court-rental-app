@@ -640,9 +640,6 @@ const Home = () => {
                   <p className="text-lg md:text-xl text-white/90 leading-relaxed">
                     • Современные методики обучения
                   </p>
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                    • Видеоанализ техники игры
-                  </p>
                 </div>
 
                 <div className="animate-fade-in backdrop-blur-sm bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 text-center">
