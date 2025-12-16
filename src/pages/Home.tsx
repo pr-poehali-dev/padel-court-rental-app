@@ -314,7 +314,7 @@ const Home = () => {
                   Тренировки
                 </span>
               </h2>
-              <p className="text-xl md:text-2xl font-semibold text-accent mt-4 drop-shadow-[0_2px_8px_rgba(218,165,32,0.4)]">
+              <p className="text-xl md:text-2xl font-semibold text-white mt-4 drop-shadow-[0_2px_8px_rgba(255,255,255,0.3)]">
                 корт и инвентарь включены
               </p>
             </div>
