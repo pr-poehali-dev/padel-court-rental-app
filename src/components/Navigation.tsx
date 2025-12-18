@@ -36,7 +36,7 @@ const Navigation = () => {
           className="flex items-center space-x-2 cursor-pointer"
         >
           <img 
-            src="https://cdn.poehali.dev/files/1343b45f-5684-4263-9a69-79495a0cb5f0.png" 
+            src="https://cdn.poehali.dev/files/ЙЦУ.png" 
             alt="ЗВИ Padel Club" 
             className="w-12 h-12 object-contain"
           />
