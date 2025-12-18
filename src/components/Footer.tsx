@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -39,6 +40,9 @@ const Footer = () => {
             <button onClick={() => scrollToSection('contact')} className="text-white/70 hover:text-white text-xs transition-colors">
               Контакты
             </button>
+            <Link to="/terms" className="text-white/70 hover:text-white text-xs transition-colors">
+              Оферта
+            </Link>
           </div>
 
           <div className="flex gap-2 order-3">
