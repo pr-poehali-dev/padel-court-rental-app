@@ -208,11 +208,6 @@ const Rules = () => {
 
       <WhatsAppButton />
       <Footer />
-      <TermsModal 
-        open={showTerms} 
-        onAccept={handleTermsAccept} 
-        onDecline={handleTermsDecline} 
-      />
     </div>
   );
 };
