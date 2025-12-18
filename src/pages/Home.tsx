@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -6,34 +5,11 @@ import Icon from '@/components/ui/icon';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import TermsModal from '@/components/TermsModal';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Home = () => {
-  const [showTerms, setShowTerms] = useState(false);
-  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
-
   const handleBookingClick = (url: string) => {
-    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
-    if (termsAccepted) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    } else {
-      setPendingUrl(url);
-      setShowTerms(true);
-    }
-  };
-
-  const handleTermsAccept = () => {
-    setShowTerms(false);
-    if (pendingUrl) {
-      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
-      setPendingUrl(null);
-    }
-  };
-
-  const handleTermsDecline = () => {
-    setShowTerms(false);
-    setPendingUrl(null);
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const scrollToSection = (sectionId: string) => {

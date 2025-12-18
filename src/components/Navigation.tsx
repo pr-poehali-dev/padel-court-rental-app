@@ -2,35 +2,13 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Icon from '@/components/ui/icon';
-import TermsModal from '@/components/TermsModal';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
-  const [showTerms, setShowTerms] = useState(false);
-  const [pendingUrl, setPendingUrl] = useState<string | null>(null);
 
   const handleBookingClick = (url: string) => {
-    const termsAccepted = localStorage.getItem('zvi_terms_accepted');
-    if (termsAccepted) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    } else {
-      setPendingUrl(url);
-      setShowTerms(true);
-    }
+    window.open(url, '_blank', 'noopener,noreferrer');
     setOpen(false);
-  };
-
-  const handleTermsAccept = () => {
-    setShowTerms(false);
-    if (pendingUrl) {
-      window.open(pendingUrl, '_blank', 'noopener,noreferrer');
-      setPendingUrl(null);
-    }
-  };
-
-  const handleTermsDecline = () => {
-    setShowTerms(false);
-    setPendingUrl(null);
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -111,11 +89,6 @@ const Navigation = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <TermsModal 
-        open={showTerms} 
-        onAccept={handleTermsAccept} 
-        onDecline={handleTermsDecline} 
-      />
     </nav>
   );
 };
