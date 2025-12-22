@@ -36,11 +36,11 @@ const Pricing = () => {
       name: 'СПЛИТ ТРЕНИРОВКА',
       price: 11000,
       icon: 'Users',
-      description: '3-4 человека',
+      description: '2 человека',
     },
     {
       name: 'МИНИ-ГРУППЫ',
-      price: 4000,
+      price: 12000,
       icon: 'UserPlus',
       description: null,
     },
