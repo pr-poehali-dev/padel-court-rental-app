@@ -59,8 +59,7 @@ const Home = () => {
   const training = [
     { name: 'ПЕРСОНАЛЬНАЯ ТРЕНИРОВКА', price: 10000, icon: 'User', description: null },
     { name: 'СПЛИТ ТРЕНИРОВКА', price: 11000, icon: 'Users', description: '3-4 человека' },
-    { name: 'МИНИ-ГРУППЫ', price: 4000, icon: 'UserPlus', description: null },
-    { name: 'ОТКРЫТАЯ ТРЕНИРОВКА ДЛЯ НОВИЧКОВ ПАДЕЛА', price: 0, icon: 'Heart', description: null, free: true }
+    { name: 'МИНИ-ГРУППЫ', price: 4000, icon: 'UserPlus', description: null }
   ];
 
   const basicRules = [
