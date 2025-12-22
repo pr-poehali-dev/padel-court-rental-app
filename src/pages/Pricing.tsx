@@ -42,7 +42,7 @@ const Pricing = () => {
       name: 'МИНИ-ГРУППЫ',
       price: 12000,
       icon: 'UserPlus',
-      description: null,
+      description: '3-4 человека',
     },
 
   ];
