@@ -44,13 +44,7 @@ const Pricing = () => {
       icon: 'UserPlus',
       description: null,
     },
-    {
-      name: 'ОТКРЫТАЯ ТРЕНИРОВКА ДЛЯ НОВИЧКОВ ПАДЕЛА',
-      price: 0,
-      icon: 'Heart',
-      description: null,
-      free: true,
-    },
+
   ];
 
   return (
