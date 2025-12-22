@@ -47,8 +47,8 @@ const Home = () => {
   ];
 
   const courts = [
-    { id: 1, name: 'PANORAMIC', type: 'Крытый', price: 6000, features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'], image: 'https://cdn.poehali.dev/files/29 (1).jpg' },
-    { id: 2, name: 'ULTRA PANORAMIC', type: 'Крытый', price: 7000, features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'], image: 'https://cdn.poehali.dev/files/зал1.jpg' }
+    { id: 1, name: 'PANORAMIC', type: 'Крытый', price: 6000, features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки'], image: 'https://cdn.poehali.dev/files/зал1.jpg' },
+    { id: 2, name: 'ULTRA PANORAMIC', type: 'Крытый', price: 7000, features: ['Кондиционер', 'LED освещение', 'Душевые', 'Раздевалки', 'Панорамный вид'], image: 'https://cdn.poehali.dev/files/29 (1).jpg' }
   ];
 
   const pricingCourts = [
