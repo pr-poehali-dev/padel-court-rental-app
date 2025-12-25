@@ -587,7 +587,7 @@ const Home = () => {
                     <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4">
                       <p className="text-lg font-bold text-white mb-2">Сплит</p>
                       <p className="text-base text-white/80">Тренировка в малой группе</p>
-                      <p className="text-xl font-bold text-accent mt-2">12 000 ₽</p>
+                      <p className="text-xl font-bold text-accent mt-2">11 000 ₽</p>
                     </div>
                     <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4">
                       <p className="text-lg font-bold text-white mb-2">Мини-группы</p>
